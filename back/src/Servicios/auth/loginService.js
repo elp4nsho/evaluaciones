@@ -11,6 +11,8 @@ exports.login = (req) =>{
         }
         var usuarios;
         UsuarioService.mostrar().then((d) => {
+
+
             usuarios = JSON.parse(d);
             for(var i in usuarios){
                 if(u===usuarios[i].rut){

@@ -108,8 +108,8 @@ exports.mostrarEvaluacionPorId = (evId) => {
         let sql = `SELECT  * FROM evaluacionAContestar WHERE id = ${evId}`;
         cona.query(sql, (e, r) => {
             if (e) reject(e);
-            var ev = new Evaluacion();
-            console.log(r)
+            var ev = {};
+
             r.forEach(evaluacion => {
                 ev = evaluacion;
                 ev.preguntas = []
@@ -121,7 +121,7 @@ exports.mostrarEvaluacionPorId = (evId) => {
                     r.forEach(pregunta => {
                         ev.preguntas.push(pregunta);
                     });
-
+                    ev.numeroPreguntas = r.length;
                     resolve(ev);
 
                 });
@@ -136,6 +136,7 @@ exports.mostrarEvaluacionPorId = (evId) => {
 
 };
 exports.enviarEvaluacion = (datos) => {
+
 
     return new Promise(function (resolve, reject) {
 
@@ -160,7 +161,7 @@ exports.enviarEvaluacion = (datos) => {
 
             datos.usuarios.forEach(d => {
 
-                sql = `INSERT INTO usuariosAContestar VALUES ('${result.insertId}', '${d.id}')`;
+                sql = `INSERT INTO usuariosAContestar VALUES ('${result.insertId}', '${d.id}',0)`;
 
                 let ii = mysql.createConnection({
                     host: "localhost",
@@ -273,7 +274,7 @@ exports.mostrarEvaluacionesRespondidas = async () => {
 
                     preguntasRespondidas.forEach(pregunta => {
 
-                        if (pregunta.idUsuario == usuario.idUsuario && evaluacion) {
+                        if (pregunta.idUsuario == usuario.idUsuario && pregunta.idEvaluacionRespondida == evaluacion.id) {
                             preguntaObj.titulo = pregunta.titulo;
                             preguntaObj.respuesta = pregunta.respuesta;
                             usuarioObj.preguntas.push(JSON.parse(JSON.stringify(preguntaObj)));
@@ -304,6 +305,15 @@ exports.mostrarEvaluacionesRespondidas = async () => {
 };
 
 exports.agregarEvaluacionRespondida = (datos) => {
+
+    console.log("HOLA");
+    var quer = `UPDATE usuariosAContestar SET contestado = 1 WHERE idUsuario = '${datos.rutEvaluado}' AND idEvaluacionAContestar = '${datos.idEvaluacion}'`;
+    co = conexion();
+    co.query(quer);
+
+
+
+
 
     return new Promise(function (resolve, reject) {
 

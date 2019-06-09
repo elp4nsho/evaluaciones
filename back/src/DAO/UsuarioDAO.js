@@ -21,16 +21,42 @@
 */
 const Usuario = require("../Modelos/Usuario");
 const db = require("../Utilidades/DatabaseFunctions");
-const Tablas = require("../Constantes/Tablas");
+const Constantes = require("../Constantes/Constantes");
 
-exports.mostrarUsuarios = () => {
+exports.mostrarUsuarios = async () => {
+    var listaUsuarios = [];
+    let sql = Constantes.Consultas.traerTodo + Constantes.Tablas.Usuario.nombre;
+
+    let usuarios = await db.devolverLaPromesaDeLaBaseDato(sql);
+    sql = "SELECT * FROM usuariosAContestar";
+    let evaluacionesDisponibles = await db.devolverLaPromesaDeLaBaseDato(sql);
+    sql = "SELECT * FROM evaluacionesRespondidas";
+    let evaluacionesRespondidas = await db.devolverLaPromesaDeLaBaseDato(sql);
+
 
     return new Promise(function (resolve, reject) {
+        var usrObj = {}
 
-        console.log(Tablas);
+        usuarios.forEach(u => {
+            usrObj = u;
+            usrObj.evaluacionesDisponibles = [];
+            usrObj.evaluacionesRespondidas = [];
 
+            evaluacionesDisponibles.forEach(ev => {
+                if (ev.idUsuario == u.rut&&ev.contestado==0) {
+                    usrObj.evaluacionesDisponibles.push(ev.idEvaluacionAContestar)
+                }
+            });
+            evaluacionesRespondidas.forEach(ev => {
+                if (ev.idUsuario == u.rut) {
+                    usrObj.evaluacionesRespondidas.push(ev.idEvaluacionAContestar);
+                }
+            });
 
+            listaUsuarios.push(u)
+        });
 
+        resolve(JSON.stringify(listaUsuarios));
 
 
     });
@@ -74,7 +100,7 @@ exports.agregarUsuario = (usuario) => {
 
 
 exports.editarUsuario = (
-   usuario
+    usuario
 ) => {
     var mysql = require('mysql');
     var con = mysql.createConnection({
@@ -103,7 +129,7 @@ exports.editarUsuario = (
 };
 
 exports.eliminarUsuario = (
-   usuario
+    usuario
 ) => {
     var mysql = require('mysql');
     var con = mysql.createConnection({
@@ -133,7 +159,7 @@ exports.eliminarUsuario = (
 
 
 exports.mostrarUsuario = (
-   usuario
+    usuario
 ) => {
     var mysql = require('mysql');
     var con = mysql.createConnection({

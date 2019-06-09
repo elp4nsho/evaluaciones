@@ -1,11 +1,33 @@
 const lamysql = require('mysql');
 
+
+devolverDatos = async (sql) => {
+    let datos;
+
+    try {
+        datos = await devolverLaPromesaDeLaBaseDato(sql);
+        return datos
+    } catch (e) {
+        return e
+    }
+
+};
+
+
 function devolverLaPromesaDeLaBaseDato(sql) {
     return new Promise((o, n) => {
 
         let c = conexion();
-        c.query(sql, (e, r) => r !== undefined ? o(r) : n(e));
+        c.query(sql, (e, r) => {
+            if (r !== undefined) {
+                o(r);
+                c.destroy();
+            } else {
+                n(e)
+            }
+        });
     });
+
 }
 
 const conexion = () => {
@@ -20,3 +42,5 @@ const conexion = () => {
 };
 
 exports.devolverLaPromesaDeLaBaseDato = devolverLaPromesaDeLaBaseDato;
+exports.conexion = conexion;
+exports.devolverDatos = devolverDatos;

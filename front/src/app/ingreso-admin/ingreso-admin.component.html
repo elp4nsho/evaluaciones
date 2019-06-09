@@ -1,0 +1,40 @@
+<div class="">
+
+  <div class="contenedor">
+
+
+    <div class="barraBusqueda">
+      <div class="input-group mb-3 mt-3">
+        <input type="text" class="form-control" placeholder="Búsqueda por nombre" aria-label="Recipient's username"
+               aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+        </div>
+      </div>
+    </div>
+    <div class="usuariosCaja">
+      <fieldset class="usuariosFieldset">
+        <legend class="usuariosLegend">Usuarios disponibles para la evaluación</legend>
+        <div class="usuarios  mb-3 mt-3">
+<p>Usuarios Seleccionados {{usuariosSeleccionados.length}}</p>
+          <app-usuario-componente (click)="aniadirALista(i)"  *ngFor="let i of listaUsuarios" [nombre]="i.nombre" [apellido]="i.apellido"
+                                  [rut]="i.rut" [correo]="i.correo"
+                                  [tipoUsuario]="i.tipoUsuario"></app-usuario-componente>
+
+        </div>
+      </fieldset>
+
+    </div>
+
+    <div class="encuesta  mb-3 mt-3">
+      <select required name="evaluacionSelect" #evaluacionSelect class="custom-select custom-select-lg mb-3">
+        <option  *ngFor="let ev of evaluaciones "  value="{{ev.id}}">{{ev.nombre}}</option>
+      </select>
+    </div>
+    <div class="botones  mb-3 mt-3">
+      <button type="button" class="btn btn-primary btn-lg btn-block" (click)="enviarEvaluaciones()"  [disabled]="usuariosSeleccionados.length == 0"    >Enviar</button>
+    </div>
+
+
+  </div>
+</div>

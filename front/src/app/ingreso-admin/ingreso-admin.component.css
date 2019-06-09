@@ -1,0 +1,70 @@
+.botones{
+  width: 70vw;
+  margin:auto;
+
+}
+.encuesta{
+  width: 70vw;
+  margin:auto;
+
+}
+.barraBusqueda {
+  width: 70vw;
+  margin:auto;
+}
+
+div.usuarios {
+  max-height: 50vh;
+  overflow-y: scroll;
+  width: 60vw;
+  margin: auto;
+  border: solid #fff;
+  outline: #007bff groove;
+  box-shadow: 2px 3px 7px black;
+}
+
+.usuariosCaja{
+  width: 70vw;
+  margin: auto;
+}
+
+.usuariosFieldset {
+
+  display: block;
+  -webkit-margin-start: 2px;
+  -webkit-margin-end: 2px;
+  -webkit-padding-before: 0.35em;
+  -webkit-padding-start: 0.75em;
+  -webkit-padding-end: 0.75em;
+  -webkit-padding-after: 0.625em;
+  min-width: -webkit-min-content;
+  border-width: 2px;
+  border-style: groove;
+  border-color: rgba(0, 135, 255, 0.71);
+  border-image: initial;
+}
+
+.usuariosLegend {
+  -webkit-padding-start: 2px;
+  -webkit-padding-end: 2px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  font-size: 116%;
+  width: auto;
+}
+
+div.usuarios::-webkit-scrollbar {
+
+  width: 5px;
+  height: 8px;
+  background: #fff;
+  border: solid 1px #7f7f7f;
+
+}
+
+div.usuarios::-webkit-scrollbar-thumb {
+  background: #007bff;
+
+}

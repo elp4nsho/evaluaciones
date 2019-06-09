@@ -1,0 +1,65 @@
+/*
+@keyframes pinchado {
+  0%{transform: scale(1);}
+  100%{transform: scale(1.050);}
+}
+
+div.card {
+  display: inline-block;
+  width: 14vw;
+  border: none;
+  font-size:10px;
+}
+h5,h6{
+  font-size: 10px;
+}
+
+div.card-body {
+  border: solid lightskyblue 2px;
+  text-align: center;
+  border-bottom: solid gray 2px;
+  margin: 10px;
+  transition: 250ms all linear;
+  box-shadow: 1px 2px 3px black;
+
+
+}
+
+.pinchado{
+}
+
+div.card-body-activado {
+  transition: 250ms all linear;
+  border: solid 2px greenyellow;
+  border-radius: 6px;
+  box-shadow: none;
+  z-index: 99999999999999;
+}
+
+div.card-body:hover {
+
+  transform: scale(1.025);
+
+}
+
+h5 {
+  border-top: solid gray 2px;
+
+}
+
+.card-text, .card-subtitle, .card-title {
+  text-transform: capitalize;
+}
+.correo{
+  font-size: 60%;
+}
+
+
+
+
+
+
+*/
+
+
+

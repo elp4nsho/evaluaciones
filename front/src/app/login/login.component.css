@@ -1,0 +1,28 @@
+form {
+  width: 60%;
+  margin: auto;
+
+}
+
+.container {
+  background: black;
+  height: 100vh;
+  max-width:100vw;
+  padding-top: 20vh;
+
+}
+.evaluaciones{
+  width: 500px;
+  /*margin:15vh auto 5vh auto;*/
+  margin: auto;
+  margin-bottom:5vh;
+}
+
+.evaluaciones-texto{
+  text-align: center;
+  margin: 0;
+  color:white;
+}
+div.usuario,div.clave{
+  margin-bottom: 3vh;
+}

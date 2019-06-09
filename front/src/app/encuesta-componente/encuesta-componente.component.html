@@ -1,0 +1,43 @@
+<div class="contenedor">
+<div class="barraEncuesta">
+  <div class="fecha">
+    <h4>{{evaluacion.fechaEvaluacionRespondida}}</h4>
+  </div>
+  <div class="numeroUsuarios">
+    <h4>{{evaluacion.idEvaluacionRespondida}}</h4>
+
+  </div>
+  <div  class="ver">
+    <button (click)="mostrarLista= !mostrarLista ; mostrarDetalles = false" class="btn btn-success btn-block ">+</button>
+  </div>
+</div>
+<div *ngIf="mostrarLista" class="listaUsuarios">
+  <div class="listaEvaluados" >
+    <button class="btn btn-info" (click)="mostrarDetalles = !mostrarDetalles">Ver</button>
+    <div class="itemEvaluados" *ngFor="let u of evaluacion.usuarios"  ><b>{{u.nombre}}</b><button class="btn btn-success" [disabled]="u.preguntas.length==0" (click)="enviarCorreo('fcisternas@altiuz.com',u.preguntas)">EnviarCorreo</button></div>
+  </div>
+</div>
+
+
+  <div class="detallesUsuario" *ngIf="mostrarDetalles">
+    <div *ngFor="let u of evaluacion.usuarios" class="contenedorDetalles">
+      <div  class="infoUsuario">
+        <h1  >{{u.rut}}</h1>
+        <h2  >{{u.nombre}}</h2>
+      </div>
+      <div class="infoPreguntas">
+        <p *ngFor="let p of u.preguntas"><b>{{p.titulo}}    {{p.respuesta}}%</b></p>
+        <!--<p *ngFor="let p of u.preguntas">¿Suele acompañarte tu jefe a almorzar? 0%</p>-->
+      </div>
+      <div class="boton">
+      </div>
+
+    </div>
+    <button class="btn btn-block btn-success align-content-center" style="width: 70%; margin:auto;"  (click)=" mostrarDetalles = false">Salir</button>
+
+  </div>
+
+
+
+
+</div>

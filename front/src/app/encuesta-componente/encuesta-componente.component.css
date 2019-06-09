@@ -1,0 +1,41 @@
+.div.contenedor{
+  width: 80vw;
+} .barraEncuesta{
+  display: flex;
+}
+.fecha{
+  text-align: center;
+  text-transform: uppercase;
+  width: 20vw;
+  border:solid;
+}
+.numeroUsuarios{
+  text-align: center;
+  width: 20vw;
+border:solid;
+}
+.ver{
+  padding: 1vh;
+  width: 20vw;
+border:solid;
+}
+div.ver button{
+  margin-top:2vh;
+}
+.detallesUsuario{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: max-content;
+  min-height: 100vh;
+  background: rgba(0,0,0,0.9);
+  color: white;
+  z-index: 999999999999999999999;
+}
+.contenedorDetalles{
+  width: 50vw;
+  margin: auto;
+  margin-top: 30vh;
+  text-align: center;
+}

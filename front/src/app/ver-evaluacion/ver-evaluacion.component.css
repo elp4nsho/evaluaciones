@@ -1,0 +1,29 @@
+div.evaluacionVer{
+  border: solid 1px;
+  margin: 20px;
+  display: flex;
+}
+div.evaluacionTitulo{
+  border: solid 1px;
+  margin: 20px;
+
+
+}
+p.evaluacionTitulo-texto{
+
+}
+div.evaluacionInfo{
+  border: solid 1px;
+  margin: 20px;
+
+
+}
+p.evaluacionInfo-texto{
+
+}
+div.evaluacionAcciones{
+  border: solid 1px;
+  margin: 20px;
+
+
+}

@@ -1,0 +1,35 @@
+.nav-link{
+  color:lightskyblue !important;
+  cursor:pointer;
+
+}
+nav > ul > li:nth-child(1) > a{
+  cursor:auto;
+
+}
+nav > ul > li:nth-child(1)> a:first-letter {
+  text-transform: capitalize;
+
+}
+nav > ul > li:nth-child(1) > a:hover{
+  background: #6A849C !important;
+  box-shadow: none;
+  max-height: 37px;
+
+}
+
+.nav-link:hover{
+
+  background: #273549 !important;
+  box-shadow: 0px 2px 2px black;
+  max-height: 37px;
+
+}
+
+
+nav{
+  background: #6A849C !important;
+  max-height: 5vh;
+  min-height: 5vh;
+  box-shadow: 2px 2px 2px black;
+}

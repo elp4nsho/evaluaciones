@@ -1,0 +1,50 @@
+div.container {
+  /*background: rgba(0,0,0,0.8);*/
+}
+
+div.encuesta {
+  overflow-y: scroll;
+  border: 3px solid;
+  height: 80vh;
+  width: 70vw;
+  margin: auto;
+}
+
+div.EntradaNegra {
+  width: 83vw;
+  position: absolute;
+  left: 17vw;
+  top: 5vh;
+  z-index: 99999999;
+  background: rgba(0, 0, 0);
+  height: 95vh;
+  padding-top: 208px;
+  color: white;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+h1.infoEntradaNegra-texto {
+  text-align: center;
+
+}
+
+.modalEnviar{
+  height: 100vh;
+  width: 99vw;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99999999999;
+  background: rgba(0,0,0,0.9);
+  overflow: hidden;
+
+}
+.contenidoModal{
+  width: 50vw;
+  margin: auto;
+  color:white;
+  margin-top: 25vh;
+  text-align: center;
+}

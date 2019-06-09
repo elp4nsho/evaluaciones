@@ -1,0 +1,12 @@
+.nav-link{
+  color:#061E35 !important;
+  cursor:pointer;
+}
+nav{
+  background: #6A849C !important;
+  max-width: 17vw;
+  min-width: 17vw;
+  min-height: 95vh;
+  height: 95vh;
+  position: absolute;
+}

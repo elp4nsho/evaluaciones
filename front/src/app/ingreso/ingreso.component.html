@@ -1,0 +1,31 @@
+<div *ngIf="encuestaDisponible != ''" class="container">
+
+
+  <div class="modalEnviar" *ngIf="modalConfirmacion">
+    <div class="contenidoModal">
+      <div class="modalTitulo">
+        <h1 class="modalTituloTexto">¿Estas seguro que deseas enviar la evaluación?</h1>
+      </div>
+      <div class="botones">
+        <button class="btn btn-block btn-success" (click)="enviarEvaluacion();respondida = false;">Enviar</button>
+        <button class="btn btn-block btn-danger" (click)="modalConfirmacion=false;">Cancelar</button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="encuesta mt-3">
+    <app-pregunta *ngFor="let pregunta of preguntasDesdeEvaluacion" preguntaTitulo="{{pregunta.titulo}}"></app-pregunta>
+  </div>
+  <p (click)="modalConfirmacion=true;" style="width: 80%;margin: auto"
+     class="text-center btn btn-block btn-primary mt-3">Enviar</p>
+</div>
+<div *ngIf="respondida ==false " class="EntradaNegra">
+  <div class="contenidoEntredaNegra">
+    <h1 class="infoEntradaNegra-texto">Tienes {{encuestaDisponible == '' || encuestaDisponible == undefined ? '0':'1'}} encuesta disponible para contestar</h1>
+    <button [disabled]="encuestaDisponible == ''|| encuestaDisponible == undefined" (click)="traerEvaluacion();respondida = true;"
+            class="btn btn-block btn-success">Empezar
+    </button>
+  </div>
+</div>

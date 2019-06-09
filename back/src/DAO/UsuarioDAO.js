@@ -27,7 +27,7 @@ exports.mostrarUsuarios = () => {
 
     return new Promise(function (resolve, reject) {
 
-        console.log(Tablas)
+        console.log(Tablas);
 
 
 

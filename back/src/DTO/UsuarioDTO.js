@@ -12,6 +12,10 @@ exports.mostrarUsuarios = ()=>{
     return UsuarioDAO.mostrarUsuarios();
 
 };
+exports.mostrarEvaluacion = (id)=>{
+    return UsuarioDAO.mostrarEvalacion(id.rut);
+
+};
 exports.editarUsuario=(datos)=>{
     var usuario = Mapper.transformar(Usuario,datos);
     return UsuarioDAO.editarUsuario(usuario);

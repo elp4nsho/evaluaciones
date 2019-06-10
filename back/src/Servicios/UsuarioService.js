@@ -15,6 +15,12 @@ function mostrar(){
         resolve(UsuarioDTO.mostrarUsuarios());
     });
 }
+function mostrarEvaluacion(req){
+
+    return new Promise((resolve,reject)=>{
+        resolve(UsuarioDTO.mostrarEvaluacion(req.body));
+    });
+}
 
 function editar(req){
 
@@ -49,3 +55,4 @@ exports.editar = editar;
 exports.mostrar = mostrar;
 exports.mostrarUsuario = mostrarUsuario;
 exports.eliminar = eliminar;
+exports.mostrarEvaluacion = mostrarEvaluacion;

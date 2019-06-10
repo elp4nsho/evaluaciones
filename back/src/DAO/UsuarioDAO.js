@@ -23,6 +23,40 @@ const Usuario = require("../Modelos/Usuario");
 const db = require("../Utilidades/DatabaseFunctions");
 const Constantes = require("../Constantes/Constantes");
 
+exports.mostrarEvalacion = async (id)=>{
+    let sql ="SELECT * FROM evaluacionesRespondidas";
+    let listaEvaluaciones = await db.devolverLaPromesaDeLaBaseDato(sql);
+    sql = "SELECT * FROM preguntasRespondidas";
+    let listaPreguntasRespondidas = await db.devolverLaPromesaDeLaBaseDato(sql);
+    sql = "SELECT * FROM evaluacionAContestar";
+    let listaEvaluacionesAContestar = await db.devolverLaPromesaDeLaBaseDato(sql);
+    sql = "SELECT * FROM evaluacion";
+    let listaEvaluacioness = await db.devolverLaPromesaDeLaBaseDato(sql);
+
+    let evaluaciones = [];
+    let evaluacion = {};
+    let usuario = {};
+    usuario.evaluaciones = listaEvaluaciones.filter(evaluacionRespondida=>{
+        if(evaluacionRespondida.idUsuario == id){
+            evaluacion = evaluacionRespondida;
+            listaEvaluacionesAContestar.forEach(evaluacionAContestar=>{
+                if(evaluacionRespondida.idEvaluacionAContestar == evaluacionAContestar.id){
+                    evaluacion.infoEvaluacion = listaEvaluacioness.filter(ev => ev.id == evaluacionAContestar.idEvaluacion);
+                }
+
+            });
+            evaluacion.preguntas = listaPreguntasRespondidas.filter(p=>p.idUsuario == id && p.idEvaluacionRespondida == evaluacionRespondida.idEvaluacionAContestar);
+            evaluacion.nroPreguntas = evaluacion.preguntas.length;
+            return true;
+        }
+    });
+    return usuario;
+
+
+};
+
+
+
 exports.mostrarUsuarios = async () => {
     var listaUsuarios = [];
     let sql = Constantes.Consultas.traerTodo + Constantes.Tablas.Usuario.nombre;

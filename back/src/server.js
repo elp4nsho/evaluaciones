@@ -46,6 +46,11 @@ app.options('/login', (req, res) => {
     res.json({});
 
 });
+app.options('/usuario/evaluacion', (req, res) => {
+    res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+    res.json({});
+
+});
 app.options('/evaluaciones/enviar', (req, res) => {
     res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
     res.json({});
@@ -82,6 +87,17 @@ app.get("/eliminar", (req, res) => {
 });
 app.get("/usuario", (req, res) => {
     UsuarioService.mostrarUsuario(req).catch(e => {
+        res.end(e.toString())
+    }).then(d => {
+        res.end(JSON.stringify(d))
+    });
+});
+
+
+app.post("/usuario/evaluacion", (req, res) => {
+    res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+
+    UsuarioService.mostrarEvaluacion(req).catch(e => {
         res.end(e.toString())
     }).then(d => {
         res.end(JSON.stringify(d))

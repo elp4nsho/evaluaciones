@@ -33,6 +33,11 @@ function agregarEvaluacionRespondida(req){
         resolve(EvaluacionDTO.agregarEvaluacionRespondida(req.body));
     });
 }
+function agregarEvaluacionRespondida(req){
+    return new Promise((resolve,reject)=>{
+        resolve(EvaluacionDTO.agregarEvaluacionRespondida(req.body));
+    });
+}
 function mostrarEvaluacionesRespondidas(){
     return new Promise((resolve,reject)=>{
         resolve(EvaluacionDTO.mostrarEvaluacionesRespondidas());

@@ -60,6 +60,100 @@ h5 {
 
 
 */
+@media only screen and (max-width: 600px) {
+
+/*
+  .rutTexto{
+    font-size: 0.4em !important;
+  }
+  .infoTextoNombre{
+    font-size: 0.6em !important;
+
+  }
+  .infoTextoCorreo{
+    font-size: 0.3em !important;
+
+  }*/
+  .contenedor{
+    width: 50vw !important;
+    border-radius: 3px !important;
+
+  }
+
+
+}
+
+
+
+.contenedor{
+  cursor: pointer;
+  border:solid #007bff 1px;
+  border-radius:15px;
+  width: 15vw;
+  display:inline-block;
+  margin: 0.5% 2%;
+  padding: 2% 0;
+
+  box-shadow: none;
+  transition: 300ms ;
+
+}
+.contenedor:hover{
+  transition: 100ms linear;
+  box-shadow: 0px 0px 5px black;
+ /* background:#007bff;
+  color:white;
+  opacity: 0.7;*/
+}
+.contenedor-activado{
+  border:solid #007bff 1px;
+
+  color:white;
+  background:#007bff;
+  width: 15vw;
+  display:inline-block;
+  padding: 2% 0;
+  box-shadow: 0px 0px 5px black;
+
+}
+.container{
+  padding: 0;
+
+  text-align: center;
+
+}
+.rut{
+}
+.rutTexto{
+  padding: 0;
+  margin: 0;
+  font-size: 80%;
+  border-bottom: gray solid 1px;
+}
+
+.info{
+  display: inline-block;
+  width: max-content;
+  margin: auto;
+}
+.infoTextoNombre{
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+
+  border-bottom: #cbcbcb solid 1px;
+  font-weight: bolder;
+
+}
+.infoTextoCorreo{
+  font-size: 60%;
+  text-transform: capitalize;
+
+  padding: 0;
+  margin: 0;
+
+}
+
 
 
 

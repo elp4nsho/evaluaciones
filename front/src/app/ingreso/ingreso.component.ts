@@ -14,7 +14,11 @@ export class IngresoComponent implements OnInit {
   respondida = false;
 
   public static listaPreguntas = [];
+  public static evSeleccionada = "";
 
+  get listaPreguntas(){
+    return IngresoComponent.listaPreguntas;
+  }
 
   preguntasDesdeEvaluacion = [];
 
@@ -29,7 +33,8 @@ export class IngresoComponent implements OnInit {
   }
 
   get encuestaDisponible(){
-    console.log("DISPONIBLES: "+this._auth.decode().evaluacionesDisponibles)
+    console.log("DISPONIBLES: "+JSON.stringify(this._auth.decode().evaluacionesDisponibles))
+
     return this._auth.decode().evaluacionesDisponibles
   }
 
@@ -39,6 +44,8 @@ export class IngresoComponent implements OnInit {
     if(this._auth.decode().tipoUsuario == 0){
         this._router.navigate(['/administracion/ingreso']);
     }
+    this._auth.login({"usuario":this._auth.decode().rut,"clave":this._auth.decode().clave});
+
 
 
   }
@@ -49,9 +56,10 @@ export class IngresoComponent implements OnInit {
     IngresoComponent.estado = true;
   }
 
-  traerEvaluacion(){
-    this.evaluacionService.traerEvaluacion(this.encuestaDisponible).subscribe((d:any)=>{
-
+  traerEvaluacion(ev){
+    IngresoComponent.listaPreguntas=[];
+    this.evaluacionService.traerEvaluacion(ev).subscribe((d:any)=>{
+      IngresoComponent.evSeleccionada = ev;
       this.preguntasDesdeEvaluacion = d.preguntas;
       console.log(this.preguntasDesdeEvaluacion);
     });
@@ -67,7 +75,7 @@ export class IngresoComponent implements OnInit {
     evaluacion.nombreEvaluado = this._auth.decode().nombre;
     evaluacion.rutEvaluado = this._auth.decode().rut;
     evaluacion.totalPreguntas = evaluacion.preguntas.length;
-    evaluacion.idEvaluacion = this._auth.decode().evaluacionesDisponibles;
+    evaluacion.idEvaluacion = IngresoComponent.evSeleccionada;
 
     this.evaluacionService.enviarEvaluacionRespondida(evaluacion).subscribe(
       d=>{

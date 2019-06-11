@@ -1,6 +1,17 @@
+@media only screen and (max-width: 600px) {
 .nav-link{
+  font-size: 0.8rem;
+  padding: 15px 0 !important;
+    text-align: center;
+}
+  nav{
+  }
+}
+
+  .nav-link{
   color:#061E35 !important;
   cursor:pointer;
+    font-weight: bolder;
 }
 nav{
   background: #6A849C !important;

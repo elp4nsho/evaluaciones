@@ -1,11 +1,11 @@
 
 
 <div class="container">
-<h1 class="tituloVer">Buscar encuesta</h1>
+<h1 class="tituloVer">Buscar evaluación</h1>
   <div class="filtros">
 
     <div class="input-group mb-3 buscar">
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <input type="text" class="form-control" placeholder="Buscar por nombre de evaluación" aria-label="Recipient's username" aria-describedby="button-addon2">
       <div class="input-group-append">
         <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
       </div>
@@ -16,38 +16,23 @@
   <table class="table">
     <thead>
     <tr>
-      <th scope="col">Encuesta</th>
+      <th scope="col">Nombre evaluación</th>
       <th scope="col">Fecha</th>
-      <th scope="col">Total</th>
-      <th scope="col"></th>
-      <th scope="col"></th>
+      <th scope="col">Preguntas</th>
+<!--      <th scope="col"></th>
+      <th scope="col"></th>-->
     </tr>
     </thead>
     <tbody>
 
-    <tr>
-      <td>Encuesta Mayo</td>
-      <td>23/06/2019</td>
-      <td>70%</td>
-      <td class="botonEliminar"><i class="fas fa-minus"></i></td>
-      <td class="botonVer"><i class="far fa-eye"></i></td>
-    </tr>
-    <tr>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td class="botonEliminar"><i class="fas fa-minus"></i></td>
-      <td class="botonVer"><i class="far fa-eye"></i></td>
+    <tr *ngFor="let ev of evaluacionesRespondidas">
+      <td>{{ev.infoEvaluacion[0].nombre}}</td>
+      <td>{{ev.fecha}}</td>
+      <td><ul *ngFor="let p of ev.preguntas"><li>{{p.titulo}} {{p.respuesta}}%</li></ul></td>
+      <!--<td class="botonEliminar"><i class="fas fa-minus"></i></td>-->
+   <!--   <td class="botonVer"><i class="far fa-eye"></i></td>
+  -->  </tr>
 
-    </tr>
-    <tr>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td class="botonEliminar"><i class="fas fa-minus"></i></td>
-      <td class="botonVer"><i class="far fa-eye"></i></td>
-
-    </tr>
     </tbody>
 
   </table>

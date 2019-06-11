@@ -16,8 +16,8 @@
       <fieldset class="usuariosFieldset">
         <legend class="usuariosLegend">Usuarios disponibles para la evaluación</legend>
         <div class="usuarios  mb-3 mt-3">
-<p>Usuarios Seleccionados {{usuariosSeleccionados.length}}</p>
-          <app-usuario-componente (click)="aniadirALista(i)"  *ngFor="let i of listaUsuarios" [nombre]="i.nombre" [apellido]="i.apellido"
+<p class="usuariosSeleccionados">Usuarios Seleccionados {{usuariosSeleccionados.length}}</p>
+          <app-usuario-componente (click)="aniadirALista(i)"  *ngFor="let i of listaUsuarios" [hidden]="i.tipoUsuario == 0" [nombre]="i.nombre" [apellido]="i.apellido"
                                   [rut]="i.rut" [correo]="i.correo"
                                   [tipoUsuario]="i.tipoUsuario"></app-usuario-componente>
 

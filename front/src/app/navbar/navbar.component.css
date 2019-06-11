@@ -3,6 +3,10 @@
   cursor:pointer;
 
 }
+.navbar-nav{
+  display: inline-block;
+
+}
 nav > ul > li:nth-child(1) > a{
   cursor:auto;
 
@@ -17,7 +21,15 @@ nav > ul > li:nth-child(1) > a:hover{
   max-height: 37px;
 
 }
+li.nav-item{
+  display: inline-block;
+  width: max-content;
+  margin: 0 10px;
+}
+li.nav-link{
+  display: inline-block;
 
+}
 .nav-link:hover{
 
   background: #273549 !important;
@@ -28,6 +40,8 @@ nav > ul > li:nth-child(1) > a:hover{
 
 
 nav{
+  padding: 0;
+  margin: 0;
   background: #6A849C !important;
   max-height: 5vh;
   min-height: 5vh;

@@ -12,7 +12,7 @@
 
 -->
 
-<div class="contenedor">
+<div class="contenedor" (click)="activado = !activado" [ngClass]="activado ? 'contenedor contenedor-activado':'contenedor'" >
   <div class="container">
     <div class="rut">
       <p class="rutTexto">{{rut}}</p>

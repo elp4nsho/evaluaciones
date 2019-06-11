@@ -32,21 +32,33 @@ export class PreguntaComponent implements OnInit {
     pregunta = {};
     pregunta.titulo = this.preguntaTitulo;
     pregunta.opcion = v;
-    console.log(pregunta);
     listaPreguntas.forEach(d=>{
       if(d.titulo == this.preguntaTitulo){
-        d.opcion = v;
-        preguntaDuplicada = true;
+
+        if(d.opcion == v){
+          preguntaDuplicada = true;
+
+        }else{
+          d.opcion = v;
+        }
       }
     });
     if(!preguntaDuplicada){
         listaPreguntas.push(pregunta);
         IngresoComponent.listaPreguntas = listaPreguntas;
+    }else{
+      listaPreguntas = this.arrayRemove(listaPreguntas,this.preguntaTitulo);
     }
-    /*console.log("LISTA PREGUNTAS"+JSON.stringify(listaPreguntas));
-*/
+    console.log("LISTA PREGUNTAS"+JSON.stringify(listaPreguntas));
   }
 
+   arrayRemove(arr, value) {
+
+    return arr.filter(function(ele){
+      return ele.titulo != value;
+    });
+
+  }
 
 
 }

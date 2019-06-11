@@ -18,14 +18,15 @@
   <div class="encuesta mt-3">
     <app-pregunta *ngFor="let pregunta of preguntasDesdeEvaluacion" preguntaTitulo="{{pregunta.titulo}}"></app-pregunta>
   </div>
-  <p (click)="modalConfirmacion=true;" style="width: 80%;margin: auto"
-     class="text-center btn btn-block btn-primary mt-3">Enviar</p>
+  <button [disabled]="listaPreguntas.length == 0" (click)="modalConfirmacion=true;" style="width: 80%;margin: auto"
+     class="text-center btn btn-block btn-primary mt-3">Enviar</button>
 </div>
 <div *ngIf="respondida ==false " class="EntradaNegra">
   <div class="contenidoEntredaNegra">
-    <h1 class="infoEntradaNegra-texto">Tienes {{encuestaDisponible == '' || encuestaDisponible == undefined ? '0':'1'}} encuesta disponible para contestar</h1>
-    <button [disabled]="encuestaDisponible == ''|| encuestaDisponible == undefined" (click)="traerEvaluacion();respondida = true;"
-            class="btn btn-block btn-success">Empezar
+    <h1 class="infoEntradaNegra-texto" *ngIf="!(encuestaDisponible == '' || encuestaDisponible == undefined)">Tienes {{encuestaDisponible == '' || encuestaDisponible == undefined ? '0':encuestaDisponible.length}} evaluacion{{encuestaDisponible.length == 1 ? '':'es'}} disponible para contestar</h1>
+    <h1 class="infoEntradaNegra-texto " *ngIf="encuestaDisponible == '' || encuestaDisponible == undefined">No posees evaluaciones disponibles</h1>
+    <button *ngFor="let ev of encuestaDisponible"  (click)="traerEvaluacion(ev);respondida = true;"
+            class="btn btn-block btn-success">Empezar evaluacion {{ev}}
     </button>
   </div>
 </div>

@@ -15,6 +15,7 @@ app.get('/', (req, res) => {
 
         /*   console.log(d.toString())*/
         res.set({"access-control-allow-origin": "*"});
+        res.set({"content-type": "application/json"});
         res.end(d.toString())
     });
 

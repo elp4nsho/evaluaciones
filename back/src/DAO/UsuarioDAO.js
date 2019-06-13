@@ -118,7 +118,7 @@ exports.agregarUsuario = (usuario) => {
         password: "",
         database: "evaluaciones"
     });
-    var sql = `INSERT INTO usuario VALUES ('${u.rut}', '${u.nombre}', '${u.apellido}', '${u.correo}', '0', '${u.clave}', NULL);`;
+    var sql = `INSERT INTO usuario VALUES ('${u.rut}', '${u.nombre}', '${u.apellido}', '${u.correo}', ${u.tipoUsuario}, '${u.clave}', NULL);`;
     var c = new Promise((o, n) => {
         con.connect(function (err) {
             if (err) throw err;
@@ -146,7 +146,7 @@ exports.editarUsuario = (
     var u = new Usuario();
     u = usuario;
     var sql =
-        `UPDATE usuario SET rut='${usuario.rut}',nombre='${usuario.nombre}',apellido='${usuario.apellido}',correo='${usuario.correo}',tipoUsuario='${usuario.tipoUsuario}',clave='${usuario.clave}',evaluacionesRespondidas='${usuario.evaluacionesRespondidas}' WHERE id=${usuario.id}`;
+        `UPDATE usuario SET nombre='${usuario.nombre}',apellido='${usuario.apellido}',correo='${usuario.correo}',tipoUsuario='${usuario.tipoUsuario}',clave='${usuario.clave}' WHERE id=${usuario.rut}`;
     //console.log(sql);
 
     var c = new Promise((o, n) => {
@@ -175,7 +175,7 @@ exports.eliminarUsuario = (
     var u = new Usuario();
     u = usuario;
     var sql =
-        `DELETE FROM usuario WHERE id=${usuario.id}`;
+        `DELETE FROM usuario WHERE rut=${usuario.rut}`;
     //console.log(sql);
 
     var c = new Promise((o, n) => {
@@ -205,7 +205,7 @@ exports.mostrarUsuario = (
     var u = new Usuario();
     u = usuario;
     var sql =
-        `SELECT * FROM usuario WHERE id=${usuario.id}`;
+        `SELECT * FROM usuario WHERE rut=${usuario.rut}`;
     console.log(sql);
 
     var c = new Promise((o, n) => {

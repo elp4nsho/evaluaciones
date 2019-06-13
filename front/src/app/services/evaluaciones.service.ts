@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from "@angular/common/http";
+import { Constants} from "../Constants/constants";
 
 @Injectable({
   providedIn: 'root'
@@ -8,20 +9,21 @@ export class EvaluacionesService {
 
   constructor(private _http: HttpClient) { }
 
-  host = "http://localhost:3000";
-  //host = "http://n3gro.com:3000";
+
+  urlBack = Constants.urlBack;
+  urlCorreo = Constants.urlCorreo;
 
 
   enviarEvaluaciones(evaluaciones){
 
-      return this._http.post(this.host+"/evaluaciones/enviar",evaluaciones);
+      return this._http.post(this.urlBack+"/evaluaciones/enviar",evaluaciones);
 
 
   }
 
   traerEvaluacionesRespondidass(){
 
-      return this._http.get(this.host+"/evaluaciones/respondidas");
+      return this._http.get(this.urlBack+"/evaluaciones/respondidas");
 
 
   }
@@ -31,26 +33,26 @@ export class EvaluacionesService {
     b.correo = correo;
     b.obs = obs;
     console.log(b);
-    return this._http.post("http://localhost:3002", b);
+    return this._http.post(this.urlCorreo, b);
 
   }
 
 
   traerEvaluaciones(){
-    return this._http.get(this.host+"/evaluaciones/todas");
+    return this._http.get(this.urlBack+"/evaluaciones/todas");
 
   }
   traerEvaluacion(idEv){
-    return this._http.get(this.host+"/evaluaciones?evId="+idEv);
+    return this._http.get(this.urlBack+"/evaluaciones?evId="+idEv);
 
   }
   traerEvaluacionesRespondidas(){
-    return this._http.get(this.host+"/evaluaciones?evId=");
+    return this._http.get(this.urlBack+"/evaluaciones?evId=");
 
   }
 
   enviarEvaluacionRespondida(ev){
-    return this._http.post(this.host+"/evaluaciones/agregar",ev);
+    return this._http.post(this.urlBack+"/evaluaciones/agregar",ev);
   }
 
 

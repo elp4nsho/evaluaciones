@@ -1,43 +1,120 @@
-<div class="contenedor">
-<div class="barraEncuesta">
-  <div class="fecha">
-    <h4>{{evaluacion.fechaEvaluacionRespondida}}</h4>
-  </div>
-  <div class="numeroUsuarios">
-    <h4>{{evaluacion.idEvaluacionRespondida}}</h4>
-
-  </div>
-  <div  class="ver">
-    <button (click)="mostrarLista= !mostrarLista ; mostrarDetalles = false" class="btn btn-success btn-block ">+</button>
-  </div>
-</div>
-<div *ngIf="mostrarLista" class="listaUsuarios">
-  <div class="listaEvaluados" >
-    <button class="btn btn-info" (click)="mostrarDetalles = !mostrarDetalles">Ver</button>
-    <div class="itemEvaluados" *ngFor="let u of evaluacion.usuarios"  ><b>{{u.nombre}}</b><button class="btn btn-success" [disabled]="u.preguntas.length==0" (click)="enviarCorreo('fcisternas@altiuz.com',u.preguntas)">EnviarCorreo</button></div>
-  </div>
-</div>
-
-
-  <div class="detallesUsuario" *ngIf="mostrarDetalles">
-    <div *ngFor="let u of evaluacion.usuarios" class="contenedorDetalles">
-      <div  class="infoUsuario">
-        <h1  >{{u.rut}}</h1>
-        <h2  >{{u.nombre}}</h2>
-      </div>
-      <div class="infoPreguntas">
-        <p *ngFor="let p of u.preguntas"><b>{{p.titulo}}    {{p.respuesta}}%</b></p>
-        <!--<p *ngFor="let p of u.preguntas">¿Suele acompañarte tu jefe a almorzar? 0%</p>-->
-      </div>
-      <div class="boton">
-      </div>
+<!--
+<div #modal class="contenedor">
+  <div class="barraEncuesta">
+    <div class="fecha">
+      <h4 class="fechaTexto">{{evaluacion.fechaEvaluacionRespondida}}</h4>
+      <h4 class="idEvaluacionTexto">{{evaluacion.idEvaluacionRespondida}}</h4>
 
     </div>
-    <button class="btn btn-block btn-success align-content-center" style="width: 70%; margin:auto;"  (click)=" mostrarDetalles = false">Salir</button>
 
+    <div class="ver">
+      <button (click)="mostrarLista= !mostrarLista ; mostrarDetalles = false"  class="btn btn-success btn-sm btn-block " style="width: 60%;margin:0 auto;font-size:13px;padding:0">Mostrar Usuarios
+      </button>
+    </div>
+  </div>
+  <div *ngIf="mostrarLista" class="listaUsuarios">
+    <div class="listaEvaluados">
+      <button class="btn btn-info" (click)="mostrarDetalles = !mostrarDetalles;scroll(modal)">Ver</button>
+      <div class="itemEvaluados" *ngFor="let u of evaluacion.usuarios"><b>{{u.nombre}}</b>
+        <button class="btn btn-success" [disabled]="u.preguntas.length==0"
+                (click)="enviarCorreo('fcisternas@altiuz.com',u.preguntas)">EnviarCorreo
+        </button>
+      </div>
+    </div>
   </div>
 
 
 
+
+</div>
+-->
+<table #modal class="table">
+  <thead>
+  <tr>
+    <th scope="col">Id Evaluación</th>
+    <th scope="col">Fecha</th>
+    <th scope="col">Usuarios</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>{{evaluacion.idEvaluacionRespondida}}</td>
+    <td>{{evaluacion.fechaEvaluacionRespondida}}</td>
+    <td>
+      <button (click)="mostrarLista= !mostrarLista ; mostrarDetalles = false" class="btn btn-success btn-sm btn-block "
+              style="width: 60%;margin:0 auto;font-size:13px;padding:0">Mostrar Usuarios
+      </button>
+
+      <!--  <div *ngIf="mostrarLista" class="listaUsuarios">
+          <div class="listaEvaluados">
+            <button class="btn btn-info" (click)="mostrarDetalles = !mostrarDetalles;scroll(modal)">Ver</button>
+            <div class="itemEvaluados" *ngFor="let u of evaluacion.usuarios"><b>{{u.nombre}}</b>
+              <button class="btn btn-success" [disabled]="u.preguntas.length==0"
+                      (click)="enviarCorreo('fcisternas@altiuz.com',u.preguntas)">EnviarCorreo
+              </button>
+            </div>
+          </div>
+        </div>
+
+  -->
+
+      <ul *ngIf="mostrarLista">
+        <li *ngFor="let u of evaluacion.usuarios">
+          <p class="usuarioNombreTexto">{{u.nombre}}</p>
+          <p class="usuarioRutTexto">{{u.rut}}</p>
+          <div>
+            <button class="btn btn-info"
+                    (click)="mostrarDetalles = !mostrarDetalles;scroll(modal);seleccionarUsuario(u)">
+              Ver
+            </button>
+            <button class="btn btn-success" [disabled]="u.preguntas.length==0"
+                    (click)="enviarCorreo(u.correo,u.preguntas)">EnviarCorreo
+            </button>
+          </div>
+        </li>
+      </ul>
+
+    </td>
+  </tr>
+
+  </tbody>
+</table>
+
+<!--
+<div id="modal" class="detallesUsuario" *ngIf="mostrarDetalles">
+  <div *ngFor="let u of usuarioSeleccionado" class="contenedorDetalles">
+    <div class="infoUsuario">
+      <h1>{{u.rut}}</h1>
+      <h2>{{u.nombre}}</h2>
+    </div>
+    <div class="infoPreguntas">
+      <p *ngFor="let p of u.preguntas"><b>{{p.titulo}} {{p.respuesta}}%</b></p>
+    </div>
+    <div class="boton">
+    </div>
+
+  </div>
+  <button class="btn btn-block btn-success align-content-center" style="width: 70%; margin:auto;"
+          (click)=" mostrarDetalles = false">Salir
+  </button>
+
+</div>
+-->
+<div id="modal" class="detallesUsuario" *ngIf="mostrarDetalles">
+  <div class="contenedorDetalles">
+    <div class="infoUsuario">
+      <h1>{{usuarioSeleccionado.rut}}</h1>
+      <h2>{{usuarioSeleccionado.nombre}}</h2>
+    </div>
+    <div class="infoPreguntas">
+      <p *ngFor="let p of usuarioSeleccionado.preguntas"><b>{{p.titulo}} {{p.respuesta}}%</b></p>
+    </div>
+    <div class="boton">
+    </div>
+
+  </div>
+  <button class="btn btn-block btn-success align-content-center" style="width: 70%; margin:auto;"
+          (click)=" mostrarDetalles = false">Salir
+  </button>
 
 </div>

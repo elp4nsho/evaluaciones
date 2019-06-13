@@ -377,7 +377,7 @@ var LayoutComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".div.contenedor{\n  width: 80vw;\n} .barraEncuesta{\n  display: flex;\n} .fecha{\n  text-align: center;\n  text-transform: uppercase;\n  width: 20vw;\n  border:solid;\n} .numeroUsuarios{\n  text-align: center;\n  width: 20vw;\nborder:solid;\n} .ver{\n  padding: 1vh;\n  width: 20vw;\nborder:solid;\n} div.ver button{\n  margin-top:2vh;\n} .detallesUsuario{\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: -webkit-max-content;\n  height: -moz-max-content;\n  height: max-content;\n  min-height: 100vh;\n  background: rgba(0,0,0,0.9);\n  color: white;\n  z-index: 999999999999999999999;\n} .contenedorDetalles{\n  width: 50vw;\n  margin: auto;\n  margin-top: 30vh;\n  text-align: center;\n}\n"
+module.exports = ".div.contenedor{\n  width: 80vw;\n}\n.barraEncuesta{\n  /*display: flex;*/\n  justify-content: center;\n  align-items: center;\n  border:solid lightseagreen 1px;\n  margin:1vh;\n\n}\n.fecha{\n  padding: 1vw;\n\n  text-align: center;\n  text-transform: uppercase;\n  display: flex;\n  justify-content: space-between;\n  /*border:solid;*/\n}\n.idEvaluacion{\n  text-align: center;\n  /*width: 20vw;*/\n  padding: 2vw;\n/*border:solid;*/\n}\n.fechaTexto{\n  font-size: 130%;\n  padding: 0;\n  margin: 0;\n  display: inline-block;\n}\n.idEvaluacionTexto{\n  font-size: 90%;\n  padding: 0;\n  margin: 0;\n  display: inline-block;\n\n}\n.ver{\n  padding: 1vw;\n\n  /*width: 20vw;*/\n/*border:solid;*/\n}\ndiv.ver button{\n  /*margin-top:2vh;*/\n}\n.detallesUsuario{\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: -webkit-max-content;\n  height: -moz-max-content;\n  height: max-content;\n  min-height: 100vh;\n  background: rgba(0,0,0,0.9);\n  color: white;\n  z-index: 999999999999999999999;\n}\n.contenedorDetalles{\n  width: 50vw;\n  margin: auto;\n  margin-top: 30vh;\n  text-align: center;\n}\n.usuarioNombreTexto{\n  padding: 0;\n  margin: 10px;\n  display: inline-block;\n}\n.usuarioRutTexto{\npadding: 0;\n  margin: 10px;\n  display: inline-block;\n}\nul{\n  list-style: none;\n}\n\n\n"
 
 /***/ }),
 
@@ -388,7 +388,7 @@ module.exports = ".div.contenedor{\n  width: 80vw;\n} .barraEncuesta{\n  display
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"contenedor\">\n<div class=\"barraEncuesta\">\n  <div class=\"fecha\">\n    <h4>{{evaluacion.fechaEvaluacionRespondida}}</h4>\n  </div>\n  <div class=\"numeroUsuarios\">\n    <h4>{{evaluacion.idEvaluacionRespondida}}</h4>\n\n  </div>\n  <div  class=\"ver\">\n    <button (click)=\"mostrarLista= !mostrarLista ; mostrarDetalles = false\" class=\"btn btn-success btn-block \">+</button>\n  </div>\n</div>\n<div *ngIf=\"mostrarLista\" class=\"listaUsuarios\">\n  <div class=\"listaEvaluados\" >\n    <button class=\"btn btn-info\" (click)=\"mostrarDetalles = !mostrarDetalles\">Ver</button>\n    <div class=\"itemEvaluados\" *ngFor=\"let u of evaluacion.usuarios\"  ><b>{{u.nombre}}</b><button class=\"btn btn-success\" [disabled]=\"u.preguntas.length==0\" (click)=\"enviarCorreo('fcisternas@altiuz.com',u.preguntas)\">EnviarCorreo</button></div>\n  </div>\n</div>\n\n\n  <div class=\"detallesUsuario\" *ngIf=\"mostrarDetalles\">\n    <div *ngFor=\"let u of evaluacion.usuarios\" class=\"contenedorDetalles\">\n      <div  class=\"infoUsuario\">\n        <h1  >{{u.rut}}</h1>\n        <h2  >{{u.nombre}}</h2>\n      </div>\n      <div class=\"infoPreguntas\">\n        <p *ngFor=\"let p of u.preguntas\"><b>{{p.titulo}}    {{p.respuesta}}%</b></p>\n        <!--<p *ngFor=\"let p of u.preguntas\">¿Suele acompañarte tu jefe a almorzar? 0%</p>-->\n      </div>\n      <div class=\"boton\">\n      </div>\n\n    </div>\n    <button class=\"btn btn-block btn-success align-content-center\" style=\"width: 70%; margin:auto;\"  (click)=\" mostrarDetalles = false\">Salir</button>\n\n  </div>\n\n\n\n\n</div>\n"
+module.exports = "<!--\n<div #modal class=\"contenedor\">\n  <div class=\"barraEncuesta\">\n    <div class=\"fecha\">\n      <h4 class=\"fechaTexto\">{{evaluacion.fechaEvaluacionRespondida}}</h4>\n      <h4 class=\"idEvaluacionTexto\">{{evaluacion.idEvaluacionRespondida}}</h4>\n\n    </div>\n\n    <div class=\"ver\">\n      <button (click)=\"mostrarLista= !mostrarLista ; mostrarDetalles = false\"  class=\"btn btn-success btn-sm btn-block \" style=\"width: 60%;margin:0 auto;font-size:13px;padding:0\">Mostrar Usuarios\n      </button>\n    </div>\n  </div>\n  <div *ngIf=\"mostrarLista\" class=\"listaUsuarios\">\n    <div class=\"listaEvaluados\">\n      <button class=\"btn btn-info\" (click)=\"mostrarDetalles = !mostrarDetalles;scroll(modal)\">Ver</button>\n      <div class=\"itemEvaluados\" *ngFor=\"let u of evaluacion.usuarios\"><b>{{u.nombre}}</b>\n        <button class=\"btn btn-success\" [disabled]=\"u.preguntas.length==0\"\n                (click)=\"enviarCorreo('fcisternas@altiuz.com',u.preguntas)\">EnviarCorreo\n        </button>\n      </div>\n    </div>\n  </div>\n\n\n\n\n</div>\n-->\n<table #modal class=\"table\">\n  <thead>\n  <tr>\n    <th scope=\"col\">Id Evaluación</th>\n    <th scope=\"col\">Fecha</th>\n    <th scope=\"col\">Usuarios</th>\n  </tr>\n  </thead>\n  <tbody>\n  <tr>\n    <td>{{evaluacion.idEvaluacionRespondida}}</td>\n    <td>{{evaluacion.fechaEvaluacionRespondida}}</td>\n    <td>\n      <button (click)=\"mostrarLista= !mostrarLista ; mostrarDetalles = false\" class=\"btn btn-success btn-sm btn-block \"\n              style=\"width: 60%;margin:0 auto;font-size:13px;padding:0\">Mostrar Usuarios\n      </button>\n\n      <!--  <div *ngIf=\"mostrarLista\" class=\"listaUsuarios\">\n          <div class=\"listaEvaluados\">\n            <button class=\"btn btn-info\" (click)=\"mostrarDetalles = !mostrarDetalles;scroll(modal)\">Ver</button>\n            <div class=\"itemEvaluados\" *ngFor=\"let u of evaluacion.usuarios\"><b>{{u.nombre}}</b>\n              <button class=\"btn btn-success\" [disabled]=\"u.preguntas.length==0\"\n                      (click)=\"enviarCorreo('fcisternas@altiuz.com',u.preguntas)\">EnviarCorreo\n              </button>\n            </div>\n          </div>\n        </div>\n\n  -->\n\n      <ul *ngIf=\"mostrarLista\">\n        <li *ngFor=\"let u of evaluacion.usuarios\">\n          <p class=\"usuarioNombreTexto\">{{u.nombre}}</p>\n          <p class=\"usuarioRutTexto\">{{u.rut}}</p>\n          <div>\n            <button class=\"btn btn-info\"\n                    (click)=\"mostrarDetalles = !mostrarDetalles;scroll(modal);seleccionarUsuario(u)\">\n              Ver\n            </button>\n            <button class=\"btn btn-success\" [disabled]=\"u.preguntas.length==0\"\n                    (click)=\"enviarCorreo(u.correo,u.preguntas)\">EnviarCorreo\n            </button>\n          </div>\n        </li>\n      </ul>\n\n    </td>\n  </tr>\n\n  </tbody>\n</table>\n\n<!--\n<div id=\"modal\" class=\"detallesUsuario\" *ngIf=\"mostrarDetalles\">\n  <div *ngFor=\"let u of usuarioSeleccionado\" class=\"contenedorDetalles\">\n    <div class=\"infoUsuario\">\n      <h1>{{u.rut}}</h1>\n      <h2>{{u.nombre}}</h2>\n    </div>\n    <div class=\"infoPreguntas\">\n      <p *ngFor=\"let p of u.preguntas\"><b>{{p.titulo}} {{p.respuesta}}%</b></p>\n    </div>\n    <div class=\"boton\">\n    </div>\n\n  </div>\n  <button class=\"btn btn-block btn-success align-content-center\" style=\"width: 70%; margin:auto;\"\n          (click)=\" mostrarDetalles = false\">Salir\n  </button>\n\n</div>\n-->\n<div id=\"modal\" class=\"detallesUsuario\" *ngIf=\"mostrarDetalles\">\n  <div class=\"contenedorDetalles\">\n    <div class=\"infoUsuario\">\n      <h1>{{usuarioSeleccionado.rut}}</h1>\n      <h2>{{usuarioSeleccionado.nombre}}</h2>\n    </div>\n    <div class=\"infoPreguntas\">\n      <p *ngFor=\"let p of usuarioSeleccionado.preguntas\"><b>{{p.titulo}} {{p.respuesta}}%</b></p>\n    </div>\n    <div class=\"boton\">\n    </div>\n\n  </div>\n  <button class=\"btn btn-block btn-success align-content-center\" style=\"width: 70%; margin:auto;\"\n          (click)=\" mostrarDetalles = false\">Salir\n  </button>\n\n</div>\n"
 
 /***/ }),
 
@@ -416,20 +416,31 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var EncuestaComponenteComponent = /** @class */ (function () {
-    function EncuestaComponenteComponent(_evaluacion) {
+    function EncuestaComponenteComponent(renderer, _evaluacion) {
+        this.renderer = renderer;
         this._evaluacion = _evaluacion;
+        this.usuarioSeleccionado = {};
         this.evaluacion = [];
         this.mostrarLista = false;
         this.mostrarDetalles = false;
+        this.usuarioSeleccionado.preguntas = [];
     }
     EncuestaComponenteComponent.prototype.enviarCorreo = function (correo, obs) {
         var observaciones = prompt("Ingrese sus observaciones");
-        var data = "";
+        var data = "<table><tr><th>Pregunta</th><th>Respuesta</th></tr>";
         obs.forEach(function (d) {
-            data += "Pregunta: " + d.titulo + " Tu Respuesta: " + d.respuesta + "\n";
+            data += "<tr><td>" + d.titulo + "</td><td>" + d.respuesta + "</td></tr>";
         });
-        data += "\n Observaciones:\n " + observaciones;
+        data += "<table> <h1>Observaciones:</h1><p>" + observaciones + "</p>";
         this._evaluacion.enviarCorreo(correo, data).subscribe(function (d) { return console.log(d); });
+    };
+    EncuestaComponenteComponent.prototype.scroll = function (el) {
+        //window.scrollTo(0, 0);
+    };
+    EncuestaComponenteComponent.prototype.seleccionarUsuario = function (obj) {
+        this.usuarioSeleccionado = obj;
+    };
+    EncuestaComponenteComponent.prototype.focusiar = function () {
     };
     EncuestaComponenteComponent.prototype.ngOnInit = function () {
     };
@@ -443,7 +454,7 @@ var EncuestaComponenteComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./encuesta-componente.component.html */ "./src/app/encuesta-componente/encuesta-componente.component.html"),
             styles: [__webpack_require__(/*! ./encuesta-componente.component.css */ "./src/app/encuesta-componente/encuesta-componente.component.css")]
         }),
-        __metadata("design:paramtypes", [_services_evaluaciones_service__WEBPACK_IMPORTED_MODULE_1__["EvaluacionesService"]])
+        __metadata("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _services_evaluaciones_service__WEBPACK_IMPORTED_MODULE_1__["EvaluacionesService"]])
     ], EncuestaComponenteComponent);
     return EncuestaComponenteComponent;
 }());
@@ -559,7 +570,7 @@ var RoleGuard = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".botones{\n  width: 70vw;\n  margin:auto;\n\n}\n.encuesta{\n  width: 70vw;\n  margin:auto;\n\n}\n.barraBusqueda {\n  width: 70vw;\n  margin:auto;\n}\ndiv.usuarios {\n  max-height: 50vh;\n  overflow-y: scroll;\n  width: 60vw;\n  margin: auto;\n  border: solid #fff;\n  outline: #007bff groove;\n  box-shadow: 2px 3px 7px black;\n}\n.usuariosCaja{\n  width: 70vw;\n  margin: auto;\n}\n.usuariosFieldset {\n\n  display: block;\n  -webkit-margin-start: 2px;\n  -webkit-margin-end: 2px;\n  -webkit-padding-before: 0.35em;\n  -webkit-padding-start: 0.75em;\n  -webkit-padding-end: 0.75em;\n  -webkit-padding-after: 0.625em;\n  min-width: -webkit-min-content;\n  border-width: 2px;\n  border-style: groove;\n  border-color: rgba(0, 135, 255, 0.71);\n  -o-border-image: initial;\n     border-image: initial;\n}\n.usuariosLegend {\n  -webkit-padding-start: 2px;\n  -webkit-padding-end: 2px;\n  border-width: initial;\n  border-style: none;\n  border-color: initial;\n  -o-border-image: initial;\n     border-image: initial;\n  font-size: 116%;\n  width: auto;\n}\ndiv.usuarios::-webkit-scrollbar {\n\n  width: 5px;\n  height: 8px;\n  background: #fff;\n  border: solid 1px #7f7f7f;\n\n}\ndiv.usuarios::-webkit-scrollbar-thumb {\n  background: #007bff;\n\n}\n"
+module.exports = "@media only screen and (max-width: 600px) {\n.usuariosLegend{\n  font-size: 0.7rem !important;\n}\n  .usuariosSeleccionados{\n    font-size: 0.7rem !important;\n\n  }\n\n}\n\n\n.botones{\n  width: 70vw;\n  margin:auto;\n\n}\n\n\n.encuesta{\n  width: 70vw;\n  margin:auto;\n\n}\n\n\n.barraBusqueda {\n  width: 70vw;\n  margin:auto;\n}\n\n\ndiv.usuarios {\n  max-height: 50vh;\n  overflow-y: scroll;\n  width: 60vw;\n  margin: auto;\n  border: solid #fff;\n  outline: #007bff groove;\n  box-shadow: 2px 3px 7px black;\n  text-align: center;\n}\n\n\n.usuariosCaja{\n  width: 70vw;\n  margin: auto;\n}\n\n\n.usuariosFieldset {\n\n  display: block;\n  -webkit-margin-start: 2px;\n  -webkit-margin-end: 2px;\n  -webkit-padding-before: 0.35em;\n  -webkit-padding-start: 0.75em;\n  -webkit-padding-end: 0.75em;\n  -webkit-padding-after: 0.625em;\n  min-width: -webkit-min-content;\n  border-width: 2px;\n  border-style: groove;\n  border-color: rgba(0, 135, 255, 0.71);\n  -o-border-image: initial;\n     border-image: initial;\n}\n\n\n.usuariosLegend {\n  -webkit-padding-start: 2px;\n  -webkit-padding-end: 2px;\n  border-width: initial;\n  border-style: none;\n  border-color: initial;\n  -o-border-image: initial;\n     border-image: initial;\n  font-size: 116%;\n  width: auto;\n}\n\n\ndiv.usuarios::-webkit-scrollbar {\n\n  width: 5px;\n  height: 8px;\n  background: #fff;\n  border: solid 1px #7f7f7f;\n\n}\n\n\ndiv.usuarios::-webkit-scrollbar-thumb {\n  background: #007bff;\n\n}\n"
 
 /***/ }),
 
@@ -570,7 +581,7 @@ module.exports = ".botones{\n  width: 70vw;\n  margin:auto;\n\n}\n.encuesta{\n  
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"\">\n\n  <div class=\"contenedor\">\n\n\n    <div class=\"barraBusqueda\">\n      <div class=\"input-group mb-3 mt-3\">\n        <input type=\"text\" class=\"form-control\" placeholder=\"Búsqueda por nombre\" aria-label=\"Recipient's username\"\n               aria-describedby=\"button-addon2\">\n        <div class=\"input-group-append\">\n          <button class=\"btn btn-outline-secondary\" type=\"button\" id=\"button-addon2\">Buscar</button>\n        </div>\n      </div>\n    </div>\n    <div class=\"usuariosCaja\">\n      <fieldset class=\"usuariosFieldset\">\n        <legend class=\"usuariosLegend\">Usuarios disponibles para la evaluación</legend>\n        <div class=\"usuarios  mb-3 mt-3\">\n<p>Usuarios Seleccionados {{usuariosSeleccionados.length}}</p>\n          <app-usuario-componente (click)=\"aniadirALista(i)\"  *ngFor=\"let i of listaUsuarios\" [nombre]=\"i.nombre\" [apellido]=\"i.apellido\"\n                                  [rut]=\"i.rut\" [correo]=\"i.correo\"\n                                  [tipoUsuario]=\"i.tipoUsuario\"></app-usuario-componente>\n\n        </div>\n      </fieldset>\n\n    </div>\n\n    <div class=\"encuesta  mb-3 mt-3\">\n      <select required name=\"evaluacionSelect\" #evaluacionSelect class=\"custom-select custom-select-lg mb-3\">\n        <option  *ngFor=\"let ev of evaluaciones \"  value=\"{{ev.id}}\">{{ev.nombre}}</option>\n      </select>\n    </div>\n    <div class=\"botones  mb-3 mt-3\">\n      <button type=\"button\" class=\"btn btn-primary btn-lg btn-block\" (click)=\"enviarEvaluaciones()\"  [disabled]=\"usuariosSeleccionados.length == 0\"    >Enviar</button>\n    </div>\n\n\n  </div>\n</div>\n"
+module.exports = "<div class=\"\">\n\n  <div class=\"contenedor\">\n\n\n    <div class=\"barraBusqueda\">\n      <div class=\"input-group mb-3 mt-3\">\n        <input type=\"text\" class=\"form-control\" placeholder=\"Búsqueda por nombre\" aria-label=\"Recipient's username\"\n               aria-describedby=\"button-addon2\">\n        <div class=\"input-group-append\">\n          <button class=\"btn btn-outline-secondary\" type=\"button\" id=\"button-addon2\">Buscar</button>\n        </div>\n      </div>\n    </div>\n    <div class=\"usuariosCaja\">\n      <fieldset class=\"usuariosFieldset\">\n        <legend class=\"usuariosLegend\">Usuarios disponibles para la evaluación</legend>\n        <div class=\"usuarios  mb-3 mt-3\">\n<p class=\"usuariosSeleccionados\">Usuarios Seleccionados {{usuariosSeleccionados.length}}</p>\n          <app-usuario-componente (click)=\"aniadirALista(i)\"  *ngFor=\"let i of listaUsuarios\" [hidden]=\"i.tipoUsuario == 0\" [nombre]=\"i.nombre\" [apellido]=\"i.apellido\"\n                                  [rut]=\"i.rut\" [correo]=\"i.correo\"\n                                  [tipoUsuario]=\"i.tipoUsuario\"></app-usuario-componente>\n\n        </div>\n      </fieldset>\n\n    </div>\n\n    <div class=\"encuesta  mb-3 mt-3\">\n      <select required name=\"evaluacionSelect\" #evaluacionSelect class=\"custom-select custom-select-lg mb-3\">\n        <option  *ngFor=\"let ev of evaluaciones \"  value=\"{{ev.id}}\">{{ev.nombre}}</option>\n      </select>\n    </div>\n    <div class=\"botones  mb-3 mt-3\">\n      <button type=\"button\" class=\"btn btn-primary btn-lg btn-block\" (click)=\"enviarEvaluaciones()\"  [disabled]=\"usuariosSeleccionados.length == 0\"    >Enviar</button>\n    </div>\n\n\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -699,7 +710,7 @@ module.exports = "div.container {\n  /*background: rgba(0,0,0,0.8);*/\n}\n\ndiv.
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"encuestaDisponible != ''\" class=\"container\">\n\n\n  <div class=\"modalEnviar\" *ngIf=\"modalConfirmacion\">\n    <div class=\"contenidoModal\">\n      <div class=\"modalTitulo\">\n        <h1 class=\"modalTituloTexto\">¿Estas seguro que deseas enviar la evaluación?</h1>\n      </div>\n      <div class=\"botones\">\n        <button class=\"btn btn-block btn-success\" (click)=\"enviarEvaluacion();respondida = false;\">Enviar</button>\n        <button class=\"btn btn-block btn-danger\" (click)=\"modalConfirmacion=false;\">Cancelar</button>\n      </div>\n    </div>\n\n  </div>\n\n\n  <div class=\"encuesta mt-3\">\n    <app-pregunta *ngFor=\"let pregunta of preguntasDesdeEvaluacion\" preguntaTitulo=\"{{pregunta.titulo}}\"></app-pregunta>\n  </div>\n  <p (click)=\"modalConfirmacion=true;\" style=\"width: 80%;margin: auto\"\n     class=\"text-center btn btn-block btn-primary mt-3\">Enviar</p>\n</div>\n<div *ngIf=\"respondida ==false \" class=\"EntradaNegra\">\n  <div class=\"contenidoEntredaNegra\">\n    <h1 class=\"infoEntradaNegra-texto\">Tienes {{encuestaDisponible == '' ? '0':'1'}} encuesta disponible para contestar</h1>\n    <button [disabled]=\"encuestaDisponible == ''\" (click)=\"traerEvaluacion();respondida = true;\"\n            class=\"btn btn-block btn-success\">Empezar\n    </button>\n  </div>\n</div>\n"
+module.exports = "<div *ngIf=\"encuestaDisponible != ''\" class=\"container\">\n\n\n  <div class=\"modalEnviar\" *ngIf=\"modalConfirmacion\">\n    <div class=\"contenidoModal\">\n      <div class=\"modalTitulo\">\n        <h1 class=\"modalTituloTexto\">¿Estas seguro que deseas enviar la evaluación?</h1>\n      </div>\n      <div class=\"botones\">\n        <button class=\"btn btn-block btn-success\" (click)=\"enviarEvaluacion();respondida = false;\">Enviar</button>\n        <button class=\"btn btn-block btn-danger\" (click)=\"modalConfirmacion=false;\">Cancelar</button>\n      </div>\n    </div>\n\n  </div>\n\n\n  <div class=\"encuesta mt-3\">\n    <app-pregunta *ngFor=\"let pregunta of preguntasDesdeEvaluacion\" preguntaTitulo=\"{{pregunta.titulo}}\"></app-pregunta>\n  </div>\n  <button [disabled]=\"listaPreguntas.length == 0\" (click)=\"modalConfirmacion=true;\" style=\"width: 80%;margin: auto\"\n     class=\"text-center btn btn-block btn-primary mt-3\">Enviar</button>\n</div>\n<div *ngIf=\"respondida ==false \" class=\"EntradaNegra\">\n  <div class=\"contenidoEntredaNegra\">\n    <h1 class=\"infoEntradaNegra-texto\" *ngIf=\"!(encuestaDisponible == '' || encuestaDisponible == undefined)\">Tienes {{encuestaDisponible == '' || encuestaDisponible == undefined ? '0':encuestaDisponible.length}} evaluacion{{encuestaDisponible.length == 1 ? '':'es'}} disponible para contestar</h1>\n    <h1 class=\"infoEntradaNegra-texto \" *ngIf=\"encuestaDisponible == '' || encuestaDisponible == undefined\">No posees evaluaciones disponibles</h1>\n    <button *ngFor=\"let ev of encuestaDisponible\"  (click)=\"traerEvaluacion(ev);respondida = true;\"\n            class=\"btn btn-block btn-success\">Empezar evaluacion {{ev}}\n    </button>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -743,8 +754,16 @@ var IngresoComponent = /** @class */ (function () {
         if (this._auth.decode().tipoUsuario == 0) {
             this._router.navigate(['/administracion/ingreso']);
         }
+        this._auth.login({ "usuario": this._auth.decode().rut, "clave": this._auth.decode().clave });
     }
     IngresoComponent_1 = IngresoComponent;
+    Object.defineProperty(IngresoComponent.prototype, "listaPreguntas", {
+        get: function () {
+            return IngresoComponent_1.listaPreguntas;
+        },
+        enumerable: true,
+        configurable: true
+    });
     Object.defineProperty(IngresoComponent.prototype, "estado", {
         get: function () {
             return IngresoComponent_1.estado;
@@ -754,7 +773,7 @@ var IngresoComponent = /** @class */ (function () {
     });
     Object.defineProperty(IngresoComponent.prototype, "encuestaDisponible", {
         get: function () {
-            console.log("DISPONIBLES: " + this._auth.decode().evaluacionesDisponibles);
+            console.log("DISPONIBLES: " + JSON.stringify(this._auth.decode().evaluacionesDisponibles));
             return this._auth.decode().evaluacionesDisponibles;
         },
         enumerable: true,
@@ -765,9 +784,11 @@ var IngresoComponent = /** @class */ (function () {
     IngresoComponent.prototype.enviar = function () {
         IngresoComponent_1.estado = true;
     };
-    IngresoComponent.prototype.traerEvaluacion = function () {
+    IngresoComponent.prototype.traerEvaluacion = function (ev) {
         var _this = this;
-        this.evaluacionService.traerEvaluacion(this.encuestaDisponible).subscribe(function (d) {
+        IngresoComponent_1.listaPreguntas = [];
+        this.evaluacionService.traerEvaluacion(ev).subscribe(function (d) {
+            IngresoComponent_1.evSeleccionada = ev;
             _this.preguntasDesdeEvaluacion = d.preguntas;
             console.log(_this.preguntasDesdeEvaluacion);
         });
@@ -781,7 +802,7 @@ var IngresoComponent = /** @class */ (function () {
         evaluacion.nombreEvaluado = this._auth.decode().nombre;
         evaluacion.rutEvaluado = this._auth.decode().rut;
         evaluacion.totalPreguntas = evaluacion.preguntas.length;
-        evaluacion.idEvaluacion = this._auth.decode().evaluacionesDisponibles;
+        evaluacion.idEvaluacion = IngresoComponent_1.evSeleccionada;
         this.evaluacionService.enviarEvaluacionRespondida(evaluacion).subscribe(function (d) {
             _this._auth.login({ "usuario": _this._auth.decode().rut, "clave": _this._auth.decode().clave });
             console.log(d);
@@ -789,6 +810,7 @@ var IngresoComponent = /** @class */ (function () {
     };
     var IngresoComponent_1;
     IngresoComponent.listaPreguntas = [];
+    IngresoComponent.evSeleccionada = "";
     IngresoComponent.estado = false;
     IngresoComponent = IngresoComponent_1 = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -971,7 +993,7 @@ var ModalComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".nav-link{\n  color:lightskyblue !important;\n  cursor:pointer;\n\n}\nnav > ul > li:nth-child(1) > a{\n  cursor:auto;\n\n}\nnav > ul > li:nth-child(1)> a:first-letter {\n  text-transform: capitalize;\n\n}\nnav > ul > li:nth-child(1) > a:hover{\n  background: #6A849C !important;\n  box-shadow: none;\n  max-height: 37px;\n\n}\n.nav-link:hover{\n\n  background: #273549 !important;\n  box-shadow: 0px 2px 2px black;\n  max-height: 37px;\n\n}\nnav{\n  background: #6A849C !important;\n  max-height: 5vh;\n  min-height: 5vh;\n  box-shadow: 2px 2px 2px black;\n}\n"
+module.exports = ".nav-link{\n  color:lightskyblue !important;\n  cursor:pointer;\n\n}\n.navbar-nav{\n  display: inline-block;\n\n}\nnav > ul > li:nth-child(1) > a{\n  cursor:auto;\n\n}\nnav > ul > li:nth-child(1)> a:first-letter {\n  text-transform: capitalize;\n\n}\nnav > ul > li:nth-child(1) > a:hover{\n  background: #6A849C !important;\n  box-shadow: none;\n  max-height: 37px;\n\n}\nli.nav-item{\n  display: inline-block;\n  width: -webkit-max-content;\n  width: -moz-max-content;\n  width: max-content;\n  margin: 0 10px;\n}\nli.nav-link{\n  display: inline-block;\n\n}\n.nav-link:hover{\n\n  background: #273549 !important;\n  box-shadow: 0px 2px 2px black;\n  max-height: 37px;\n\n}\nnav{\n  padding: 0;\n  margin: 0;\n  background: #6A849C !important;\n  max-height: 5vh;\n  min-height: 5vh;\n  box-shadow: 2px 2px 2px black;\n}\n"
 
 /***/ }),
 
@@ -1148,19 +1170,29 @@ var PreguntaComponent = /** @class */ (function () {
         pregunta = {};
         pregunta.titulo = this.preguntaTitulo;
         pregunta.opcion = v;
-        console.log(pregunta);
         listaPreguntas.forEach(function (d) {
             if (d.titulo == _this.preguntaTitulo) {
-                d.opcion = v;
-                preguntaDuplicada = true;
+                if (d.opcion == v) {
+                    preguntaDuplicada = true;
+                }
+                else {
+                    d.opcion = v;
+                }
             }
         });
         if (!preguntaDuplicada) {
             listaPreguntas.push(pregunta);
             _ingreso_ingreso_component__WEBPACK_IMPORTED_MODULE_1__["IngresoComponent"].listaPreguntas = listaPreguntas;
         }
-        /*console.log("LISTA PREGUNTAS"+JSON.stringify(listaPreguntas));
-    */
+        else {
+            listaPreguntas = this.arrayRemove(listaPreguntas, this.preguntaTitulo);
+        }
+        console.log("LISTA PREGUNTAS" + JSON.stringify(listaPreguntas));
+    };
+    PreguntaComponent.prototype.arrayRemove = function (arr, value) {
+        return arr.filter(function (ele) {
+            return ele.titulo != value;
+        });
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])("preguntaTitulo"),
@@ -1299,6 +1331,8 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var EvaluacionesService = /** @class */ (function () {
     function EvaluacionesService(_http) {
         this._http = _http;
+        //host = "http://192.168.43.251:3000";
+        //host = "http://192.168.0.4:3000";
         this.host = "http://n3gro.com:3000";
     }
     EvaluacionesService.prototype.enviarEvaluaciones = function (evaluaciones) {
@@ -1370,6 +1404,9 @@ var UsuariosService = /** @class */ (function () {
     UsuariosService.prototype.usuarios = function () {
         return this._http.get(this.host);
     };
+    UsuariosService.prototype.evaluacionesPorRut = function (rut) {
+        return this._http.post(this.host + "/usuario/evaluacion", { rut: rut });
+    };
     UsuariosService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
@@ -1390,7 +1427,7 @@ var UsuariosService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".nav-link{\n  color:#061E35 !important;\n  cursor:pointer;\n}\nnav{\n  background: #6A849C !important;\n  max-width: 17vw;\n  min-width: 17vw;\n  min-height: 95vh;\n  height: 95vh;\n  position: absolute;\n}\n"
+module.exports = "@media only screen and (max-width: 600px) {\n.nav-link{\n  font-size: 0.8rem;\n  padding: 15px 0 !important;\n    text-align: center;\n}\n  nav{\n  }\n}\n\n  .nav-link{\n  color:#061E35 !important;\n  cursor:pointer;\n    font-weight: bolder;\n}\n\n  nav{\n  background: #6A849C !important;\n  max-width: 17vw;\n  min-width: 17vw;\n  min-height: 95vh;\n  height: 95vh;\n  position: absolute;\n}\n"
 
 /***/ }),
 
@@ -1401,7 +1438,7 @@ module.exports = ".nav-link{\n  color:#061E35 !important;\n  cursor:pointer;\n}\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"nav flex-column\">\n  <a *ngIf=\"!isAdmin\" class=\"nav-link\" routerLink=\"ingreso\">Ingreso <span class=\"badge badge-secondary\">1</span></a>\n  <!--<a *ngIf=\"!isAdmin\" class=\"nav-link\" routerLink=\"ver\">Ver</a>\n-->\n  <a *ngIf=\"isAdmin\" class=\"nav-link\" routerLink=\"administracion/ingreso\">Ingreso <span class=\"badge badge-secondary\">1</span></a>\n  <a *ngIf=\"isAdmin\" class=\"nav-link\" routerLink=\"administracion/ver\">Ver</a>\n  <!--<a *ngIf=\"isAdmin\" class=\"nav-link\" routerLink=\"administracion/usuarios\">Usuarios</a>\n\n-->\n\n</nav>\n"
+module.exports = "<nav class=\"nav flex-column\">\n  <a *ngIf=\"!isAdmin\" class=\"nav-link\" routerLink=\"ingreso\">Ingreso <span class=\"badge badge-secondary\">1</span></a>\n  <a *ngIf=\"!isAdmin\" class=\"nav-link\" routerLink=\"ver\">Ver</a>\n  <a *ngIf=\"isAdmin\" class=\"nav-link\" routerLink=\"administracion/ingreso\">Ingreso <!--<span class=\"badge badge-secondary\">1</span>--></a>\n  <a *ngIf=\"isAdmin\" class=\"nav-link\" routerLink=\"administracion/ver\">Ver</a>\n  <a *ngIf=\"isAdmin\" class=\"nav-link\" routerLink=\"administracion/usuarios\">Usuarios</a>\n\n\n</nav>\n"
 
 /***/ }),
 
@@ -1463,7 +1500,7 @@ var SidebarComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@-webkit-keyframes pinchado {\n  0%{-webkit-transform: scale(1);transform: scale(1);}\n  100%{-webkit-transform: scale(1.050);transform: scale(1.050);}\n}\n\n@keyframes pinchado {\n  0%{-webkit-transform: scale(1);transform: scale(1);}\n  100%{-webkit-transform: scale(1.050);transform: scale(1.050);}\n}\n\ndiv.card {\n  display: inline-block;\n  width: 14vw;\n  border: none\n\n}\n\ndiv.card-body {\n  border: solid lightskyblue 2px;\n  text-align: center;\n  border-bottom: solid gray 2px;\n  margin: 10px;\n  transition: 250ms all linear;\n  box-shadow: 1px 2px 3px black;\n\n\n}\n\n.pinchado{\n}\n\ndiv.card-body-activado {\n  transition: 250ms all linear;\n  border: solid 2px greenyellow;\n  border-radius: 6px;\n  box-shadow: none;\n  z-index: 99999999999999;\n}\n\ndiv.card-body:hover {\n\n  -webkit-transform: scale(1.025);\n\n          transform: scale(1.025);\n\n}\n\nh5 {\n  border-top: solid gray 2px;\n\n}\n\n.card-text, .card-subtitle, .card-title {\n  text-transform: capitalize;\n}\n\n.correo{\n  font-size: 60%;\n}\n\n\n\n\n\n\n"
+module.exports = "/*\n@keyframes pinchado {\n  0%{transform: scale(1);}\n  100%{transform: scale(1.050);}\n}\n\ndiv.card {\n  display: inline-block;\n  width: 14vw;\n  border: none;\n  font-size:10px;\n}\nh5,h6{\n  font-size: 10px;\n}\n\ndiv.card-body {\n  border: solid lightskyblue 2px;\n  text-align: center;\n  border-bottom: solid gray 2px;\n  margin: 10px;\n  transition: 250ms all linear;\n  box-shadow: 1px 2px 3px black;\n\n\n}\n\n.pinchado{\n}\n\ndiv.card-body-activado {\n  transition: 250ms all linear;\n  border: solid 2px greenyellow;\n  border-radius: 6px;\n  box-shadow: none;\n  z-index: 99999999999999;\n}\n\ndiv.card-body:hover {\n\n  transform: scale(1.025);\n\n}\n\nh5 {\n  border-top: solid gray 2px;\n\n}\n\n.card-text, .card-subtitle, .card-title {\n  text-transform: capitalize;\n}\n.correo{\n  font-size: 60%;\n}\n\n\n\n\n\n\n*/\n@media only screen and (max-width: 600px) {\n\n/*\n  .rutTexto{\n    font-size: 0.4em !important;\n  }\n  .infoTextoNombre{\n    font-size: 0.6em !important;\n\n  }\n  .infoTextoCorreo{\n    font-size: 0.3em !important;\n\n  }*/\n  .contenedor{\n    width: 50vw !important;\n    border-radius: 3px !important;\n\n  }\n\n\n}\n.contenedor{\n  cursor: pointer;\n  border:solid #007bff 1px;\n  border-radius:15px;\n  width: 15vw;\n  display:inline-block;\n  margin: 0.5% 2%;\n  padding: 2% 0;\n\n  box-shadow: none;\n  transition: 300ms ;\n\n}\n.contenedor:hover{\n  transition: 100ms linear;\n  box-shadow: 0px 0px 5px black;\n /* background:#007bff;\n  color:white;\n  opacity: 0.7;*/\n}\n.contenedor-activado{\n  border:solid #007bff 1px;\n\n  color:white;\n  background:#007bff;\n  width: 15vw;\n  display:inline-block;\n  padding: 2% 0;\n  box-shadow: 0px 0px 5px black;\n\n}\n.container{\n  padding: 0;\n\n  text-align: center;\n\n}\n.rut{\n}\n.rutTexto{\n  padding: 0;\n  margin: 0;\n  font-size: 80%;\n  border-bottom: gray solid 1px;\n}\n.info{\n  display: inline-block;\n  width: -webkit-max-content;\n  width: -moz-max-content;\n  width: max-content;\n  margin: auto;\n}\n.infoTextoNombre{\n  padding: 0;\n  margin: 0;\n  text-transform: capitalize;\n\n  border-bottom: #cbcbcb solid 1px;\n  font-weight: bolder;\n\n}\n.infoTextoCorreo{\n  font-size: 60%;\n  text-transform: capitalize;\n\n  padding: 0;\n  margin: 0;\n\n}\n\n\n\n\n"
 
 /***/ }),
 
@@ -1474,7 +1511,7 @@ module.exports = "@-webkit-keyframes pinchado {\n  0%{-webkit-transform: scale(1
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card\" (click)=\"activado = !activado\">\n  <div [ngClass]=\"activado ? 'card-body card-body-activado pinchado':'card-body'\">\n    <h5 class=\"card-title \" title=\"Rut\">{{rut}}</h5>\n    <h6 class=\"card-subtitle mb-2 text-muted\"title=\"Nombre\" >{{nombre}}</h6>\n    <p class=\"card-text\" title=\"apellido\">{{apellido}}</p>\n    <p class=\"card-text correo\" title=\"correo\">{{correo}}</p>\n   <!-- <a href=\"#\" class=\"card-link\">{{tipoUsuario}}</a>-->\n<!--    <a href=\"#\" class=\"card-link\">{{correo}}</a>-->\n  </div>\n</div>\n\n"
+module.exports = "<!--\n<div class=\"card\" (click)=\"activado = !activado\">\n  <div [ngClass]=\"activado ? 'card-body card-body-activado pinchado':'card-body'\">\n    <h5 class=\"card-title \" title=\"Rut\">{{rut}}</h5>\n    <h6 class=\"card-subtitle mb-2 text-muted\"title=\"Nombre\" >{{nombre}}</h6>\n    <p class=\"card-text\" title=\"apellido\">{{apellido}}</p>\n    <p class=\"card-text correo\" title=\"correo\">{{correo}}</p>\n   <a href=\"#\" class=\"card-link\">{{tipoUsuario}}</a>\n   <a href=\"#\" class=\"card-link\">{{correo}}</a>\n  </div>\n</div>\n\n-->\n\n<div class=\"contenedor\" (click)=\"activado = !activado\" [ngClass]=\"activado ? 'contenedor contenedor-activado':'contenedor'\" >\n  <div class=\"container\">\n    <div class=\"rut\">\n      <p class=\"rutTexto\">{{rut}}</p>\n    </div>\n    <div class=\"info\">\n      <p class=\"infoTextoNombre\">{{nombre}} {{apellido}}</p>\n      <p class=\"infoTextoCorreo\">{{correo}}</p>\n    </div>\n\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1747,7 +1784,7 @@ var VerEvaluacionComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".buscar {\n  width: 70%;\n  margin: auto;\n\n}\n\n.filtros {\n  text-align: center;\n}\n\n.tituloVer {\n  text-align: center;\n}\n\ni {\n  padding: 0;\n  margin: 0;\n  width: 100%;\n  text-align: center;\n}\n\ntd {\n\n  vertical-align: middle;\n\n}\n\ntd.botonEliminar {\n  max-width: 18px;\n  min-width: 18px;\n  cursor: pointer;\n}\n\ntd.botonEliminar:hover {\n  background: #cb361a;\n  color: #fff;\n  transition: 250ms all ease-in;\n}\n\ntd.botonVer {\n  max-width: 18px;\n  min-width: 18px;\n  cursor: pointer;\n}\n\ntd.botonVer:hover {\n  background: #68c535;\n  color: #fff;\n  transition: 250ms all ease-in;\n}\n"
+module.exports = ".buscar {\n  width: 70%;\n  margin: auto;\n\n}\n\n.filtros {\n  text-align: center;\n}\n\n.tituloVer {\n  text-align: center;\n}\n\ni {\n  padding: 0;\n  margin: 0;\n  width: 100%;\n  text-align: center;\n}\n\ntd {\n\n  vertical-align: middle;\n\n}\n\ntd.botonEliminar {\n  max-width: 18px;\n  min-width: 18px;\n  cursor: pointer;\n}\n\ntd.botonEliminar:hover {\n  background: #cb361a;\n  color: #fff;\n  transition: 250ms all ease-in;\n}\n\ntd.botonVer {\n  max-width: 18px;\n  min-width: 18px;\n  cursor: pointer;\n  padding: 0;\n}\n\ni.fa-eye:before{\n  background: #0087ff;\n  padding: 12px;\n}\n\ntd.botonVer:hover {\n /* background: #68c535;*/\n  color: #fff;\n  transition: 250ms all ease-in;\n}\n"
 
 /***/ }),
 
@@ -1758,7 +1795,7 @@ module.exports = ".buscar {\n  width: 70%;\n  margin: auto;\n\n}\n\n.filtros {\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n\n<div class=\"container\">\n<h1 class=\"tituloVer\">Buscar encuesta</h1>\n  <div class=\"filtros\">\n\n    <div class=\"input-group mb-3 buscar\">\n      <input type=\"text\" class=\"form-control\" placeholder=\"Recipient's username\" aria-label=\"Recipient's username\" aria-describedby=\"button-addon2\">\n      <div class=\"input-group-append\">\n        <button class=\"btn btn-outline-secondary\" type=\"button\" id=\"button-addon2\">Button</button>\n      </div>\n    </div>\n\n  </div>\n\n  <table class=\"table\">\n    <thead>\n    <tr>\n      <th scope=\"col\">Encuesta</th>\n      <th scope=\"col\">Fecha</th>\n      <th scope=\"col\">Total</th>\n      <th scope=\"col\"></th>\n      <th scope=\"col\"></th>\n    </tr>\n    </thead>\n    <tbody>\n\n    <tr>\n      <td>Encuesta Mayo</td>\n      <td>23/06/2019</td>\n      <td>70%</td>\n      <td class=\"botonEliminar\"><i class=\"fas fa-minus\"></i></td>\n      <td class=\"botonVer\"><i class=\"far fa-eye\"></i></td>\n    </tr>\n    <tr>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n      <td class=\"botonEliminar\"><i class=\"fas fa-minus\"></i></td>\n      <td class=\"botonVer\"><i class=\"far fa-eye\"></i></td>\n\n    </tr>\n    <tr>\n      <td>Larry</td>\n      <td>the Bird</td>\n      <td>@twitter</td>\n      <td class=\"botonEliminar\"><i class=\"fas fa-minus\"></i></td>\n      <td class=\"botonVer\"><i class=\"far fa-eye\"></i></td>\n\n    </tr>\n    </tbody>\n\n  </table>\n\n\n\n\n\n</div>\n\n\n"
+module.exports = "\n\n<div class=\"container\">\n<h1 class=\"tituloVer\">Buscar evaluación</h1>\n  <div class=\"filtros\">\n\n    <div class=\"input-group mb-3 buscar\">\n      <input type=\"text\" class=\"form-control\" placeholder=\"Buscar por nombre de evaluación\" aria-label=\"Recipient's username\" aria-describedby=\"button-addon2\">\n      <div class=\"input-group-append\">\n        <button class=\"btn btn-outline-secondary\" type=\"button\" id=\"button-addon2\">Button</button>\n      </div>\n    </div>\n\n  </div>\n\n  <table class=\"table\">\n    <thead>\n    <tr>\n      <th scope=\"col\">Nombre evaluación</th>\n      <th scope=\"col\">Fecha</th>\n      <th scope=\"col\">Preguntas</th>\n<!--      <th scope=\"col\"></th>\n      <th scope=\"col\"></th>-->\n    </tr>\n    </thead>\n    <tbody>\n\n    <tr *ngFor=\"let ev of evaluacionesRespondidas\">\n      <td>{{ev.infoEvaluacion[0].nombre}}</td>\n      <td>{{ev.fecha}}</td>\n      <td><ul *ngFor=\"let p of ev.preguntas\"><li>{{p.titulo}} {{p.respuesta}}%</li></ul></td>\n      <!--<td class=\"botonEliminar\"><i class=\"fas fa-minus\"></i></td>-->\n   <!--   <td class=\"botonVer\"><i class=\"far fa-eye\"></i></td>\n  -->  </tr>\n\n    </tbody>\n\n  </table>\n\n\n\n\n\n</div>\n\n\n"
 
 /***/ }),
 
@@ -1774,6 +1811,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VerComponent", function() { return VerComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _services_usuarios_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/usuarios.service */ "./src/app/services/usuarios.service.ts");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/auth.service */ "./src/app/services/auth.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1785,11 +1824,23 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
+
 var VerComponent = /** @class */ (function () {
-    function VerComponent() {
+    function VerComponent(_auth, uService) {
+        this._auth = _auth;
+        this.uService = uService;
         this.faCoffee = _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1__["faCoffee"];
+        this.evaluacionesRespondidas = [];
+        this.traerEvaluacionesRespondidas();
     }
     VerComponent.prototype.ngOnInit = function () {
+    };
+    VerComponent.prototype.traerEvaluacionesRespondidas = function () {
+        var _this = this;
+        this.uService.evaluacionesPorRut(this._auth.decode().rut).subscribe(function (d) {
+            _this.evaluacionesRespondidas = d.evaluaciones;
+        });
     };
     VerComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1797,7 +1848,7 @@ var VerComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./ver.component.html */ "./src/app/ver/ver.component.html"),
             styles: [__webpack_require__(/*! ./ver.component.css */ "./src/app/ver/ver.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_services_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"], _services_usuarios_service__WEBPACK_IMPORTED_MODULE_2__["UsuariosService"]])
     ], VerComponent);
     return VerComponent;
 }());

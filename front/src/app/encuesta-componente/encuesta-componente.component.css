@@ -1,29 +1,53 @@
 .div.contenedor{
   width: 80vw;
-} .barraEncuesta{
-  display: flex;
+}
+.barraEncuesta{
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  border:solid lightseagreen 1px;
+  margin:1vh;
+
 }
 .fecha{
+  padding: 1vw;
+
   text-align: center;
   text-transform: uppercase;
-  width: 20vw;
-  border:solid;
+  display: flex;
+  justify-content: space-between;
+  /*border:solid;*/
 }
-.numeroUsuarios{
+.idEvaluacion{
   text-align: center;
-  width: 20vw;
-border:solid;
+  /*width: 20vw;*/
+  padding: 2vw;
+/*border:solid;*/
+}
+.fechaTexto{
+  font-size: 130%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.idEvaluacionTexto{
+  font-size: 90%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+
 }
 .ver{
-  padding: 1vh;
-  width: 20vw;
-border:solid;
+  padding: 1vw;
+
+  /*width: 20vw;*/
+/*border:solid;*/
 }
 div.ver button{
-  margin-top:2vh;
+  /*margin-top:2vh;*/
 }
 .detallesUsuario{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -39,3 +63,18 @@ div.ver button{
   margin-top: 30vh;
   text-align: center;
 }
+.usuarioNombreTexto{
+  padding: 0;
+  margin: 10px;
+  display: inline-block;
+}
+.usuarioRutTexto{
+padding: 0;
+  margin: 10px;
+  display: inline-block;
+}
+ul{
+  list-style: none;
+}
+
+

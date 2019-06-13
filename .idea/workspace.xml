@@ -3,19 +3,271 @@
   <component name="ChangeListManager">
     <list default="true" id="7520b18e-e654-47a9-8af8-cfd04c390d2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/ingreso-admin/ingreso-admin.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/ingreso-admin/ingreso-admin.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/ingreso-admin/ingreso-admin.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/ingreso-admin/ingreso-admin.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/ingreso/ingreso.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/ingreso/ingreso.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/ingreso/ingreso.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/ingreso/ingreso.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/navbar/navbar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/navbar/navbar.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/pregunta/pregunta.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/pregunta/pregunta.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/sidebar/sidebar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/sidebar/sidebar.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/sidebar/sidebar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/usuario-componente/usuario-componente.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/usuario-componente/usuario-componente.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/usuario-componente/usuario-componente.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/usuario-componente/usuario-componente.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/ver/ver.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/ver/ver.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/ver/ver.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/ver/ver.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/ver/ver.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/ver/ver.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/Constantes/Constantes.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/Constantes/Constantes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/DAO/UsuarioDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/DAO/UsuarioDAO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/back.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/abbrev/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/abbrev/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/ansi-align/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/ansi-align/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/ansi-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/ansi-regex/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/ansi-styles/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/ansi-styles/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/anymatch/node_modules/normalize-path/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/anymatch/node_modules/normalize-path/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/anymatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/anymatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/arr-diff/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/arr-diff/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/arr-flatten/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/arr-flatten/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/arr-union/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/arr-union/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/array-unique/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/array-unique/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/assign-symbols/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/assign-symbols/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/async-each/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/async-each/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/atob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/atob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/balanced-match/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/balanced-match/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/base/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/base/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/base/node_modules/is-accessor-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/base/node_modules/is-accessor-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/base/node_modules/is-data-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/base/node_modules/is-data-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/base/node_modules/is-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/base/node_modules/is-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/base/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/base/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/base64url/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/base64url/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/bignumber.js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/bignumber.js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/binary-extensions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/binary-extensions/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/boxen/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/boxen/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/brace-expansion/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/brace-expansion/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/braces/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/braces/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/braces/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/braces/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/buffer-equal-constant-time/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/buffer-equal-constant-time/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/cache-base/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/cache-base/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/camelcase/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/camelcase/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/capture-stack-trace/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/capture-stack-trace/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/chalk/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/chalk/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/chokidar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/chokidar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/ci-info/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/ci-info/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/class-utils/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/class-utils/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/class-utils/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/class-utils/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/cli-boxes/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/cli-boxes/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/collection-visit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/collection-visit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/color-convert/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/color-convert/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/color-name/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/color-name/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/component-emitter/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/component-emitter/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/concat-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/concat-map/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/configstore/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/configstore/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/copy-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/copy-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/core-util-is/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/core-util-is/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/create-error-class/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/create-error-class/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/cross-spawn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/cross-spawn/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/crypto-random-string/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/crypto-random-string/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/decode-uri-component/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/decode-uri-component/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/deep-extend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/deep-extend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/define-property/node_modules/is-accessor-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/define-property/node_modules/is-accessor-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/define-property/node_modules/is-data-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/define-property/node_modules/is-data-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/define-property/node_modules/is-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/define-property/node_modules/is-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/dot-prop/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/dot-prop/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/duplexer3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/duplexer3/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/ecdsa-sig-formatter/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/ecdsa-sig-formatter/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/escape-string-regexp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/escape-string-regexp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/execa/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/execa/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/expand-brackets/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/expand-brackets/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/expand-brackets/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/expand-brackets/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/expand-brackets/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/expand-brackets/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/expand-brackets/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/expand-brackets/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/expand-brackets/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/expand-brackets/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/extend-shallow/node_modules/is-extendable/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/extend-shallow/node_modules/is-extendable/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/extglob/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/extglob/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/extglob/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/extglob/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/extglob/node_modules/is-accessor-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/extglob/node_modules/is-accessor-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/extglob/node_modules/is-data-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/extglob/node_modules/is-data-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/extglob/node_modules/is-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/extglob/node_modules/is-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/extglob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/extglob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/fill-range/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/fill-range/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/fill-range/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/fill-range/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/for-in/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/for-in/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/fragment-cache/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/fragment-cache/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/get-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/get-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/get-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/get-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/glob-parent/node_modules/is-glob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/glob-parent/node_modules/is-glob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/glob-parent/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/glob-parent/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/global-dirs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/global-dirs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/got/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/got/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/graceful-fs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/graceful-fs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/has-flag/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/has-flag/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/has-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/has-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/has-values/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/has-values/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/has-values/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/has-values/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/ignore-by-default/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/ignore-by-default/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/import-lazy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/import-lazy/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/imurmurhash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/imurmurhash/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/inherits/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/inherits/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/ini/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/ini/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-accessor-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-accessor-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-binary-path/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-binary-path/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-buffer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-buffer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-ci/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-ci/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-data-descriptor/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-data-descriptor/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-data-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-data-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-descriptor/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-descriptor/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-extendable/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-extendable/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-extglob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-extglob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-fullwidth-code-point/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-fullwidth-code-point/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-glob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-glob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-installed-globally/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-installed-globally/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-npm/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-npm/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-number/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-number/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-number/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-number/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-obj/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-obj/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-path-inside/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-path-inside/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-plain-object/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-plain-object/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-redirect/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-redirect/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-retry-allowed/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-retry-allowed/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/is-windows/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/is-windows/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/isarray/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/isarray/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/isexe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/isexe/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/isobject/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/isobject/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/jsonwebtoken/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/jsonwebtoken/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/jwa/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/jwa/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/jws/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/jws/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/latest-version/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/latest-version/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/lodash.includes/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/lodash.includes/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/lodash.isboolean/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/lodash.isboolean/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/lodash.isinteger/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/lodash.isinteger/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/lodash.isnumber/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/lodash.isnumber/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/lodash.isplainobject/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/lodash.isplainobject/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/lodash.isstring/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/lodash.isstring/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/lodash.once/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/lodash.once/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/lowercase-keys/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/lowercase-keys/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/lru-cache/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/lru-cache/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/make-dir/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/make-dir/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/map-cache/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/map-cache/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/map-visit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/map-visit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/micromatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/micromatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/minimatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/minimatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/minimist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/minimist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/mixin-deep/node_modules/is-extendable/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/mixin-deep/node_modules/is-extendable/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/mixin-deep/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/mixin-deep/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/mysql/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/mysql/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/nanomatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/nanomatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/nodemon/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/nodemon/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/nopt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/nopt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/normalize-path/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/normalize-path/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/npm-run-path/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/npm-run-path/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/oauth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/oauth/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/object-copy/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/object-copy/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/object-copy/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/object-copy/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/object-copy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/object-copy/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/object-visit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/object-visit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/object.pick/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/object.pick/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/p-finally/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/p-finally/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/package-json/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/package-json/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/pascalcase/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/pascalcase/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/passport-facebook/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/passport-facebook/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/passport-oauth2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/passport-oauth2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/passport-strategy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/passport-strategy/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/passport/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/passport/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/path-dirname/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/path-dirname/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/path-is-absolute/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/path-is-absolute/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/path-is-inside/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/path-is-inside/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/path-key/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/path-key/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/pause/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/pause/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/pify/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/pify/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/posix-character-classes/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/posix-character-classes/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/prepend-http/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/prepend-http/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/process-nextick-args/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/process-nextick-args/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/pseudomap/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/pseudomap/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/pstree.remy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/pstree.remy/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/rc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/rc/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/readable-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/readable-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/readdirp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/readdirp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/regex-not/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/regex-not/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/registry-auth-token/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/registry-auth-token/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/registry-url/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/registry-url/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/remove-trailing-separator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/remove-trailing-separator/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/repeat-element/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/repeat-element/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/repeat-string/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/repeat-string/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/resolve-url/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/resolve-url/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/ret/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/ret/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/rxjs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/rxjs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/safe-buffer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/safe-buffer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/safe-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/safe-regex/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/semver-diff/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/semver-diff/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/semver/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/semver/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/set-value/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/set-value/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/set-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/set-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/shebang-command/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/shebang-command/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/shebang-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/shebang-regex/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/signal-exit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/signal-exit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/snapdragon-node/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/snapdragon-node/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/snapdragon-node/node_modules/is-accessor-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/snapdragon-node/node_modules/is-accessor-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/snapdragon-node/node_modules/is-data-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/snapdragon-node/node_modules/is-data-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/snapdragon-node/node_modules/is-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/snapdragon-node/node_modules/is-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/snapdragon-node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/snapdragon-node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/snapdragon-util/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/snapdragon-util/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/snapdragon-util/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/snapdragon-util/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/snapdragon/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/snapdragon/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/snapdragon/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/snapdragon/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/snapdragon/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/snapdragon/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/snapdragon/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/snapdragon/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/snapdragon/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/snapdragon/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/source-map-resolve/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/source-map-resolve/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/source-map-url/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/source-map-url/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/source-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/source-map/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/split-string/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/split-string/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/sqlstring/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/sqlstring/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/static-extend/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/static-extend/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/static-extend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/static-extend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/string-width/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/string-width/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/string_decoder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/string_decoder/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/strip-ansi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/strip-ansi/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/strip-eof/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/strip-eof/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/strip-json-comments/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/strip-json-comments/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/supports-color/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/supports-color/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/term-size/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/term-size/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/timed-out/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/timed-out/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/to-object-path/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/to-object-path/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/to-object-path/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/to-object-path/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/to-regex-range/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/to-regex-range/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/to-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/to-regex/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/touch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/touch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/tslib/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/tslib/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/uid2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/uid2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/undefsafe/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/undefsafe/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/undefsafe/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/undefsafe/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/undefsafe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/undefsafe/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/union-value/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/union-value/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/union-value/node_modules/set-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/union-value/node_modules/set-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/union-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/union-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/unique-string/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/unique-string/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/unset-value/node_modules/has-value/node_modules/isobject/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/unset-value/node_modules/has-value/node_modules/isobject/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/unset-value/node_modules/has-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/unset-value/node_modules/has-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/unset-value/node_modules/has-values/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/unset-value/node_modules/has-values/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/unset-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/unset-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/unzip-response/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/unzip-response/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/upath/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/upath/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/update-notifier/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/update-notifier/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/urix/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/urix/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/url-parse-lax/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/url-parse-lax/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/use/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/use/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/util-deprecate/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/util-deprecate/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/utils-merge/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/utils-merge/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/which/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/which/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/widest-line/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/widest-line/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/write-file-atomic/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/write-file-atomic/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/xdg-basedir/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/xdg-basedir/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/node_modules/yallist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/node_modules/yallist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/dist/front/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/front/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/dist/front/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/front/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/services/evaluaciones.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/services/evaluaciones.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/services/usuarios.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/services/usuarios.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,7 +282,7 @@
     <session id="979052795">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.103" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.130" value="1" />
@@ -43,41 +295,43 @@
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.66" value="1" />
+          <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.82" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="34" />
           <entry key="html" value="69" />
-          <entry key="js" value="91" />
-          <entry key="json" value="3" />
+          <entry key="js" value="102" />
+          <entry key="json" value="4" />
           <entry key="key" value="3" />
-          <entry key="ts" value="106" />
+          <entry key="ts" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="34" />
           <entry key="HTML" value="69" />
-          <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="91" />
+          <entry key="JSON" value="4" />
+          <entry key="JavaScript" value="102" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="TypeScript" value="106" />
+          <entry key="TypeScript" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="3410" />
           <entry key="html" value="5359" />
-          <entry key="js" value="22865" />
-          <entry key="json" value="21" />
-          <entry key="ts" value="8502" />
+          <entry key="js" value="23045" />
+          <entry key="json" value="45" />
+          <entry key="ts" value="8936" />
           <entry key="txt" value="206" />
         </counts>
       </usages-collector>
@@ -85,15 +339,15 @@
         <counts>
           <entry key="CSS" value="3410" />
           <entry key="HTML" value="5364" />
-          <entry key="JSON" value="21" />
-          <entry key="JavaScript" value="22865" />
+          <entry key="JSON" value="45" />
+          <entry key="JavaScript" value="23045" />
           <entry key="PLAIN_TEXT" value="206" />
-          <entry key="TypeScript" value="8497" />
+          <entry key="TypeScript" value="8931" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="11" />
+          <entry key="Angular2LanguageService" value="13" />
           <entry key="TsLintLanguageService" value="1" />
         </counts>
       </usages-collector>
@@ -103,128 +357,116 @@
     <favorites_list name="ProyectoEvaluacionesEncuesta" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="363">
-                  <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-                  <folding>
-                    <element signature="n#style#0;n#button#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#button#0;n#div#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/front/src/app/ingreso/ingreso.component.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/front/src/app/pregunta/pregunta.component.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/front/src/app/services/evaluaciones.service.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#0#43#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/front/src/app/services/auth.service.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/front/src/app/ingreso/ingreso.component.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-375">
-                  <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/front/src/app/services/usuarios.service.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/front/src/app/ver-admin/ver-admin.component.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="247">
-                  <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
-                  <caret line="73" column="24" lean-forward="true" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/front/src/app/ver-admin/ver-admin.component.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" selection-start-line="8" selection-end-line="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/back/src/DAO/UsuarioDAO.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="120" column="117" selection-start-line="120" selection-start-column="117" selection-end-line="120" selection-end-column="117" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/src/app/services/usuarios.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/src/app/services/auth.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/src/app/services/evaluaciones.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+              <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+              <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+              <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/src/Constantes/Constantes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/src/Servicios/EvaluacionService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="54" lean-forward="true" selection-start-column="54" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/src/app/Constants/constants.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/src/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/src/Servicios/auth/jwtGenerator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="930">
+              <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/src/Servicios/auth/loginService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -243,9 +485,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/front/src/styles.css" />
-        <option value="$PROJECT_DIR$/front/src/app/pregunta/pregunta.component.html" />
-        <option value="$PROJECT_DIR$/front/src/app/pregunta/pregunta.component.css" />
         <option value="$PROJECT_DIR$/front/src/app/ingreso/ingreso.component.css" />
         <option value="$PROJECT_DIR$/front/src/app/navbar/navbar.component.ts" />
         <option value="$PROJECT_DIR$/back/src/Modelos/Evaluacio.js" />
@@ -263,7 +502,6 @@
         <option value="$PROJECT_DIR$/front/src/app/login/login.component.ts" />
         <option value="$PROJECT_DIR$/front/src/app/login/login.component.html" />
         <option value="$PROJECT_DIR$/back/src/Constantes/Tablas.js" />
-        <option value="$PROJECT_DIR$/back/src/Constantes/Constantes.js" />
         <option value="$PROJECT_DIR$/back/src/Servicios/auth/loginService.js" />
         <option value="$PROJECT_DIR$/back/src/Utilidades/DatabaseFunctions.js" />
         <option value="$PROJECT_DIR$/back/src/DAO/EvaluacionDAO.js" />
@@ -279,21 +517,25 @@
         <option value="$PROJECT_DIR$/back/src/Servicios/EvaluacionService.js" />
         <option value="$PROJECT_DIR$/back/src/Servicios/UsuarioService.js" />
         <option value="$PROJECT_DIR$/back/src/DTO/UsuarioDTO.js" />
-        <option value="$PROJECT_DIR$/back/src/DAO/UsuarioDAO.js" />
         <option value="$PROJECT_DIR$/front/src/app/sidebar/sidebar.component.html" />
-        <option value="$PROJECT_DIR$/back/src/server.js" />
         <option value="$PROJECT_DIR$/front/src/app/ver/ver.component.ts" />
         <option value="$PROJECT_DIR$/front/src/app/ver/ver.component.css" />
         <option value="$PROJECT_DIR$/front/src/app/ver/ver.component.html" />
         <option value="$PROJECT_DIR$/front/src/app/ingreso/ingreso.component.html" />
         <option value="$PROJECT_DIR$/front/src/app/ingreso/ingreso.component.ts" />
         <option value="$PROJECT_DIR$/front/src/app/pregunta/pregunta.component.ts" />
-        <option value="$PROJECT_DIR$/front/src/app/services/evaluaciones.service.ts" />
-        <option value="$PROJECT_DIR$/front/src/app/services/auth.service.ts" />
-        <option value="$PROJECT_DIR$/front/src/app/services/usuarios.service.ts" />
         <option value="$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.ts" />
         <option value="$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.html" />
         <option value="$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.css" />
+        <option value="$PROJECT_DIR$/back/src/package.json" />
+        <option value="$PROJECT_DIR$/back/src/server.js" />
+        <option value="$PROJECT_DIR$/back/src/Constantes/Constantes.js" />
+        <option value="$PROJECT_DIR$/front/src/app/Constants/Constants.js" />
+        <option value="$PROJECT_DIR$/front/src/app/Constants/constants.ts" />
+        <option value="$PROJECT_DIR$/front/src/app/services/evaluaciones.service.ts" />
+        <option value="$PROJECT_DIR$/front/src/app/services/auth.service.ts" />
+        <option value="$PROJECT_DIR$/front/src/app/services/usuarios.service.ts" />
+        <option value="$PROJECT_DIR$/back/src/DAO/UsuarioDAO.js" />
       </list>
     </option>
   </component>
@@ -327,6 +569,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -337,6 +580,24 @@
             <path>
               <item name="ProyectoEvaluacionesEncuesta" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoEvaluacionesEncuesta" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoEvaluacionesEncuesta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoEvaluacionesEncuesta" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoEvaluacionesEncuesta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoEvaluacionesEncuesta" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoEvaluacionesEncuesta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoEvaluacionesEncuesta" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -357,33 +618,24 @@
               <item name="ProyectoEvaluacionesEncuesta" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="encuesta-componente" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProyectoEvaluacionesEncuesta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProyectoEvaluacionesEncuesta" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="ver" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="ver&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ver-admin/ver-admin.component.html&#10;evalua&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;eva&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Servicios/EvaluacionService.js&#10;ingreso&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso/ingreso.component.html&#10;server&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;side&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/sidebar/sidebar.component.html&#10;usuario&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/usuarios.service.ts&#10;server.js&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;us&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/DAO/UsuarioDAO.js&#10;navba&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/navbar/navbar.component.css&#10;navbar&#9;null&#9;null&#10;ingre&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso-admin/ingreso-admin.component.html&#10;logi&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/login/login.component.ts&#10;jwtGe&#9;null&#9;null&#10;jw&#9;null&#9;null&#10;data&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Utilidades/DatabaseFunctions.js&#10;login&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Servicios/auth/loginService.js&#10;database&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Utilidades/DatabaseFunctions.js&#10;ta&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Constantes/Tablas.js&#10;tabl&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Constantes/Tablas.js&#10;u&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/DAO/UsuarioDAO.js&#10;service&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;dash&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/dashboard/dashboard.module.ts&#10;encuesta&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/encuesta-componente/encuesta-componente.component.ts&#10;home&#9;null&#9;null&#10;dashboar&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/dashboard/dashboard.module.ts&#10;eval&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;serve&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;serv&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;Service&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;UsuarioSer&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/usuarios.service.ts&#10;ser&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;Eva&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;ingres&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso/ingreso.component.ts&#10;Evalua&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;evaluacionS&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;usuarios&#9;null&#9;null&#10;admin&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso-admin/ingreso-admin.component.ts&#10;modal&#9;null&#9;null&#10;pregun&#9;null&#9;null&#10;layou&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/dashboard/layout/layout.component.html&#10;encue&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/encuesta-componente/encuesta-componente.component.html&#10;ver-a&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ver-admin/ver-admin.component.html&#10;auth&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/auth.service.ts&#10;sidebar&#9;null&#9;null&#10;app.m&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/app.module.ts" />
+    <property name="SearchEverywhereHistoryKey" value="usu&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/usuarios.service.ts&#10;ver&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ver-admin/ver-admin.component.html&#10;evalua&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;eva&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Servicios/EvaluacionService.js&#10;ingreso&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso/ingreso.component.html&#10;server&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;side&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/sidebar/sidebar.component.html&#10;usuario&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/usuarios.service.ts&#10;server.js&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;us&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/DAO/UsuarioDAO.js&#10;navba&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/navbar/navbar.component.css&#10;navbar&#9;null&#9;null&#10;ingre&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso-admin/ingreso-admin.component.html&#10;logi&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/login/login.component.ts&#10;jwtGe&#9;null&#9;null&#10;jw&#9;null&#9;null&#10;data&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Utilidades/DatabaseFunctions.js&#10;login&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Servicios/auth/loginService.js&#10;database&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Utilidades/DatabaseFunctions.js&#10;ta&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Constantes/Tablas.js&#10;tabl&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Constantes/Tablas.js&#10;u&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/DAO/UsuarioDAO.js&#10;service&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;dash&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/dashboard/dashboard.module.ts&#10;encuesta&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/encuesta-componente/encuesta-componente.component.ts&#10;home&#9;null&#9;null&#10;dashboar&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/dashboard/dashboard.module.ts&#10;eval&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;serve&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;serv&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;Service&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;UsuarioSer&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/usuarios.service.ts&#10;ser&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;Eva&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;ingres&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso/ingreso.component.ts&#10;Evalua&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;evaluacionS&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;usuarios&#9;null&#9;null&#10;admin&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso-admin/ingreso-admin.component.ts&#10;modal&#9;null&#9;null&#10;pregun&#9;null&#9;null&#10;layou&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/dashboard/layout/layout.component.html&#10;encue&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/encuesta-componente/encuesta-componente.component.html&#10;ver-a&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ver-admin/ver-admin.component.html&#10;auth&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/auth.service.ts&#10;sidebar&#9;null&#9;null&#10;app.m&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/app.module.ts" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/back/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/proyecto-evaluaciones/node_modules/tslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/front/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
@@ -453,7 +705,9 @@
       <workItem from="1559935735525" duration="12367000" />
       <workItem from="1559949536464" duration="820000" />
       <workItem from="1559969865583" duration="9925000" />
-      <workItem from="1560052465695" duration="36957000" />
+      <workItem from="1560052465695" duration="43129000" />
+      <workItem from="1560399591429" duration="35000" />
+      <workItem from="1560442274714" duration="1511000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <created>1560052913750</created>
@@ -483,11 +737,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560175997129</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="last commit">
+      <created>1560212324055</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560212324055</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189081000" />
+    <option name="totallyTimeSpent" value="196799000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -502,12 +763,12 @@
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5767327" visible="true" weight="0.072970964" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5767327" visible="true" weight="0.20476545" />
       <window_info id="Structure" order="1" sideWeight="0.41584158" side_tool="true" weight="0.14892033" />
       <window_info id="Favorites" order="2" sideWeight="0.5012346" side_tool="true" weight="0.24944155" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32890365" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.13122924" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.13122924" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986711" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5018615" side_tool="true" weight="0.269103" />
       <window_info anchor="bottom" id="Message" order="5" />
@@ -517,7 +778,7 @@
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32890365" />
       <window_info anchor="bottom" id="TypeScript" order="11" sideWeight="0.5026061" weight="0.29401994" />
-      <window_info anchor="bottom" x="475" y="443" width="685" height="240" id="Terminal" order="12" sideWeight="0.42326733" weight="0.2641196" />
+      <window_info anchor="bottom" x="475" y="443" width="685" height="240" id="Terminal" order="12" sideWeight="0.42326733" visible="true" weight="0.24584718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -576,49 +837,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/back/src/Modelos/Pregunta.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back/src/Modelos/Evaluacion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back/src/DTO/PreguntaDTO.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/ver-admin/ver-admin.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="24" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/dashboard/home/home.component.ts" />
-    <entry file="file://$PROJECT_DIR$/front/src/app/sidebar/sidebar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/src/app/dashboard/dashboard.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -656,13 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/src/Constantes/Constantes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/node_modules/jwt-decode/standalone.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -681,23 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-90">
           <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back/src/Utilidades/DatabaseFunctions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back/src/Servicios/auth/loginService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -705,9 +899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -760,13 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/src/DAO/UsuarioDAO.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="40" column="46" lean-forward="true" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back/src/DTO/UsuarioDTO.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -812,45 +996,7 @@
     <entry file="file://$PROJECT_DIR$/front/src/app/ingreso/ingreso.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-375">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/pregunta/pregunta.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/services/evaluaciones.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/services/auth.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back/src/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="78" column="3" lean-forward="true" selection-start-line="78" selection-start-column="3" selection-end-line="78" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back/src/Servicios/EvaluacionService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
@@ -858,13 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="41" column="18" lean-forward="true" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/services/usuarios.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -879,30 +1018,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/ingreso/ingreso.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/ver-admin/ver-admin.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front/src/app/ver-admin/ver-admin.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -915,19 +1037,156 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
+        <state relative-caret-position="118">
           <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/ingreso/ingreso.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/pregunta/pregunta.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front/src/app/encuesta-componente/encuesta-componente.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="73" column="24" lean-forward="true" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
+        <state relative-caret-position="140">
+          <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/ver-admin/ver-admin.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/src/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/src/Utilidades/DatabaseFunctions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/src/node_modules/mysql/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/node_modules/typescript/lib/lib.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4320">
+          <caret line="301" column="19" selection-start-line="301" selection-start-column="19" selection-end-line="301" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/src/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/src/Servicios/auth/jwtGenerator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/src/Servicios/auth/loginService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/Constants/Constants.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/src/Servicios/EvaluacionService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="54" lean-forward="true" selection-start-column="54" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/src/Constantes/Constantes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/services/evaluaciones.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/services/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/services/usuarios.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/Constants/constants.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/src/DAO/UsuarioDAO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="120" column="117" selection-start-line="120" selection-start-column="117" selection-end-line="120" selection-end-column="117" />
         </state>
       </provider>
     </entry>

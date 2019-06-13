@@ -32,7 +32,7 @@ app.post('/login', (req, res) => {
         res.end(e.toString())
     }).then(d => {
         if (!d) {
-            res.status(301);
+            res.status(401);
             res.end("FALSO");
         } else {
             res.end(JSON.stringify(d));

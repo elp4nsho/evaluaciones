@@ -1,9 +1,10 @@
+var host = "http://n3gro.com";
+//var host = "http://localhost";
+var puertoBack = 3000;
+var puertoCorreo = 3002;
+
 export const Constants = {
-  host:"http://n3gro.com",
-  puertoBack:3000,
-  puertoCorreo:3002,
-  urlBack:this.host+":"+this.puertoBack,
-  urlCorreo:this.host+":"+this.puertoCorreo,
-  //host:"http://localhost"
+  urlBack:host+":"+puertoBack,
+  urlCorreo:host+":"+puertoCorreo,
 
 };

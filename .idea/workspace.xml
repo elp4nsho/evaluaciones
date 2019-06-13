@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7520b18e-e654-47a9-8af8-cfd04c390d2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,28 +43,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="34" />
-          <entry key="html" value="69" />
+          <entry key="html" value="70" />
           <entry key="js" value="102" />
           <entry key="json" value="4" />
           <entry key="key" value="3" />
-          <entry key="ts" value="113" />
+          <entry key="ts" value="114" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="34" />
-          <entry key="HTML" value="69" />
+          <entry key="HTML" value="70" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="102" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="TypeScript" value="113" />
+          <entry key="TypeScript" value="114" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="3410" />
-          <entry key="html" value="5359" />
-          <entry key="js" value="23049" />
+          <entry key="html" value="5371" />
+          <entry key="js" value="23050" />
           <entry key="json" value="45" />
           <entry key="ts" value="9072" />
           <entry key="txt" value="230" />
@@ -74,9 +73,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="3410" />
-          <entry key="HTML" value="5364" />
+          <entry key="HTML" value="5376" />
           <entry key="JSON" value="45" />
-          <entry key="JavaScript" value="23049" />
+          <entry key="JavaScript" value="23050" />
           <entry key="PLAIN_TEXT" value="230" />
           <entry key="TypeScript" value="9067" />
         </counts>
@@ -169,29 +168,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/src/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+            <state relative-caret-position="90">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/src/Servicios/auth/jwtGenerator.js">
+        <entry file="file://$PROJECT_DIR$/front/src/app/login/login.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+            <state relative-caret-position="5">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/src/Servicios/auth/loginService.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front/src/app/login/login.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="285">
+              <caret line="22" column="122" selection-start-line="22" selection-start-column="122" selection-end-line="22" selection-end-column="122" />
             </state>
           </provider>
         </entry>
@@ -236,7 +235,6 @@
         <option value="$PROJECT_DIR$/front/src/app/ver-admin/ver-admin.component.ts" />
         <option value="$PROJECT_DIR$/front/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/front/src/app/login/login.component.ts" />
-        <option value="$PROJECT_DIR$/front/src/app/login/login.component.html" />
         <option value="$PROJECT_DIR$/back/src/Constantes/Tablas.js" />
         <option value="$PROJECT_DIR$/back/src/Servicios/auth/loginService.js" />
         <option value="$PROJECT_DIR$/back/src/Utilidades/DatabaseFunctions.js" />
@@ -272,6 +270,7 @@
         <option value="$PROJECT_DIR$/back/src/DAO/UsuarioDAO.js" />
         <option value="$PROJECT_DIR$/front/src/app/Constants/constants.ts" />
         <option value="$PROJECT_DIR$/back/src/server.js" />
+        <option value="$PROJECT_DIR$/front/src/app/login/login.component.html" />
       </list>
     </option>
   </component>
@@ -371,7 +370,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="usu&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/usuarios.service.ts&#10;ver&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ver-admin/ver-admin.component.html&#10;evalua&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;eva&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Servicios/EvaluacionService.js&#10;ingreso&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso/ingreso.component.html&#10;server&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;side&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/sidebar/sidebar.component.html&#10;usuario&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/usuarios.service.ts&#10;server.js&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;us&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/DAO/UsuarioDAO.js&#10;navba&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/navbar/navbar.component.css&#10;navbar&#9;null&#9;null&#10;ingre&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso-admin/ingreso-admin.component.html&#10;logi&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/login/login.component.ts&#10;jwtGe&#9;null&#9;null&#10;jw&#9;null&#9;null&#10;data&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Utilidades/DatabaseFunctions.js&#10;login&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Servicios/auth/loginService.js&#10;database&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Utilidades/DatabaseFunctions.js&#10;ta&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Constantes/Tablas.js&#10;tabl&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Constantes/Tablas.js&#10;u&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/DAO/UsuarioDAO.js&#10;service&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;dash&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/dashboard/dashboard.module.ts&#10;encuesta&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/encuesta-componente/encuesta-componente.component.ts&#10;home&#9;null&#9;null&#10;dashboar&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/dashboard/dashboard.module.ts&#10;eval&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;serve&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;serv&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;Service&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;UsuarioSer&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/usuarios.service.ts&#10;ser&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;Eva&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;ingres&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso/ingreso.component.ts&#10;Evalua&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;evaluacionS&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;usuarios&#9;null&#9;null&#10;admin&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso-admin/ingreso-admin.component.ts&#10;modal&#9;null&#9;null&#10;pregun&#9;null&#9;null&#10;layou&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/dashboard/layout/layout.component.html&#10;encue&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/encuesta-componente/encuesta-componente.component.html&#10;ver-a&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ver-admin/ver-admin.component.html&#10;auth&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/auth.service.ts&#10;sidebar&#9;null&#9;null&#10;app.m&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/app.module.ts" />
+    <property name="SearchEverywhereHistoryKey" value="login&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/login/login.component.ts&#10;usu&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/usuarios.service.ts&#10;ver&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ver-admin/ver-admin.component.html&#10;evalua&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;eva&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Servicios/EvaluacionService.js&#10;ingreso&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso/ingreso.component.html&#10;server&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;side&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/sidebar/sidebar.component.html&#10;usuario&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/usuarios.service.ts&#10;server.js&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;us&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/DAO/UsuarioDAO.js&#10;navba&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/navbar/navbar.component.css&#10;navbar&#9;null&#9;null&#10;ingre&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso-admin/ingreso-admin.component.html&#10;logi&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/login/login.component.ts&#10;jwtGe&#9;null&#9;null&#10;jw&#9;null&#9;null&#10;data&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Utilidades/DatabaseFunctions.js&#10;database&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Utilidades/DatabaseFunctions.js&#10;ta&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Constantes/Tablas.js&#10;tabl&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/Constantes/Tablas.js&#10;u&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/DAO/UsuarioDAO.js&#10;service&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;dash&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/dashboard/dashboard.module.ts&#10;encuesta&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/encuesta-componente/encuesta-componente.component.ts&#10;home&#9;null&#9;null&#10;dashboar&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/dashboard/dashboard.module.ts&#10;eval&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;serve&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;serv&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;Service&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;UsuarioSer&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/usuarios.service.ts&#10;ser&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/back/src/server.js&#10;Eva&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;ingres&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso/ingreso.component.ts&#10;Evalua&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;evaluacionS&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/evaluaciones.service.ts&#10;usuarios&#9;null&#9;null&#10;admin&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ingreso-admin/ingreso-admin.component.ts&#10;modal&#9;null&#9;null&#10;pregun&#9;null&#9;null&#10;layou&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/dashboard/layout/layout.component.html&#10;encue&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/encuesta-componente/encuesta-componente.component.html&#10;ver-a&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/ver-admin/ver-admin.component.html&#10;auth&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/services/auth.service.ts&#10;sidebar&#9;null&#9;null&#10;app.m&#9;FILE&#9;file:///home/croshy/ProyectoEvaluacionesEncuesta/front/src/app/app.module.ts" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -451,7 +450,7 @@
       <workItem from="1559969865583" duration="9925000" />
       <workItem from="1560052465695" duration="43129000" />
       <workItem from="1560399591429" duration="35000" />
-      <workItem from="1560442274714" duration="3364000" />
+      <workItem from="1560442274714" duration="4222000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <created>1560052913750</created>
@@ -502,11 +501,25 @@
       <option name="project" value="LOCAL" />
       <updated>1560448928724</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="prueba cambio de version">
+      <created>1560449001182</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1560449001182</updated>
+    </task>
+    <task id="LOCAL-00009" summary="prueba cambio de version">
+      <created>1560449062938</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560449062939</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198652000" />
+    <option name="totallyTimeSpent" value="199510000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,13 +609,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front/src/app/dashboard/dashboard.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -651,13 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-90">
           <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -944,8 +943,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/back/src/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="90">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="122" selection-start-line="22" selection-start-column="122" selection-end-line="22" selection-end-column="122" />
         </state>
       </provider>
     </entry>

@@ -48,7 +48,7 @@
 
         <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
           <input name="usuario" ngModel #usuario="ngModel" class="input100" type="text">
-          <span class="focus-input100" data-placeholder="Usuario"></span>
+          <span class="focus-input100" data-placeholder="{{usuario.length>0 ? '':'Usuario'}}"></span>
         </div>
 
         <div class="wrap-input100 validate-input" data-validate="Enter password">

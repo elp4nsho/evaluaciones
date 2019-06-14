@@ -2,7 +2,7 @@ const UsuarioDTO = require("../DTO/UsuarioDTO");
 
 function agregar(req){
 
-    var datos = req.query;
+    var datos = req;
 
     return new Promise((resolve,reject)=>{
         resolve(UsuarioDTO.agregarUsuario(datos));
@@ -24,7 +24,7 @@ function mostrarEvaluacion(req){
 
 function editar(req){
 
-    var datos = req.query;
+    var datos = req;
     return new Promise((resolve,reject)=>{
         resolve(UsuarioDTO.editarUsuario(datos));
     });
@@ -33,7 +33,7 @@ function editar(req){
 
 function eliminar(req){
 
-    var datos = req.query;
+    var datos = req;
     return new Promise((resolve,reject)=>{
         resolve(UsuarioDTO.eliminarUsuario(datos));
     });

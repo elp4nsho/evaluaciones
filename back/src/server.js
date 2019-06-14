@@ -47,6 +47,21 @@ app.options('/login', (req, res) => {
     res.json({});
 
 });
+app.options('/editar', (req, res) => {
+    res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+    res.json({});
+
+});
+app.options('/agregar', (req, res) => {
+    res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+    res.json({});
+
+});
+app.options('/eliminar', (req, res) => {
+    res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+    res.json({});
+
+});
 app.options('/usuario/evaluacion', (req, res) => {
     res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
     res.json({});
@@ -64,23 +79,30 @@ app.options('/evaluaciones/agregar', (req, res) => {
 });
 
 
-app.get('/agregar', (req, res) => {
-    UsuarioService.agregar(req).catch(e => {
+app.post('/agregar', (req, res) => {
+        res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+
+    console.log(req.body.rut);
+    UsuarioService.agregar(req.body).catch(e => {
         res.end(e.toString())
     }).then(d => {
         res.end(JSON.stringify(d))
     });
 });
-app.get("/editar", (req, res) => {
-    UsuarioService.editar(req).catch(e => {
+app.post("/editar", (req, res) => {
+        res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+
+    UsuarioService.editar(req.body).catch(e => {
         res.end(e.toString())
     }).then(d => {
         res.end(JSON.stringify(d))
     });
 });
 
-app.get("/eliminar", (req, res) => {
-    UsuarioService.eliminar(req).catch(e => {
+app.post("/eliminar", (req, res) => {
+        res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+
+    UsuarioService.eliminar(req.body).catch(e => {
         res.end(e.toString())
     }).then(d => {
         res.end(JSON.stringify(d))

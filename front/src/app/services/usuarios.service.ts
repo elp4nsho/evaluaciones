@@ -19,6 +19,18 @@ export class UsuariosService {
     return this._http.post(this.urlBack+"/usuario/evaluacion",{rut:rut});
   }
 
+  agregar(usuario){
+    return this._http.post(this.urlBack+"/agregar",usuario);
+  }
+  editar(usuario){
+    return this._http.post(this.urlBack+"/editar",usuario);
+  }
+  eliminar(usuario){
+    return this._http.post(this.urlBack+"/eliminar",{rut:usuario.rut});
+  }
+
+
+
 
 
 }

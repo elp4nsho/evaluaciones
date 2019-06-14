@@ -108,117 +108,28 @@ exports.mostrarUsuarios = async () => {
 * @param apellido: string
 *
 * */
-exports.agregarUsuario = (usuario) => {
-    var u = new Usuario();
-    u = usuario;
-    var mysql = require('mysql');
-    var con = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "",
-        database: "evaluaciones"
-    });
-    var sql = `INSERT INTO usuario VALUES ('${u.rut}', '${u.nombre}', '${u.apellido}', '${u.correo}', ${u.tipoUsuario}, '${u.clave}', NULL);`;
-    var c = new Promise((o, n) => {
-        con.connect(function (err) {
-            if (err) throw err;
-            con.query(sql, function (err, result) {
-                if (err) n(err);
-                con.destroy();
-                o(result);
-            });
-        });
-    });
-    return c;
+exports.agregarUsuario = async (u) => {
+    let sql = `INSERT INTO usuario VALUES ('${u.rut}', '${u.nombre}', '${u.apellido}', '${u.correo}', ${u.tipoUsuario == undefined ? 1 : u.tipoUsuario}, '${u.clave}', NULL);`;
+    return await db.devolverLaPromesaDeLaBaseDato(sql);
 };
 
 
-exports.editarUsuario = (
-    usuario
-) => {
-    var mysql = require('mysql');
-    var con = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "",
-        database: "evaluaciones"
-    });
-    var u = new Usuario();
-    u = usuario;
-    var sql =
-        `UPDATE usuario SET nombre='${usuario.nombre}',apellido='${usuario.apellido}',correo='${usuario.correo}',tipoUsuario='${usuario.tipoUsuario}',clave='${usuario.clave}' WHERE id=${usuario.rut}`;
-    //console.log(sql);
+exports.editarUsuario = async (usuario) => {
 
-    var c = new Promise((o, n) => {
-        con.connect(function (err) {
-            if (err) throw err;
-            con.query(sql, function (err, result) {
-                if (err) n(err);
-                con.destroy();
-                o(result);
-            });
-        });
-    });
-    return c;
+    let sql =`UPDATE usuario SET nombre='${usuario.nombre}',apellido='${usuario.apellido}',correo='${usuario.correo}',tipoUsuario='${usuario.tipoUsuario}',clave='${usuario.clave}' WHERE rut=${usuario.rut}`;
+    return db.devolverLaPromesaDeLaBaseDato(sql);
 };
 
-exports.eliminarUsuario = (
-    usuario
-) => {
-    var mysql = require('mysql');
-    var con = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "",
-        database: "evaluaciones"
-    });
-    var u = new Usuario();
-    u = usuario;
-    var sql =
-        `DELETE FROM usuario WHERE rut=${usuario.rut}`;
-    //console.log(sql);
+exports.eliminarUsuario = async (usuario) => {
 
-    var c = new Promise((o, n) => {
-        con.connect(function (err) {
-            if (err) throw err;
-            con.query(sql, function (err, result) {
-                if (err) n(err);
-                con.destroy();
-                o(result);
-            });
-        });
-    });
-    return c;
+    let sql =`DELETE FROM usuario WHERE rut=${usuario.rut}`;
+    return db.devolverLaPromesaDeLaBaseDato(sql);
 };
 
 
-exports.mostrarUsuario = (
-    usuario
-) => {
-    var mysql = require('mysql');
-    var con = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "",
-        database: "evaluaciones"
-    });
-    var u = new Usuario();
-    u = usuario;
-    var sql =
-        `SELECT * FROM usuario WHERE rut=${usuario.rut}`;
-    console.log(sql);
-
-    var c = new Promise((o, n) => {
-        con.connect(function (err) {
-            if (err) throw err;
-            con.query(sql, function (err, result) {
-                if (err) n(err);
-                con.destroy();
-                o(result);
-            });
-        });
-    });
-    return c;
+exports.mostrarUsuario = (usuario) => {
+    let sql =`SELECT * FROM usuario WHERE rut=${usuario.rut}`;
+    return db.devolverLaPromesaDeLaBaseDato(sql);
 };
 
 

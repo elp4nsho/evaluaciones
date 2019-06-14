@@ -1,44 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7520b18e-e654-47a9-8af8-cfd04c390d2f" name="Default Changelist" comment="prueba cambio de version">
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/fonts/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/fonts/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/fonts/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/fonts/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/fonts/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-ThinItalic.ttf" afterDir="false" />
+    <list default="true" id="7520b18e-e654-47a9-8af8-cfd04c390d2f" name="Default Changelist" comment="editado el login y agregado crud usuario excepto agregar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/DAO/UsuarioDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/DAO/UsuarioDAO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/Servicios/UsuarioService.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/Servicios/UsuarioService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/services/usuarios.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/services/usuarios.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/usuarios/usuarios.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/usuarios/usuarios.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/usuarios/usuarios.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/usuarios/usuarios.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/usuarios/usuarios.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/usuarios/usuarios.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/fonts/fonts/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/fonts/fonts/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,7 +19,7 @@
     <session id="979052795">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.103" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.130" value="1" />
@@ -62,6 +28,7 @@
           <entry key="project.open.time.163" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.206" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.38" value="1" />
@@ -73,12 +40,12 @@
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.82" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="36" />
+          <entry key="css" value="37" />
           <entry key="html" value="72" />
           <entry key="js" value="109" />
           <entry key="json" value="4" />
@@ -89,7 +56,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="36" />
+          <entry key="CSS" value="37" />
           <entry key="HTML" value="72" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="109" />
@@ -100,26 +67,26 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="3553" />
-          <entry key="html" value="5666" />
+          <entry key="html" value="5680" />
           <entry key="js" value="23441" />
           <entry key="json" value="45" />
           <entry key="ts" value="9590" />
-          <entry key="txt" value="230" />
+          <entry key="txt" value="287" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="3553" />
-          <entry key="HTML" value="5671" />
+          <entry key="HTML" value="5685" />
           <entry key="JSON" value="45" />
           <entry key="JavaScript" value="23441" />
-          <entry key="PLAIN_TEXT" value="230" />
+          <entry key="PLAIN_TEXT" value="287" />
           <entry key="TypeScript" value="9585" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="14" />
+          <entry key="Angular2LanguageService" value="15" />
           <entry key="TsLintLanguageService" value="1" />
         </counts>
       </usages-collector>
@@ -131,18 +98,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/src/DAO/PreguntaDAO.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/src/app/services/usuarios.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="270">
               <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
@@ -154,7 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/src/app/usuarios/usuarios.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="615">
               <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
@@ -172,11 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/src/app/usuarios/usuarios.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
+            <state relative-caret-position="600">
               <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -184,7 +139,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/src/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
+            <state relative-caret-position="1545">
               <caret line="83" selection-start-line="83" selection-end-line="83" />
               <caret line="93" selection-start-line="93" selection-end-line="93" />
               <caret line="103" selection-start-line="103" selection-end-line="103" />
@@ -192,11 +147,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/src/app/Constants/constants.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+              <caret column="30" selection-start-column="30" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -204,26 +159,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/src/Servicios/UsuarioService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
+            <state relative-caret-position="510">
               <caret line="34" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front/src/app/login/login.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            <state relative-caret-position="177">
+              <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/src/app/app.component.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/src/app/login/login.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="3532" column="15" lean-forward="true" selection-start-line="3532" selection-start-column="15" selection-end-line="3532" selection-end-column="15" />
+            <state relative-caret-position="52935">
+              <caret line="3529" column="20" selection-start-line="3529" selection-start-column="20" selection-end-line="3529" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -303,9 +263,9 @@
         <option value="$PROJECT_DIR$/back/src/server.js" />
         <option value="$PROJECT_DIR$/front/src/app/usuarios/usuarios.component.ts" />
         <option value="$PROJECT_DIR$/front/src/app/usuarios/usuarios.component.html" />
-        <option value="$PROJECT_DIR$/front/src/app/login/login.component.html" />
         <option value="$PROJECT_DIR$/front/src/app/login/login.component.css" />
         <option value="$PROJECT_DIR$/front/src/app/Constants/constants.ts" />
+        <option value="$PROJECT_DIR$/front/src/app/login/login.component.html" />
       </list>
     </option>
   </component>
@@ -528,7 +488,8 @@
       <workItem from="1560052465695" duration="43129000" />
       <workItem from="1560399591429" duration="35000" />
       <workItem from="1560442274714" duration="4623000" />
-      <workItem from="1560484381178" duration="5713000" />
+      <workItem from="1560484381178" duration="6945000" />
+      <workItem from="1560519645879" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <created>1560052913750</created>
@@ -607,11 +568,25 @@
       <option name="project" value="LOCAL" />
       <updated>1560449981812</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="editado el login y agregado crud usuario excepto agregar">
+      <created>1560490908828</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560490908828</updated>
+    </task>
+    <task id="LOCAL-00013" summary="editado el login y agregado crud usuario excepto agregar">
+      <created>1560491274122</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1560491274122</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205624000" />
+    <option name="totallyTimeSpent" value="207455000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -624,9 +599,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5767327" visible="true" weight="0.20476545" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5767327" visible="true" weight="0.20476545" />
       <window_info id="Structure" order="1" sideWeight="0.41584158" side_tool="true" weight="0.14892033" />
       <window_info id="Favorites" order="2" sideWeight="0.5012346" side_tool="true" weight="0.24944155" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32890365" />
@@ -641,7 +615,7 @@
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32890365" />
       <window_info anchor="bottom" id="TypeScript" order="11" sideWeight="0.5026061" weight="0.29401994" />
-      <window_info anchor="bottom" x="475" y="443" width="685" height="240" id="Terminal" order="12" sideWeight="0.42326733" visible="true" weight="0.24584718" />
+      <window_info active="true" anchor="bottom" x="475" y="443" width="685" height="240" id="Terminal" order="12" sideWeight="0.42326733" visible="true" weight="0.24584718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -684,7 +658,8 @@
     <MESSAGE value="Se corrige el retorno del servicio de usuarios, permitiendo ahora entregar mas 1 evaluacion disponible agregando en el front la capacidad de elegir x evaluacion" />
     <MESSAGE value="last commit" />
     <MESSAGE value="prueba cambio de version" />
-    <option name="LAST_COMMIT_MESSAGE" value="prueba cambio de version" />
+    <MESSAGE value="editado el login y agregado crud usuario excepto agregar" />
+    <option name="LAST_COMMIT_MESSAGE" value="editado el login y agregado crud usuario excepto agregar" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -701,13 +676,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front/node_modules/jwt-decode/standalone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/src/app/usuario-componente/usuario-componente.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -940,9 +908,6 @@
           <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
           <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
           <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -950,9 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -991,9 +953,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-Bold.ttf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/front/src/app/services/usuarios.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="270">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
@@ -1001,19 +966,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/src/server.js">
+    <entry file="file://$PROJECT_DIR$/front/src/app/usuarios/usuarios.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back/src/Servicios/UsuarioService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="615">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
@@ -1024,44 +980,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/usuarios/usuarios.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/assets/fonts/poppins/Poppins-Bold.ttf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/src/app/usuarios/usuarios.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="600">
           <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/login/login.component.html">
+    <entry file="file://$PROJECT_DIR$/back/src/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/login/login.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="3532" column="15" lean-forward="true" selection-start-line="3532" selection-start-column="15" selection-end-line="3532" selection-end-column="15" />
+        <state relative-caret-position="1545">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front/src/app/Constants/constants.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/src/Servicios/UsuarioService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/login/login.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52935">
+          <caret line="3529" column="20" selection-start-line="3529" selection-start-column="20" selection-end-line="3529" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
         </state>
       </provider>
     </entry>

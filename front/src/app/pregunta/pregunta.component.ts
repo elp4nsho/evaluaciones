@@ -8,6 +8,9 @@ import {IngresoComponent} from "../ingreso/ingreso.component";
 })
 export class PreguntaComponent implements OnInit {
 
+  respondida = false;
+
+
   pregunta1 = false;
   pregunta2 = false;
   pregunta3 = false;

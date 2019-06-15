@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavbarComponent} from '../../navbar/navbar.component';
+import {AuthService} from "../../services/auth.service";
 
 @Component({
   selector: 'app-layout',
@@ -8,7 +9,13 @@ import { NavbarComponent} from '../../navbar/navbar.component';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  get obtenerAdmin(){
+
+    return this.auth.decode().tipoUsuario == 0;
+  }
+
+
+  constructor(private auth : AuthService) { }
 
   ngOnInit() {
   }

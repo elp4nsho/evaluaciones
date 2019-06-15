@@ -1,5 +1,5 @@
-var host = "http://n3gro.com";
-//var host = "http://localhost";
+//var host = "http://n3gro.com";
+var host = "http://localhost";
 var puertoBack = 3000;
 var puertoCorreo = 3002;
 

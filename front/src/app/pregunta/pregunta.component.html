@@ -1,4 +1,4 @@
-<div class="pregunta">
+<div *ngIf="!respondida" (click)="respondida = true;" class="pregunta">
   <div class="pregunta-info">
     <div class="encabezado">
       <!--<p class="encabezado-texto">Consideras que tu supervisor no hace escucha a lo que le sugieres o comentas</p>-->

@@ -11,11 +11,16 @@ import {AuthService} from '../services/auth.service';
 })
 export class LoginComponent implements OnInit {
 
-  usuario = "administrador";
+  usuario = "";
   clave = "admin";
 
+  get vacioUsuario(){
+    console.log(this.usuario);
+    return this.usuario;
+  }
+
+
   constructor(private _router: Router, private _authService: AuthService) {
-    this.usuario = 'olo'
     if (localStorage.getItem('token') != null) {
       if (localStorage.getItem('token').length > 0) {
         this._router.navigate(['dashboard/home']);

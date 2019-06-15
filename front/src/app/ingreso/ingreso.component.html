@@ -1,3 +1,4 @@
+<!--
 <div *ngIf="encuestaDisponible != ''" class="container">
 
 
@@ -30,3 +31,72 @@
     </button>
   </div>
 </div>
+-->
+
+
+<!-- Header -->
+<header class="masthead d-flex" style="padding-top: 0 ;">
+
+  <!--Vista en caso de no tener encuestas-->
+
+  <div *ngIf="encuestaDisponible == '' || encuestaDisponible == undefined" class="container text-center my-auto">
+    <img src="https://www.dt.gob.cl/portal/1626/channels-911_logo_DT.png">
+    <h1 class="mb-1" style="color:white;text-shadow: 0px 2px 3px black;">No tienes encuestas disponibles</h1>
+
+    <h3 class="mb-5">
+      <em></em>
+    </h3>
+
+
+    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about" routerLink="/evaluaciones/ver">Ver Respondidas</a>
+
+  </div>
+
+  <!--Vista en caso de tener encuesta dispnible-->
+  <div *ngIf="!(encuestaDisponible == '' || encuestaDisponible == undefined)" class="container text-center my-auto">
+
+    <!--PREGUNTAS-->
+
+    <div *ngIf="!(preguntasDesdeEvaluacion.length == 0)" class="contenedorDePreguntas">
+
+      <div class="preguntasContenedor">
+        <app-pregunta *ngFor="let pregunta of preguntasDesdeEvaluacion"
+                      preguntaTitulo="{{pregunta.titulo}}"></app-pregunta>
+
+      </div>
+    </div>
+
+
+    <!--ACCEDER A LAS PREGUNTAS-->
+
+    <img *ngIf="preguntasDesdeEvaluacion.length == 0" src="https://www.dt.gob.cl/portal/1626/channels-911_logo_DT.png">
+    <h1 *ngIf="preguntasDesdeEvaluacion.length == 0" class="mb-1" style="color:white;text-shadow: 0px 2px 3px black;">
+      Encuesta disponible </h1>
+    <h3 *ngIf="preguntasDesdeEvaluacion.length == 0" class="mb-5">
+      <em></em>
+    </h3>
+    <a *ngIf="preguntasDesdeEvaluacion.length == 0" class="btn btn-primary btn-xl js-scroll-trigger" href="#about"
+       (click)="traerEvaluacion(encuestaDisponible[0])">Comenzar encuesta</a>
+    <!---->
+    <div class="botonesPreguntas">
+
+      <button *ngIf="!(preguntasDesdeEvaluacion.length == 0)" class="btn btn-primary btn-xl mt-3" href="#"
+              (click)="preguntasDesdeEvaluacion = []"> Atras
+      </button>
+
+      <button *ngIf="!(preguntasDesdeEvaluacion.length == 0)" [disabled]="listaPreguntas.length == 0"
+              (click)="modalConfirmacion=true;"
+              class="btn btn-primary btn-xl mt-3">Enviar
+      </button>
+    </div>
+    <!---->
+
+  </div>
+  <!--FIN Vista en caso de tener encuesta dispnible-->
+
+
+  <div class="overlay"></div>
+</header>
+
+
+

@@ -1,6 +1,6 @@
-<app-navbar></app-navbar>
-<app-sidebar></app-sidebar>
-<div class="contenedor">
+<app-navbar *ngIf="obtenerAdmin"></app-navbar>
+<app-sidebar *ngIf="obtenerAdmin"></app-sidebar>
+<div  [ngClass]="obtenerAdmin ? 'contenedor':''">
   <router-outlet></router-outlet>
 
 </div>

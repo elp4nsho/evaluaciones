@@ -1,4 +1,4 @@
-<div *ngIf="!respondida" (click)="respondida = true;" class="pregunta">
+<div class="pregunta">
   <div class="pregunta-info">
     <div class="encabezado">
       <!--<p class="encabezado-texto">Consideras que tu supervisor no hace escucha a lo que le sugieres o comentas</p>-->
@@ -17,8 +17,9 @@
           Nunca
         </p>
       </div>
-      <div (click)="seleccionarOpcion(0); pregunta1 = !pregunta1; pregunta2 = false; pregunta3 = false; pregunta4 = false; pregunta5 = false;"
-           [ngClass]=" pregunta1 ?  'opcionPregunta0 opcionPregunta0Activado':'opcionPregunta0'   "></div>
+      <div
+        (click)="seleccionarOpcion(0); pregunta1 = !pregunta1; pregunta2 = false; pregunta3 = false; pregunta4 = false; pregunta5 = false;"
+        [ngClass]=" pregunta1 ?  'opcionPregunta0 opcionPregunta0Activado':'opcionPregunta0'   "></div>
 
     </div>
     <div class="opcionesPregunta25">
@@ -27,8 +28,9 @@
           Pocas veces
         </p>
       </div>
-      <div (click)="seleccionarOpcion(25);pregunta2 = !pregunta2; pregunta1 = false; pregunta3 = false; pregunta4 = false; pregunta5 = false;"
-           [ngClass]=" pregunta2 ?  'opcionPregunta25 opcionPregunta25Activado':'opcionPregunta25' "></div>
+      <div
+        (click)="seleccionarOpcion(25);pregunta2 = !pregunta2; pregunta1 = false; pregunta3 = false; pregunta4 = false; pregunta5 = false;"
+        [ngClass]=" pregunta2 ?  'opcionPregunta25 opcionPregunta25Activado':'opcionPregunta25' "></div>
 
 
     </div>
@@ -38,9 +40,10 @@
           Algunas veces
         </p>
       </div>
-      <div (click)="seleccionarOpcion(50);pregunta3 = !pregunta3; pregunta1 = false; pregunta2 = false; pregunta4 = false; pregunta5 = false;"
-           class="opcionPregunta50"
-           [ngClass]=" pregunta3 ?  'opcionPregunta50 opcionPregunta50Activado':'opcionPregunta50' "></div>
+      <div
+        (click)="seleccionarOpcion(50);pregunta3 = !pregunta3; pregunta1 = false; pregunta2 = false; pregunta4 = false; pregunta5 = false;"
+        class="opcionPregunta50"
+        [ngClass]=" pregunta3 ?  'opcionPregunta50 opcionPregunta50Activado':'opcionPregunta50' "></div>
 
 
     </div>
@@ -50,9 +53,10 @@
           La mayoria del tiempo
         </p>
       </div>
-      <div (click)="seleccionarOpcion(75);pregunta4 = !pregunta4; pregunta1 = false; pregunta2 = false; pregunta3 = false; pregunta5 = false;"
-           class="opcionPregunta75"
-           [ngClass]=" pregunta4 ?  'opcionPregunta75 opcionPregunta75Activado':'opcionPregunta75'"></div>
+      <div
+        (click)="seleccionarOpcion(75);pregunta4 = !pregunta4; pregunta1 = false; pregunta2 = false; pregunta3 = false; pregunta5 = false;"
+        class="opcionPregunta75"
+        [ngClass]=" pregunta4 ?  'opcionPregunta75 opcionPregunta75Activado':'opcionPregunta75'"></div>
 
 
     </div>
@@ -62,32 +66,16 @@
           Siempre
         </p>
       </div>
-      <div (click)="seleccionarOpcion(100);pregunta5 = !pregunta5; pregunta1 = false; pregunta2 = false; pregunta3 = false; pregunta4 = false;"
-           class="opcionPregunta100"
-           [ngClass]=" pregunta5 ?  'opcionPregunta100 opcionPregunta100Activado':'opcionPregunta100' "></div>
+      <div
+        (click)="seleccionarOpcion(100);pregunta5 = !pregunta5; pregunta1 = false; pregunta2 = false; pregunta3 = false; pregunta4 = false;"
+        class="opcionPregunta100"
+        [ngClass]=" pregunta5 ?  'opcionPregunta100 opcionPregunta100Activado':'opcionPregunta100' "></div>
 
     </div>
 
-
-    <!--
-     <div class="pregunta-opciones">
-       <div class="opcion">
-         <p class="letra">A</p>
-         <p class="letra-texto">Aveces </p>
-       </div>
-       <div class="opcionSeleccionada">
-         <p class="letra">B</p>
-         <p class="letra-texto">La mayoria del tiempo</p>
-       </div>
-       <div class="opcion">
-         <p class="letra">C</p>
-         <p class="letra-texto">Siempre</p>
-       </div>
-       <div class="opcion">
-         <p class="letra">D</p>
-         <p class="letra-texto">Nunca</p>
-       </div>
-
-     </div>-->
-
   </div>
+
+
+
+
+</div>

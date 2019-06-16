@@ -59,9 +59,12 @@
 
     <div *ngIf="!(preguntasDesdeEvaluacion.length == 0)" class="contenedorDePreguntas">
 
-      <div class="preguntasContenedor">
+      <div class="preguntasContenedor mt-3">
         <app-pregunta *ngFor="let pregunta of preguntasDesdeEvaluacion"
-                      preguntaTitulo="{{pregunta.titulo}}"></app-pregunta>
+                      preguntaTitulo="{{pregunta.titulo}}"
+
+                      preguntaFinal="{{ultimaPregunta}}"
+        ></app-pregunta>
 
       </div>
     </div>
@@ -80,9 +83,9 @@
     <!---->
     <div class="botonesPreguntas">
 
-      <button *ngIf="!(preguntasDesdeEvaluacion.length == 0)" class="btn btn-primary btn-xl mt-3" href="#"
-              (click)="preguntasDesdeEvaluacion = []"> Atras
-      </button>
+      <!--   <button *ngIf="!(preguntasDesdeEvaluacion.length == 0)" class="btn btn-primary btn-xl mt-3" href="#"
+                 (click)="preguntasDesdeEvaluacion = []"> Atras
+         </button>-->
 
       <button *ngIf="!(preguntasDesdeEvaluacion.length == 0)" [disabled]="listaPreguntas.length == 0"
               (click)="modalConfirmacion=true;"

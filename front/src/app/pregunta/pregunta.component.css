@@ -8,8 +8,6 @@ div.pregunta {
   border: solid 1px;
   margin: 1vh auto;
   background: white;
-  position: fixed;
-  height: 300px;
 }
 
 div.opcion {

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthService} from "../services/auth.service";
-import { Router} from "@angular/router";
+import {Component, OnInit} from '@angular/core';
+import {AuthService} from "../services/auth.service";
+import {Router} from "@angular/router";
 import {EvaluacionesService} from "../services/evaluaciones.service";
 
 @Component({
@@ -15,12 +15,13 @@ export class IngresoComponent implements OnInit {
 
   public static listaPreguntas = [];
   public static evSeleccionada = "";
+  public static preguntaFinal = false;
 
-  get listaPreguntas(){
+  get listaPreguntas() {
     return IngresoComponent.listaPreguntas;
   }
 
-  preguntasDesdeEvaluacion = [];
+  preguntasDesdeEvaluacion: any = [];
 
   entradaNegra = true;
 
@@ -28,46 +29,57 @@ export class IngresoComponent implements OnInit {
 
   public static estado = false;
 
-  get estado(){
+  get estado() {
     return IngresoComponent.estado;
   }
 
-  get encuestaDisponible(){
-    console.log("DISPONIBLES: "+JSON.stringify(this._auth.decode().evaluacionesDisponibles))
+
+  get ultimaPregunta() {
+
+    if(IngresoComponent.listaPreguntas.length == this.preguntasDesdeEvaluacion.length){
+      IngresoComponent.preguntaFinal = true;
+    }
+
+    return IngresoComponent.listaPreguntas.length == this.preguntasDesdeEvaluacion.length - 1
+  }
+
+  get encuestaDisponible() {
+    //console.log("DISPONIBLES: "+JSON.stringify(this._auth.decode().evaluacionesDisponibles))
 
     return this._auth.decode().evaluacionesDisponibles
   }
 
 
-  constructor(private evaluacionService : EvaluacionesService,private _router :Router,private _auth:AuthService) {
+  constructor(private evaluacionService: EvaluacionesService, private _router: Router, private _auth: AuthService) {
     this.entradaNegra = true;
-    if(this._auth.decode().tipoUsuario == 0){
-        this._router.navigate(['/administracion/ingreso']);
+    if (this._auth.decode().tipoUsuario == 0) {
+      this._router.navigate(['/administracion/ingreso']);
     }
-    this._auth.login({"usuario":this._auth.decode().rut,"clave":this._auth.decode().clave});
-
+    this._auth.login({"usuario": this._auth.decode().rut, "clave": this._auth.decode().clave});
 
 
   }
+
   ngOnInit() {
   }
 
-  enviar(){
+  enviar() {
     IngresoComponent.estado = true;
   }
 
-  traerEvaluacion(ev){
-    IngresoComponent.listaPreguntas=[];
-    this.evaluacionService.traerEvaluacion(ev).subscribe((d:any)=>{
+  traerEvaluacion(ev) {
+    IngresoComponent.listaPreguntas = [];
+    this.evaluacionService.traerEvaluacion(ev).subscribe((d: any) => {
       IngresoComponent.evSeleccionada = ev;
       this.preguntasDesdeEvaluacion = d.preguntas;
-      console.log(this.preguntasDesdeEvaluacion);
+
     });
 
   }
 
 
-  enviarEvaluacion(){
+  enviarEvaluacion() {
+
     this.modalConfirmacion = false;
     let evaluacion: any = {};
     evaluacion.fecha = new Date().toString();
@@ -78,10 +90,10 @@ export class IngresoComponent implements OnInit {
     evaluacion.idEvaluacion = IngresoComponent.evSeleccionada;
 
     this.evaluacionService.enviarEvaluacionRespondida(evaluacion).subscribe(
-      d=>{
-          this._auth.login({"usuario":this._auth.decode().rut,"clave":this._auth.decode().clave});
+      d => {
+        this._auth.login({"usuario": this._auth.decode().rut, "clave": this._auth.decode().clave});
 
-          console.log(d);
+        console.log(d);
       }
     );
 

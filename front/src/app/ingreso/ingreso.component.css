@@ -1,3 +1,12 @@
+@media only screen and (max-width: 600px) {
+  .preguntasContenedor{
+    width: 90vw !important;
+  }
+
+
+}
+
+
 div.container {
   /*background: rgba(0,0,0,0.8);*/
 }

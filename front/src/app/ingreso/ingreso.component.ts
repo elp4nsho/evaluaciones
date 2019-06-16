@@ -85,7 +85,8 @@ export class IngresoComponent implements OnInit {
 
     this.modalConfirmacion = false;
     let evaluacion: any = {};
-    evaluacion.fecha = new Date().toString();
+    let fecha = new Date();
+    evaluacion.fecha = "DIA: "+fecha.getDate()+"/"+(fecha.getMonth()+1)+"/"+fecha.getFullYear()+" \n HORA: "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
     evaluacion.preguntas = IngresoComponent.listaPreguntas;
     evaluacion.nombreEvaluado = this._auth.decode().nombre;
     evaluacion.rutEvaluado = this._auth.decode().rut;

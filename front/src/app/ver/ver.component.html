@@ -1,6 +1,8 @@
+<!--
 
 
 <div class="container">
+  <a style="color: #fff;font-size: 230%;width: max-content; text-shadow: 0 1px 3px black;" routerLink="/evaluaciones/ingreso"><i style="width: max-content" class="fas fa-arrow-left"></i></a>
 <h1 class="tituloVer">Buscar evaluación</h1>
   <div class="filtros">
 
@@ -19,8 +21,8 @@
       <th scope="col">Nombre evaluación</th>
       <th scope="col">Fecha</th>
       <th scope="col">Preguntas</th>
-<!--      <th scope="col"></th>
-      <th scope="col"></th>-->
+&lt;!&ndash;      <th scope="col"></th>
+      <th scope="col"></th>&ndash;&gt;
     </tr>
     </thead>
     <tbody>
@@ -29,9 +31,9 @@
       <td>{{ev.infoEvaluacion[0].nombre}}</td>
       <td>{{ev.fecha}}</td>
       <td><ul *ngFor="let p of ev.preguntas"><li>{{p.titulo}} {{p.respuesta}}%</li></ul></td>
-      <!--<td class="botonEliminar"><i class="fas fa-minus"></i></td>-->
-   <!--   <td class="botonVer"><i class="far fa-eye"></i></td>
-  -->  </tr>
+      &lt;!&ndash;<td class="botonEliminar"><i class="fas fa-minus"></i></td>&ndash;&gt;
+   &lt;!&ndash;   <td class="botonVer"><i class="far fa-eye"></i></td>
+  &ndash;&gt;  </tr>
 
     </tbody>
 
@@ -42,5 +44,89 @@
 
 
 </div>
+
+
+-->
+
+
+<!-- Header -->
+<header class="masthead d-flex">
+
+
+  <div class="container">
+    <a style="color: #fff;font-size: 230%;width: max-content; text-shadow: 0 1px 3px black;"
+       routerLink="/evaluaciones/ingreso"><i style="width: max-content" class="fas fa-arrow-left"></i></a>
+    <h1 class="tituloVer">Encuestas</h1>
+    <div class="filtros">
+
+      <div class="input-group mb-3 buscar">
+        <input type="text" class="form-control" placeholder="Buscar por nombre de evaluación"
+               aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+
+    </div>
+
+    <table class="table tablaVer">
+      <thead>
+      <tr>
+        <th scope="col">Nombre evaluación</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Preguntas</th>
+       <!-- <th scope="col"></th>
+        <th scope="col"></th>-->
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr *ngFor="let ev of evaluacionesRespondidas">
+        <td>{{ev.infoEvaluacion[0].nombre}}</td>
+        <td>{{ev.fecha}}</td>
+        <td>
+          <ul *ngFor="let p of ev.preguntas">
+            <li>{{p.titulo}} {{p.respuesta}}%</li>
+          </ul>
+        </td>
+      <!--  <td class="botonEliminar"><i class="fas fa-minus"></i></td>
+        <td class="botonVer"><i class="far fa-eye"></i></td>-->
+      </tr>
+
+      </tbody>
+
+    </table>
+
+
+  </div>
+
+
+  <!-- <div class="container text-center my-auto">
+     <h1 class="mb-1">Stylish Portfolio</h1>
+     <h3 class="mb-5">
+       <em>A Free Bootstrap Theme by Start Bootstrap</em>
+     </h3>
+     <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+   </div>
+   <div class="overlay"></div>-->
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

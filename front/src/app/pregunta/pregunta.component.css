@@ -5,9 +5,13 @@ p {
 
 div.pregunta {
   width: 60vw;
-  border: solid 1px;
+
   margin: 1vh auto;
-  background: white;
+  background: #007bff;
+
+  padding:6vh 2vw;
+  border:solid 3px #00bdff;
+
 }
 
 div.opcion {
@@ -41,12 +45,16 @@ p.letra-texto {
 }
 
 div.encabezado {
-  border: solid 1px;
+
 }
 
 p.encabezado-texto {
 
   text-align: center;
+  color: #fff;
+  font-size: 150%;
+  font-weight: bolder;
+  text-shadow: 0 2px 3px black;
 
 }
 
@@ -59,13 +67,12 @@ p.encabezado-texto:after {
 }
 
 div.declaracion {
-  border: solid 1px;
 
 }
 
 p.declaracion-texto {
   font-size: 70%;
-  color: gray;
+  color: #fff;
 }
 
 .opcionesPregunta {
@@ -199,4 +206,6 @@ p.referenciaTexto {
   font-size: 75%;
   font-weight: bolder;
   margin-bottom: 3vh;
+  color: #fff;
+
 }

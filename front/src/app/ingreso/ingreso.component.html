@@ -33,6 +33,19 @@
 </div>
 -->
 
+<div class="modalEnviar" *ngIf="modalConfirmacion">
+  <div class="contenidoModal">
+    <div class="modalTitulo">
+      <h1 class="modalTituloTexto">¿Estas seguro que deseas enviar la evaluación?</h1>
+    </div>
+    <div class="botones mt-4" style="display: flex;align-items: center;justify-content: space-around">
+      <button class="btn btn-xl btn-danger" (click)="modalConfirmacion=false;">Cancelar</button>
+      <button class="btn btn-xl btn-success" (click)="enviarEvaluacion();respondida = false;">Enviar</button>
+    </div>
+  </div>
+
+</div>
+
 
 <!-- Header -->
 <header class="masthead d-flex" style="padding-top: 0 ;">
@@ -58,6 +71,10 @@
     <!--PREGUNTAS-->
 
     <div *ngIf="!(preguntasDesdeEvaluacion.length == 0)" class="contenedorDePreguntas">
+
+      <p class="numeroDePreguntasTexto">
+        Preguntas {{listaPreguntas.length + "/"+ preguntasDesdeEvaluacion.length}}
+      </p>
 
       <div class="preguntasContenedor mt-3">
         <app-pregunta *ngFor="let pregunta of preguntasDesdeEvaluacion"

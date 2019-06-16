@@ -34,9 +34,11 @@ export class IngresoComponent implements OnInit {
   }
 
 
+
+
   get ultimaPregunta() {
 
-    if(IngresoComponent.listaPreguntas.length == this.preguntasDesdeEvaluacion.length){
+    if (IngresoComponent.listaPreguntas.length == this.preguntasDesdeEvaluacion.length) {
       IngresoComponent.preguntaFinal = true;
     }
 
@@ -79,6 +81,7 @@ export class IngresoComponent implements OnInit {
 
 
   enviarEvaluacion() {
+    this.preguntasDesdeEvaluacion = [];
 
     this.modalConfirmacion = false;
     let evaluacion: any = {};

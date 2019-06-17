@@ -144,6 +144,7 @@ exports.enviarEvaluacion = (datos) => {
 
 
         let fecha = new Date();
+        fecha = "DIA: "+fecha.getDate()+"/"+(fecha.getMonth()+1)+"/"+fecha.getFullYear()+" \n HORA: "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
 
         var consulta = `INSERT INTO evaluacionAContestar VALUES ('', '${datos.idEvaluacion}', '${fecha.toString()}', '${fecha}')`;
 

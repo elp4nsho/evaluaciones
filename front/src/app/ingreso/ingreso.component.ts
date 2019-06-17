@@ -78,7 +78,10 @@ export class IngresoComponent implements OnInit {
     });
 
   }
-
+  salir(){
+    localStorage.removeItem("token");
+    this._router.navigate(["login"]);
+  }
 
   enviarEvaluacion() {
     this.preguntasDesdeEvaluacion = [];

@@ -13,6 +13,7 @@ ul{
 
 ul{
   list-style: none;
+  padding: 0;
 }
 
 .buscar {
@@ -33,6 +34,7 @@ ul{
   color: white;
   text-align: center;
   text-shadow: 0 2px 3px black;
+  padding-bottom: 3vh !important;
 }
 
 

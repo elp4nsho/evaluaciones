@@ -1,28 +1,31 @@
 <div class="container">
   <div class="contenedor">
 
-   <!-- <div class="barraBusqueda">
-      <div class="input-group mb-3 mt-3">
-        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
-               aria-describedby="button-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-        </div>
-      </div>
-    </div>-->
-    <h1 class="text-center">Usuarios</h1>
+    <!-- <div class="barraBusqueda">
+       <div class="input-group mb-3 mt-3">
+         <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+         <div class="input-group-append">
+           <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+         </div>
+       </div>
+     </div>-->
+    <h1 class="text-center">Encuestas</h1>
     <div class="row">
 
       <div class="col-sm-3">
-        <i class="fa fa-retweet" aria-hidden="true"  style="cursor: pointer" (click)="obtenerUsuarios()"></i>
+        <i class="fa fa-retweet" aria-hidden="true"  style="cursor: pointer" (click)="obtenerEncuestas()"></i>
         <div class="listaUsuarios">
-          <ul *ngFor="let u of usuarios">
-            <li (click)="usuarioSeleccionado(u)">{{u.nombre}}: <em style="font-size: 75%;">{{u.tipoUsuario == 0 ? 'Administrador' : u.tipoUsuario == 1 ? 'Trabajador': u.tipoUsuario == 2 ? 'Empleador' : u.tipoUsuario == 3 ? 'Sindicato' : 'Desconocido' }}</em></li>
+          <ul *ngFor="let e of encuestasObtenidas">
+            <li *ngFor="let p of transformar(e)" >
+              {{p.nombre}} : {{p.valor}}
+              </li>
           </ul>
         </div>
 
       </div>
-      <div class="col-sm-9 ">
+
+     <!-- <div class="col-sm-9 ">
         <i class="fa fa-broom" (click)="limpiar()" style="cursor: pointer"  aria-hidden="true"></i>
 
         <div class="form-row">
@@ -67,44 +70,11 @@
           </div>
 
 
-
-
         </div>
 
-
       </div>
-
+-->
     </div>
-
-    <!-- <table class="table">
-       <thead>
-       <tr>
-         <th scope="col">Nombre</th>
-         <th scope="col">Apellido</th>
-         <th scope="col">Rut</th>
-         <th scope="col">Correo</th>
-         <th scope="col"></th>
-         <th scope="col"></th>
-       </tr>
-       </thead>
-       <tbody>
-
-       <tr *ngFor="let u of usuarios">
-         <td>{{u.nombre}}</td>
-         <td>{{u.apellido}}</td>
-         <td>{{u.rut}}</td>
-         <td>{{u.correo}}</td>
-         <td>
-           <button class="btn btn-sm" (click)="editar(u)">Editar</button>
-         </td>
-         <td>
-           <button class="btn btn-sm" (click)="eliminar(u)">Eliminar</button>
-         </td>
-       </tr>
-
-       </tbody>
-     </table>-->
-
 
   </div>
 </div>

@@ -6,6 +6,7 @@ const dao = require("./DAO/UsuarioDAO");
 const loginService = require("./Servicios/auth/loginService");
 const UsuarioService = require("./Servicios/UsuarioService");
 const EvaluacionService = require("./Servicios/EvaluacionService");
+const PreguntaService = require("./Servicios/PreguntaService");
 
 app.get('/', (req, res) => {
     var u = req.query.usuario;
@@ -165,6 +166,16 @@ app.post("/evaluaciones/enviar", (req, res) => {
         res.end(JSON.stringify(d))
     });
 });
+
+app.get("/preguntas",(req,res)=>{
+    res.set({"access-control-allow-origin": "*"});
+    PreguntaService.mostrarPorId().catch(e => {
+        res.end(e.toString())
+    }).then(d => {
+        res.end(JSON.stringify(d))
+    });
+});
+
 
 app.post("/evaluaciones/agregar", (req, res) => {
     res.set({"access-control-allow-origin": "*"});

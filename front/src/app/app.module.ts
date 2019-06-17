@@ -21,6 +21,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { UsuarioComponenteComponent } from './usuario-componente/usuario-componente.component';
 import { EncuestaComponenteComponent } from './encuesta-componente/encuesta-componente.component';
+import { EncuestasComponent } from './encuestas/encuestas.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { EncuestaComponenteComponent } from './encuesta-componente/encuesta-comp
     PreguntaComponent,
     ModalComponent,
     VerEvaluacionComponent,
+    EncuestasComponent,
   ],
   imports: [
     BrowserModule,

@@ -20,33 +20,13 @@
 *
 */
 const Usuario = require("../Modelos/Usuario");
+const db = require("../Utilidades/DatabaseFunctions");
 
 
-exports.mostrarPreguntasPorIdEvaluacion = () => {
-
-    return new Promise(function (resolve, reject) {
-
-        var mysql = require('mysql');
-        var con = mysql.createConnection({
-            host: "localhost",
-            user: "root",
-            password: "",
-            database: "evaluaciones"
-        });
-
-        var sql = "select * from pregunta";
-
-        con.connect(function (err) {
-            if (err) throw err;
-            con.query(sql, function (err, result) {
-                if (err) reject(err);
-                con.destroy();
-                resolve(JSON.stringify(result));
-            });
-        });
-    });
-
-
+exports.mostrarPreguntasPorIdEvaluacion = async () => {
+    let sql = "SELECT * FROM pregunta";
+    let respuesta = await db.devolverLaPromesaDeLaBaseDato(sql);
+    return respuesta;
 };
 
 /*

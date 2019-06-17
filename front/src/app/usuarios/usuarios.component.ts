@@ -11,6 +11,10 @@ export class UsuariosComponent implements OnInit {
   public static usuarios: any = [];
 
 
+
+
+
+
   mostrar = false;
 
   rut = "";
@@ -40,7 +44,7 @@ export class UsuariosComponent implements OnInit {
   ngOnInit() {
   }
 
-  usuarioSeleccionado(u){
+  usuarioSeleccionado(u) {
     this.rut = u.rut;
     this.nombre = u.nombre;
     this.apellido = u.apellido;
@@ -49,9 +53,9 @@ export class UsuariosComponent implements OnInit {
     this.clave = u.clave;
   }
 
-  agregar(){
+  agregar() {
 
-    let u:any = {};
+    let u: any = {};
     u.rut = this.rut;
     u.nombre = this.nombre;
     u.apellido = this.apellido;
@@ -59,17 +63,16 @@ export class UsuariosComponent implements OnInit {
     u.tipoUsuario = this.tipoUsuario;
     u.clave = this.clave;
 
-    this.uService.agregar(u).subscribe(d=>{
+    this.uService.agregar(u).subscribe(d => {
+      this.limpiar();
       this.obtenerUsuarios();
-
-
     })
 
   }
 
   editar() {
 
-    let u:any = {};
+    let u: any = {};
     u.rut = this.rut;
     u.nombre = this.nombre;
     u.apellido = this.apellido;
@@ -78,12 +81,13 @@ export class UsuariosComponent implements OnInit {
     u.clave = this.clave;
 
     this.uService.editar(u).subscribe(d => {
+      this.limpiar();
       this.obtenerUsuarios();
     });
   }
 
   eliminar() {
-    let u:any = {};
+    let u: any = {};
     u.rut = this.rut;
     u.nombre = this.nombre;
     u.apellido = this.apellido;
@@ -92,9 +96,20 @@ export class UsuariosComponent implements OnInit {
     u.clave = this.clave;
 
 
-      this.uService.eliminar(u).subscribe(d => {
-        this.obtenerUsuarios();
-      });
+    this.uService.eliminar(u).subscribe(d => {
+      this.limpiar();
+      this.obtenerUsuarios();
+    });
+  }
+
+
+  limpiar() {
+    this.rut = "";
+    this.nombre = "";
+    this.apellido = "";
+    this.correo = "";
+    this.tipoUsuario = "";
+    this.clave = "";
   }
 
 

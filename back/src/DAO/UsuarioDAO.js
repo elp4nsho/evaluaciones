@@ -116,19 +116,19 @@ exports.agregarUsuario = async (u) => {
 
 exports.editarUsuario = async (usuario) => {
 
-    let sql =`UPDATE usuario SET nombre='${usuario.nombre}',apellido='${usuario.apellido}',correo='${usuario.correo}',tipoUsuario='${usuario.tipoUsuario}',clave='${usuario.clave}' WHERE rut=${usuario.rut}`;
+    let sql =`UPDATE usuario SET nombre='${usuario.nombre}',apellido='${usuario.apellido}',correo='${usuario.correo}',tipoUsuario='${usuario.tipoUsuario}',clave='${usuario.clave}' WHERE rut='${usuario.rut}'`;
     return db.devolverLaPromesaDeLaBaseDato(sql);
 };
 
 exports.eliminarUsuario = async (usuario) => {
 
-    let sql =`DELETE FROM usuario WHERE rut=${usuario.rut}`;
+    let sql =`DELETE FROM usuario WHERE rut='${usuario.rut}'`;
     return db.devolverLaPromesaDeLaBaseDato(sql);
 };
 
 
 exports.mostrarUsuario = (usuario) => {
-    let sql =`SELECT * FROM usuario WHERE rut=${usuario.rut}`;
+    let sql =`SELECT * FROM usuario WHERE rut='${usuario.rut}'`;
     return db.devolverLaPromesaDeLaBaseDato(sql);
 };
 

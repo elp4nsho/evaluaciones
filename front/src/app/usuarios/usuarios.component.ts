@@ -10,6 +10,16 @@ export class UsuariosComponent implements OnInit {
 
   public static usuarios: any = [];
 
+
+  mostrar = false;
+
+  rut = "";
+  correo = "";
+  clave = "";
+  tipoUsuario = "";
+  nombre = "";
+  apellido = "";
+
   get usuarios() {
 
     return UsuariosComponent.usuarios;
@@ -30,16 +40,61 @@ export class UsuariosComponent implements OnInit {
   ngOnInit() {
   }
 
-  editar(u) {
+  usuarioSeleccionado(u){
+    this.rut = u.rut;
+    this.nombre = u.nombre;
+    this.apellido = u.apellido;
+    this.correo = u.correo;
+    this.tipoUsuario = u.tipoUsuario;
+    this.clave = u.clave;
+  }
+
+  agregar(){
+
+    let u:any = {};
+    u.rut = this.rut;
+    u.nombre = this.nombre;
+    u.apellido = this.apellido;
+    u.correo = this.correo;
+    u.tipoUsuario = this.tipoUsuario;
+    u.clave = this.clave;
+
+    this.uService.agregar(u).subscribe(d=>{
+      this.obtenerUsuarios();
+
+
+    })
+
+  }
+
+  editar() {
+
+    let u:any = {};
+    u.rut = this.rut;
+    u.nombre = this.nombre;
+    u.apellido = this.apellido;
+    u.correo = this.correo;
+    u.tipoUsuario = this.tipoUsuario;
+    u.clave = this.clave;
+
     this.uService.editar(u).subscribe(d => {
       this.obtenerUsuarios();
     });
   }
 
-  eliminar(u) {
-    this.uService.eliminar(u).subscribe(d => {
-      this.obtenerUsuarios();
-    });
+  eliminar() {
+    let u:any = {};
+    u.rut = this.rut;
+    u.nombre = this.nombre;
+    u.apellido = this.apellido;
+    u.correo = this.correo;
+    u.tipoUsuario = this.tipoUsuario;
+    u.clave = this.clave;
+
+
+      this.uService.eliminar(u).subscribe(d => {
+        this.obtenerUsuarios();
+      });
   }
 
 

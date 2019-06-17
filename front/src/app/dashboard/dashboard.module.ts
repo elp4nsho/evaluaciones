@@ -12,12 +12,14 @@ import {RoleGuard} from '../guards/role-guard.service';
 import {UsuariosComponent} from "../usuarios/usuarios.component";
 import {UsuarioComponenteComponent} from "../usuario-componente/usuario-componente.component";
 import {EncuestaComponenteComponent} from "../encuesta-componente/encuesta-componente.component";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   imports: [
     CommonModule,
 
-    RouterModule.forChild(dashboardRoutes)
+    RouterModule.forChild(dashboardRoutes),
+    FormsModule
   ],
   declarations: [VerAdminComponent,
     IngresoAdminComponent,LayoutComponent,EncuestaComponenteComponent,NavbarComponent,SidebarComponent,UsuariosComponent,UsuarioComponenteComponent],

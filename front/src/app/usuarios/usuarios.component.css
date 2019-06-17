@@ -3,3 +3,43 @@ input{
   width: 70px;
 }
 */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  text-transform: capitalize;
+  margin: 0;
+  padding: 1vw;
+  background: lightskyblue;
+  border: white solid 1px;
+  color: white;
+  font-weight: bolder;
+}
+
+li:hover {
+  margin: 0;
+  padding: 1vw;
+  background: white;
+  border: lightskyblue solid 1px;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.listaUsuarios{
+  max-height: 350px;
+  overflow-y: scroll;
+}
+.listaUsuarios::-webkit-scrollbar{
+  width: 5px;
+  height: 8px;
+  background: #fff;
+  border: solid 1px #7f7f7f;
+
+}
+.listaUsuarios::-webkit-scrollbar-thumb{
+  background: #007bff;
+
+}

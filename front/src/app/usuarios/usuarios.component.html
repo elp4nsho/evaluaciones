@@ -11,34 +11,96 @@
       </div>
     </div>
 
-    <table class="table">
-      <thead>
-      <tr>
-        <th scope="col">Nombre</th>
-        <th scope="col">Apellido</th>
-        <th scope="col">Rut</th>
-        <th scope="col">Correo</th>
-        <th scope="col"></th>
-        <th scope="col"></th>
-      </tr>
-      </thead>
-      <tbody>
+    <div class="row">
 
-      <tr *ngFor="let u of usuarios">
-        <td>{{u.nombre}}</td>
-        <td>{{u.apellido}}</td>
-        <td>{{u.rut}}</td>
-        <td>{{u.correo}}</td>
-        <td>
-          <button class="btn btn-sm" (click)="editar(u)">Editar</button>
-        </td>
-        <td>
-          <button class="btn btn-sm" (click)="eliminar(u)">Eliminar</button>
-        </td>
-      </tr>
+      <div class="col-sm-3">
+        <div class="listaUsuarios">
+          <ul *ngFor="let u of usuarios">
+            <li (click)="usuarioSeleccionado(u)">{{u.nombre}}: <em style="font-size: 75%;">{{u.tipoUsuario == 0 ? 'Administrador' : u.tipoUsuario == 1 ? 'Trabajador': u.tipoUsuario == 2 ? 'Empleador' : u.tipoUsuario == 3 ? 'Sindicato' : 'Desconocido' }}</em></li>
+          </ul>
+        </div>
 
-      </tbody>
-    </table>
+      </div>
+      <div class="col-sm-9 ">
+        <div class="form-row">
+          <div class="col-6 mb-3">
+            <label for="rut">Rut</label>
+
+            <input id="rut" [(ngModel)]="rut"  type="text" class="form-control" placeholder="Rut">
+          </div>
+          <div class="col-6 mb-3">
+            <label for="nombre">Nombre</label>
+            <input id="nombre"  [(ngModel)]="nombre"  type="text" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="col-6 mb-3">
+            <label for="Apellido">Apellido</label>
+
+            <input id="Apellido" [(ngModel)]="apellido" type="text" class="form-control" placeholder="Apellido">
+          </div>
+          <div class="col-6 mb-3">
+            <label for="correo">Correo</label>
+
+            <input id="correo" [(ngModel)]="correo" type="text" class="form-control" placeholder="Correo">
+          </div>
+          <div class="col-5 mb-3">
+            <label for="clave">Clave</label>
+
+            <input id="clave"  [(ngModel)]="clave" type="{{!mostrar ? 'password':'text'}}" class="form-control" placeholder="Clave">
+          </div>
+          <div class="col-1"><i (click)="mostrar = !mostrar" class="fa fa-eye" style="position: relative;top:20px;"></i></div>
+          <div class="col-6">
+            <label for="tipoUsuario">Tipo de usuario</label>
+            <select required  class="form-control" [(ngModel)]="tipoUsuario" name="" id="tipoUsuario">
+              <option [selected]="tipoUsuario == 0" value="0">Administrador</option>
+              <option [selected]="tipoUsuario == 1" value="1">Trabajador</option>
+              <option [selected]="tipoUsuario == 2" value="2">Empleador</option>
+              <option [selected]="tipoUsuario == 3" value="3">Sindicato</option>
+            </select>
+          </div>
+          <div class="col-12" style="display: flex;justify-content: space-between">
+            <button (click)="agregar()" class="btn btn-xl btn-success">Agregar</button>
+            <button (click)="editar()" class="btn btn-xl btn-primary">Editar</button>
+            <button (click)="eliminar()" class="btn btn-xl btn-danger">Eliminar</button>
+          </div>
+
+
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- <table class="table">
+       <thead>
+       <tr>
+         <th scope="col">Nombre</th>
+         <th scope="col">Apellido</th>
+         <th scope="col">Rut</th>
+         <th scope="col">Correo</th>
+         <th scope="col"></th>
+         <th scope="col"></th>
+       </tr>
+       </thead>
+       <tbody>
+
+       <tr *ngFor="let u of usuarios">
+         <td>{{u.nombre}}</td>
+         <td>{{u.apellido}}</td>
+         <td>{{u.rut}}</td>
+         <td>{{u.correo}}</td>
+         <td>
+           <button class="btn btn-sm" (click)="editar(u)">Editar</button>
+         </td>
+         <td>
+           <button class="btn btn-sm" (click)="eliminar(u)">Eliminar</button>
+         </td>
+       </tr>
+
+       </tbody>
+     </table>-->
 
 
   </div>

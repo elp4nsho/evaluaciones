@@ -40,9 +40,18 @@ const conexion = () => {
 };
 
 
-exports.mostrarEvaluacionesParaTomar = () => {
+exports.mostrarEvaluacionesParaTomar = async () => {
     let sql = "SELECT * FROM evaluacion";
-    return devolverLaPromesaDeLaBaseDato(sql);
+    let evaluaciones = await devolverLaPromesaDeLaBaseDato(sql);
+    let preguntas= await PreguntaService.mostrarPorId();
+
+    evaluaciones.map(ev=>{
+        ev.preguntas = preguntas.filter(p=>p.idEvaluacion == ev.id);
+    });
+
+    return evaluaciones;
+
+
 };
 
 

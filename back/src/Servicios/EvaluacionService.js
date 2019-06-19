@@ -15,6 +15,12 @@ function mostrarEvaluacionesParaTomar(){
         resolve(EvaluacionDTO.mostrarEvaluacionesParaTomar());
     });
 }
+function editarEvaluacion(req){
+
+    return new Promise((resolve,reject)=>{
+        resolve(EvaluacionDTO.mostrarEvaluacionesParaTomar(req.body));
+    });
+}
 function mostrarPorId(evId){
 
     return new Promise((resolve,reject)=>{
@@ -83,5 +89,6 @@ exports.eliminar = eliminar;
 exports.mostrarPorId = mostrarPorId;
 exports.enviarEvaluacion = enviarEvaluacion;
 exports.agregarEvaluacionRespondida = agregarEvaluacionRespondida;
+exports.editarEvaluacion = editarEvaluacion;
 exports.mostrarEvaluacionesRespondidas = mostrarEvaluacionesRespondidas;
 exports.mostrarEvaluacionesParaTomar = mostrarEvaluacionesParaTomar;

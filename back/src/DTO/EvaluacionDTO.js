@@ -12,6 +12,10 @@ exports.mostrarEvaluacionesParaTomar = ()=>{
     return EvaluacionDAO.mostrarEvaluacionesParaTomar();
 
 };
+exports.editarEvaluacion = (evaluacion)=>{
+    return EvaluacionDAO.editarEvaluacion(evaluacion);
+
+};
 exports.mostrarEvaluacionPorId = (evId)=>{
     return EvaluacionDAO.mostrarEvaluacionPorId(evId);
 

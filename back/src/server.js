@@ -53,6 +53,11 @@ app.options('/editar', (req, res) => {
     res.json({});
 
 });
+app.options('/evaluaciones/editar', (req, res) => {
+    res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+    res.json({});
+
+});
 app.options('/agregar', (req, res) => {
     res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
     res.json({});
@@ -122,6 +127,15 @@ app.post("/usuario/evaluacion", (req, res) => {
     res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
 
     UsuarioService.mostrarEvaluacion(req).catch(e => {
+        res.end(e.toString())
+    }).then(d => {
+        res.end(JSON.stringify(d))
+    });
+});
+app.post("/evaluaciones/editar", (req, res) => {
+    res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+
+    EvaluacionService.editarEvaluacion(req).catch(e => {
         res.end(e.toString())
     }).then(d => {
         res.end(JSON.stringify(d))

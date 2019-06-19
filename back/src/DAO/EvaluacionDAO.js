@@ -55,6 +55,23 @@ exports.mostrarEvaluacionesParaTomar = async () => {
 };
 
 
+exports.editarEvaluacion = async (evaluacion) => {
+
+    return evaluacion;
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
 exports.mostrarEvaluacionPorId = (evId) => {
 
 

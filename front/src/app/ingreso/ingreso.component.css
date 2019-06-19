@@ -444,8 +444,8 @@ a:hover, a:focus, a:active {
   overflow-y: scroll;
   overflow-x: hidden;
   max-height: 70vh;
-  background: white;
-  box-shadow: 2px 2px 3px black;
+  background: #f3be2100;
+/*  box-shadow: 2px 2px 3px black;*/
 
 
 }

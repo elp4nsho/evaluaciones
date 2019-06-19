@@ -18,7 +18,7 @@ function mostrarEvaluacionesParaTomar(){
 function editarEvaluacion(req){
 
     return new Promise((resolve,reject)=>{
-        resolve(EvaluacionDTO.mostrarEvaluacionesParaTomar(req.body));
+        resolve(EvaluacionDTO.editarEvaluacion(req.body));
     });
 }
 function mostrarPorId(evId){

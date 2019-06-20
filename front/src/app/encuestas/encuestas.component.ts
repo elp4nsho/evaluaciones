@@ -63,20 +63,20 @@ export class EncuestasComponent implements OnInit {
 
   }
 
-  empujarNuevaPregunta(){
-    this.encuestaPreguntas.push({id:'n'+this.c,titulo:'Nueva Pregunta'});
+  empujarNuevaPregunta() {
+    this.encuestaPreguntas.push({id: 'n' + this.c, titulo: 'Nueva Pregunta'});
     this.c++;
   }
 
 
   agregar() {
+    this.showSpinner = true;
 
 
     let e: any = {};
     e.id = this.encuestaId;
     e.nombre = this.encuestaNombre;
     e.preguntas = [];
-    /*  e.preguntas = this.encuestaPreguntas;*/
     e.fechaInicio = this.encuestaInicio;
     e.fechaFin = this.encuestaFin;
 
@@ -88,11 +88,15 @@ export class EncuestasComponent implements OnInit {
     console.log(e);
 
 
-    /*
-        this.uService.agregar(u).subscribe(d => {
-          this.limpiar();
-          this.obtenerUsuarios();
-        });*/
+    this.eService.agregar(e).subscribe(d => {
+      this.limpiar();
+      this.obtenerEncuestas();
+      this.showSpinner = false;
+
+    }, e => {
+      this.showSpinner = false;
+      alert("ERROR DE CONEXION");
+    });
 
   }
 
@@ -112,32 +116,35 @@ export class EncuestasComponent implements OnInit {
     }
 
 
-
-      this.eService.editar(e).subscribe(d => {
-        console.log(d);
-        this.limpiar();
-        this.obtenerEncuestas();
-        this.showSpinner = false;
-      },e=>{
-        alert("error al connectar al servidor");
-        this.showSpinner = false
-      });
+    this.eService.editar(e).subscribe(d => {
+      console.log(d);
+      this.limpiar();
+      this.obtenerEncuestas();
+      this.showSpinner = false;
+    }, e => {
+      alert("error al connectar al servidor");
+      this.showSpinner = false
+    });
   }
 
   eliminar() {
+    this.showSpinner = true;
+
     let e: any = {};
 
-    e.nombre = this.encuestaNombre;
-    e.preguntas = this.encuestaPreguntas;
-    e.fechaInicio = this.encuestaInicio;
-    e.fechaFin = this.encuestaFin;
-    e.encuestaId = this.encuestaId;
+    e.id = this.encuestaId;
 
 
-    /* this.uService.eliminar(u).subscribe(d => {
-       this.limpiar();
-       this.obtenerUsuarios();
-     });*/
+    this.eService.eliminar(e).subscribe(d => {
+      this.limpiar();
+      this.obtenerEncuestas();
+      this.showSpinner = false;
+
+    }, e => {
+      this.showSpinner = false;
+      alert("ERROR DE CONEXION");
+
+    });
   }
 
 

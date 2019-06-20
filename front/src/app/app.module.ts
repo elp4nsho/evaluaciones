@@ -22,7 +22,8 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { UsuarioComponenteComponent } from './usuario-componente/usuario-componente.component';
 import { EncuestaComponenteComponent } from './encuesta-componente/encuesta-componente.component';
 import { EncuestasComponent } from './encuestas/encuestas.component';
-import { Ng2LoadingSpinnerModule } from 'ng2-loading-spinner'
+import { Ng2LoadingSpinnerModule } from 'ng2-loading-spinner';
+import { ResultadosComponent } from './resultados/resultados.component'
 
 
 
@@ -37,6 +38,7 @@ import { Ng2LoadingSpinnerModule } from 'ng2-loading-spinner'
     ModalComponent,
     VerEvaluacionComponent,
     EncuestasComponent,
+    ResultadosComponent,
   ],
   imports: [
     Ng2LoadingSpinnerModule.forRoot({}),

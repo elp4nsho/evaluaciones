@@ -21,6 +21,16 @@ export class EvaluacionesService {
 
   }
 
+  agregar(e){
+    return this._http.post(this.urlBack+"/evaluaciones/agregarevaluacion",e);
+  }
+
+
+  eliminar(e){
+    return this._http.post(this.urlBack+"/evaluaciones/eliminar",e);
+  }
+
+
   editar(e){
     return this._http.post(this.urlBack+"/evaluaciones/editar",e);
   }

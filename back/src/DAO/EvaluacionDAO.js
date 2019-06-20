@@ -76,7 +76,7 @@ exports.editarEvaluacion = async (evaluacion) => {
 };
 exports.agregarEvaluacion = async (evaluacion) => {
 
-    let sql = `INSERT INTO evaluacion VALUES(null,'${evaluacion.nombre}',fechaInicio='${evaluacion.fechaInicio}',fechaFin='${evaluacion.fechaFin}')`;
+    let sql = `INSERT INTO evaluacion VALUES(null,'${evaluacion.nombre}','${evaluacion.fechaInicio}','${evaluacion.fechaFin}')`;
     let respuestaActEvaluacion = await devolverLaPromesaDeLaBaseDato(sql);
     evaluacion.preguntas.forEach(
         p=>{

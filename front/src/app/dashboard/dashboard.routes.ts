@@ -8,6 +8,7 @@ import {IngresoAdminComponent} from '../ingreso-admin/ingreso-admin.component';
 import {RoleGuard} from '../guards/role-guard.service';
 import {UsuariosComponent} from "../usuarios/usuarios.component";
 import {EncuestasComponent} from "../encuestas/encuestas.component";
+import {ResultadosComponent} from "../resultados/resultados.component";
 
 
 export const dashboardRoutes: Routes = [
@@ -35,6 +36,11 @@ export const dashboardRoutes: Routes = [
       },
       {
         path: 'administracion/ingreso', component: IngresoAdminComponent,
+        data: {tipoUsuario: 0},
+        canActivate: [RoleGuard]
+      },
+      {
+        path: 'administracion/resultados', component: ResultadosComponent,
         data: {tipoUsuario: 0},
         canActivate: [RoleGuard]
       }

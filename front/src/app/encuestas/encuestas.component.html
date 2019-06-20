@@ -43,11 +43,12 @@
             <input id="fechaFin" [(ngModel)]="encuestaFin" type="text" class="form-control" placeholder="Fecha Fin">
           </div>
           <div  class="col-12 mb-3">
-            <i (click)="encuestaPreguntas.push({titulo:'Nueva Pregunta'})" class="fa fa-plus"></i>
+            <i (click)="empujarNuevaPregunta()" class="fa fa-plus"></i>
           </div>
-          <div class="col-12 mb-3" *ngFor="let p of encuestaPreguntas">
-            <label for="pregunta">Pregunta</label>
-            <input name="pregunta" id="pregunta" [value]="p.titulo" type="text" class="form-control" placeholder="Pregunta">
+          <div id="d{{p.id}}" class="col-12 mb-3" *ngFor="let p of encuestaPreguntas">
+            <button id="btn{{p.id}}" (click)="borrar(p.id)">borrar</button>
+            <label id="label{{p.id}}"  >Pregunta</label>
+            <input name="pregunta" id="input{{p.id}}" [value]="p.titulo" type="text" class="form-control" placeholder="Pregunta">
 
 
           </div>

@@ -21,6 +21,11 @@ export class EvaluacionesService {
 
   }
 
+  editar(e){
+    return this._http.post(this.urlBack+"/evaluaciones/editar",e);
+  }
+
+
   traerEvaluacionesRespondidass(){
 
       return this._http.get(this.urlBack+"/evaluaciones/respondidas");

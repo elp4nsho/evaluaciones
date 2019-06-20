@@ -57,6 +57,13 @@ exports.mostrarEvaluacionesParaTomar = async () => {
 
 exports.editarEvaluacion = async (evaluacion) => {
 
+    let sql = `UPDATE evaluacion SET nombre='${evaluacion.nombre}',fechaInicio='${evaluacion.fechaInicio}',fechaFin='${evaluacion.fechaFin}' WHERE id = '${evaluacion.id}'`;
+    let respuestaActEvaluacion = await devolverLaPromesaDeLaBaseDato(sql);
+    console.log(evaluacion.preguntas);
+
+
+
+
     return evaluacion;
 
 

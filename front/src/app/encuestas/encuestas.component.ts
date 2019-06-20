@@ -8,6 +8,9 @@ import {EvaluacionesService} from "../services/evaluaciones.service";
 })
 export class EncuestasComponent implements OnInit {
 
+  c = 0;
+
+
   encuestasObtenidas: any = [];
 
   encuestaNombre = "";
@@ -23,7 +26,6 @@ export class EncuestasComponent implements OnInit {
     this.encuestaFin = e.fechaFin;
     this.encuestaId = e.id;
 
-    console.log(this.encuestaPreguntas)
   }
 
   obtenerEncuestas() {
@@ -50,6 +52,19 @@ export class EncuestasComponent implements OnInit {
     return datos;
   }
 
+  borrar(id) {
+    document.getElementById("input" + id).remove();
+    document.getElementById("label" + id).remove();
+    document.getElementById("btn" + id).remove();
+    document.getElementById("d" + id).style.position = "absolute";
+
+  }
+
+  empujarNuevaPregunta(){
+    this.encuestaPreguntas.push({id:'n'+this.c,titulo:'Nueva Pregunta'});
+    this.c++;
+  }
+
 
   agregar() {
 
@@ -62,9 +77,9 @@ export class EncuestasComponent implements OnInit {
     e.fechaInicio = this.encuestaInicio;
     e.fechaFin = this.encuestaFin;
 
-    let preguntas:any  = document.getElementsByName("pregunta");
+    let preguntas: any = document.getElementsByName("pregunta");
     for (let i = 0; i < preguntas.length; i++) {
-      e.preguntas.push({idEvaluacion:e.id,titulo:preguntas[i].value});
+      e.preguntas.push({idEvaluacion: e.id, titulo: preguntas[i].value});
     }
 
     console.log(e);
@@ -81,18 +96,24 @@ export class EncuestasComponent implements OnInit {
   editar() {
 
     let e: any = {};
-
+    e.id = this.encuestaId;
     e.nombre = this.encuestaNombre;
-    e.preguntas = this.encuestaPreguntas;
+    e.preguntas = [];
     e.fechaInicio = this.encuestaInicio;
     e.fechaFin = this.encuestaFin;
-    e.encuestaId = this.encuestaId;
+
+    let preguntas: any = document.getElementsByName("pregunta");
+    for (let i = 0; i < preguntas.length; i++) {
+      e.preguntas.push({idEvaluacion: e.id, titulo: preguntas[i].value});
+    }
 
 
-    /*  this.eService.editar(u).subscribe(d => {
-        this.limpiar();
-        this.obtenerUsuarios();
-      });*/
+
+      this.eService.editar(e).subscribe(d => {
+        console.log(d);
+      /*  this.limpiar();
+        this.obtenerUsuarios();*/
+      });
   }
 
   eliminar() {

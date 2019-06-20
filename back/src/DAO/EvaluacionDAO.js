@@ -74,6 +74,31 @@ exports.editarEvaluacion = async (evaluacion) => {
 
 
 };
+exports.agregarEvaluacion = async (evaluacion) => {
+
+    let sql = `INSERT INTO evaluacion VALUES(null,'${evaluacion.nombre}',fechaInicio='${evaluacion.fechaInicio}',fechaFin='${evaluacion.fechaFin}'`;
+    let respuestaActEvaluacion = await devolverLaPromesaDeLaBaseDato(sql);
+    evaluacion.preguntas.forEach(
+        p=>{
+            sql = `INSERT INTO pregunta VALUES (null,${p.idEvaluacion},0,'${p.titulo}')`;
+            c = conexion();
+            c.query(sql,(e,r)=>{});
+        }
+    );
+    return evaluacion;
+};
+
+exports.eliminarEvaluacion = async (evaluacion) => {
+
+    let sql = `DELETE FROM evaluacion WHERE id = '${evaluacion.id}'`;
+    let respuestaActEvaluacion = await devolverLaPromesaDeLaBaseDato(sql);
+    console.log(evaluacion.preguntas);
+    sql = `DELETE FROM pregunta WHERE idEvaluacion=${evaluacion.id}`;
+    let respuestaEliminadoDePreguntas = await devolverLaPromesaDeLaBaseDato(sql);
+
+    return evaluacion;
+};
+
 
 
 

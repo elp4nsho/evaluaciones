@@ -9,7 +9,7 @@ import {EvaluacionesService} from "../services/evaluaciones.service";
 export class EncuestasComponent implements OnInit {
 
   c = 0;
-
+  showSpinner: boolean = true;
 
   encuestasObtenidas: any = [];
 
@@ -37,6 +37,9 @@ export class EncuestasComponent implements OnInit {
 
   constructor(private eService: EvaluacionesService) {
     this.obtenerEncuestas();
+    setTimeout(() => {
+      this.showSpinner = false;
+    }, 1500);
   }
 
   transformar(o) {
@@ -94,6 +97,7 @@ export class EncuestasComponent implements OnInit {
   }
 
   editar() {
+    this.showSpinner = true;
 
     let e: any = {};
     e.id = this.encuestaId;
@@ -111,8 +115,12 @@ export class EncuestasComponent implements OnInit {
 
       this.eService.editar(e).subscribe(d => {
         console.log(d);
-      /*  this.limpiar();
-        this.obtenerUsuarios();*/
+        this.limpiar();
+        this.obtenerEncuestas();
+        this.showSpinner = false;
+      },e=>{
+        alert("error al connectar al servidor");
+        this.showSpinner = false
       });
   }
 

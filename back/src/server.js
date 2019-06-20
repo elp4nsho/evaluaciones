@@ -83,6 +83,16 @@ app.options('/evaluaciones/agregar', (req, res) => {
     res.json({});
 
 });
+app.options('/evaluaciones/agregarevaluacion', (req, res) => {
+    res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+    res.json({});
+
+});
+app.options('/evaluaciones/eliminar', (req, res) => {
+    res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+    res.json({});
+
+});
 
 
 app.post('/agregar', (req, res) => {
@@ -136,6 +146,26 @@ app.post("/evaluaciones/editar", (req, res) => {
     res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
 
     EvaluacionService.editarEvaluacion(req).catch(e => {
+        res.end(e.toString())
+    }).then(d => {
+        res.end(JSON.stringify(d))
+    });
+});
+
+app.post("/evaluaciones/eliminar", (req, res) => {
+    res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+
+    EvaluacionService.eliminarEvaluacion(req).catch(e => {
+        res.end(e.toString())
+    }).then(d => {
+        res.end(JSON.stringify(d))
+    });
+});
+
+app.post("/evaluaciones/agregarevaluacion", (req, res) => {
+    res.set({"access-control-allow-origin": "*", "Access-Control-Allow-Headers": "content-type"});
+
+    EvaluacionService.agregarEvaluacion(req).catch(e => {
         res.end(e.toString())
     }).then(d => {
         res.end(JSON.stringify(d))

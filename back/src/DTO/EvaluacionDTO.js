@@ -16,6 +16,14 @@ exports.editarEvaluacion = (evaluacion)=>{
     return EvaluacionDAO.editarEvaluacion(evaluacion);
 
 };
+exports.agregarEvaluacion = (evaluacion)=>{
+    return EvaluacionDAO.agregarEvaluacion(evaluacion);
+
+};
+exports.eliminar = (evaluacion)=>{
+    return EvaluacionDAO.eliminarEvaluacion(evaluacion);
+
+};
 exports.mostrarEvaluacionPorId = (evId)=>{
     return EvaluacionDAO.mostrarEvaluacionPorId(evId);
 

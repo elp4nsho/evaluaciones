@@ -21,6 +21,18 @@ function editarEvaluacion(req){
         resolve(EvaluacionDTO.editarEvaluacion(req.body));
     });
 }
+function agregarEvaluacion(req){
+
+    return new Promise((resolve,reject)=>{
+        resolve(EvaluacionDTO.agregarEvaluacion(req.body));
+    });
+}
+function eliminarEvaluacion(req){
+
+    return new Promise((resolve,reject)=>{
+        resolve(EvaluacionDTO.eliminar(req.body));
+    });
+}
 function mostrarPorId(evId){
 
     return new Promise((resolve,reject)=>{
@@ -92,3 +104,5 @@ exports.agregarEvaluacionRespondida = agregarEvaluacionRespondida;
 exports.editarEvaluacion = editarEvaluacion;
 exports.mostrarEvaluacionesRespondidas = mostrarEvaluacionesRespondidas;
 exports.mostrarEvaluacionesParaTomar = mostrarEvaluacionesParaTomar;
+exports.agregarEvaluacion = agregarEvaluacion;
+exports.eliminarEvaluacion = eliminarEvaluacion;

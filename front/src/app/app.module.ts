@@ -22,6 +22,9 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { UsuarioComponenteComponent } from './usuario-componente/usuario-componente.component';
 import { EncuestaComponenteComponent } from './encuesta-componente/encuesta-componente.component';
 import { EncuestasComponent } from './encuestas/encuestas.component';
+import { Ng2LoadingSpinnerModule } from 'ng2-loading-spinner'
+
+
 
 @NgModule({
   declarations: [
@@ -36,6 +39,7 @@ import { EncuestasComponent } from './encuestas/encuestas.component';
     EncuestasComponent,
   ],
   imports: [
+    Ng2LoadingSpinnerModule.forRoot({}),
     BrowserModule,
     FontAwesomeModule,
     RouterModule.forRoot(APP_ROUTES,{useHash: true}),

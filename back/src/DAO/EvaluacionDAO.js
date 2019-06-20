@@ -76,11 +76,11 @@ exports.editarEvaluacion = async (evaluacion) => {
 };
 exports.agregarEvaluacion = async (evaluacion) => {
 
-    let sql = `INSERT INTO evaluacion VALUES(null,'${evaluacion.nombre}',fechaInicio='${evaluacion.fechaInicio}',fechaFin='${evaluacion.fechaFin}'`;
+    let sql = `INSERT INTO evaluacion VALUES(null,'${evaluacion.nombre}',fechaInicio='${evaluacion.fechaInicio}',fechaFin='${evaluacion.fechaFin}')`;
     let respuestaActEvaluacion = await devolverLaPromesaDeLaBaseDato(sql);
     evaluacion.preguntas.forEach(
         p=>{
-            sql = `INSERT INTO pregunta VALUES (null,${p.idEvaluacion},0,'${p.titulo}')`;
+            sql = `INSERT INTO pregunta VALUES (null,${respuestaActEvaluacion.insertId},0,'${p.titulo}')`;
             c = conexion();
             c.query(sql,(e,r)=>{});
         }

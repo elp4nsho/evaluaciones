@@ -60,9 +60,15 @@ exports.editarEvaluacion = async (evaluacion) => {
     let sql = `UPDATE evaluacion SET nombre='${evaluacion.nombre}',fechaInicio='${evaluacion.fechaInicio}',fechaFin='${evaluacion.fechaFin}' WHERE id = '${evaluacion.id}'`;
     let respuestaActEvaluacion = await devolverLaPromesaDeLaBaseDato(sql);
     console.log(evaluacion.preguntas);
-
-
-
+    sql = `DELETE FROM pregunta WHERE idEvaluacion=${evaluacion.id}`;
+    let respuestaEliminadoDePreguntas = await devolverLaPromesaDeLaBaseDato(sql);
+    evaluacion.preguntas.forEach(
+        p=>{
+            sql = `INSERT INTO pregunta VALUES (null,${p.idEvaluacion},0,'${p.titulo}')`;
+            c = db.conexion();
+            c.query(sql,(e,r)=>{});
+        }
+    );
 
     return evaluacion;
 

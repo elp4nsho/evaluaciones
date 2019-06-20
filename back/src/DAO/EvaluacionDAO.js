@@ -316,12 +316,13 @@ exports.mostrarEvaluacionesRespondidas = async () => {
         sql = "SELECT * FROM usuariosAContestar";
         sql = "SELECT * FROM usuario INNER join usuariosAContestar on usuario.rut = usuariosAContestar.idUsuario";
         let usuariosAContestar = await devolverLaPromesaDeLaBaseDato(sql);
-        sql = "SELECT * FROM evaluacionAContestar";
+        sql = "SELECT * FROM evaluacionAContestar INNER join evaluacion on evaluacion.id = evaluacionAContestar.idEvaluacion";
         let evaluacionesAMostrar = await devolverLaPromesaDeLaBaseDato(sql);
 
 
         evaluacionesAMostrar.forEach( evaluacion => {
             evaluacionRespondida.idEvaluacionRespondida = evaluacion.id;
+            evaluacionRespondida.infoEvaluacion = evaluacion;
             evaluacionRespondida.fechaEvaluacionRespondida = evaluacion.fechaInicio;
             evaluacionRespondida.usuarios = [];
 

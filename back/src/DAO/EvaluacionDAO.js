@@ -332,6 +332,7 @@ exports.mostrarEvaluacionesRespondidas = async () => {
                     usuarioObj.rut = usuario.rut;
                     usuarioObj.nombre = usuario.nombre;
                     usuarioObj.correo = usuario.correo;
+                    usuarioObj.tipoUsuario= usuario.tipoUsuario;
 
 
 

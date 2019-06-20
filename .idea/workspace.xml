@@ -25,7 +25,7 @@
             <entry file="file://$PROJECT_DIR$/back/src/DAO/EvaluacionDAO.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="4063">
-                  <caret line="266" column="16" selection-start-line="266" selection-start-column="16" selection-end-line="266" selection-end-column="16" />
+                  <caret line="272" column="16" selection-start-line="272" selection-start-column="16" selection-end-line="272" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -124,8 +124,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/back/src/DAO/EvaluacionDAO.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+                <state relative-caret-position="289">
+                  <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -303,9 +303,9 @@
         <option value="$PROJECT_DIR$/back/src/server.js" />
         <option value="$PROJECT_DIR$/back/src/Servicios/EvaluacionService.js" />
         <option value="$PROJECT_DIR$/front/src/app/encuestas/encuestas.component.html" />
-        <option value="$PROJECT_DIR$/back/src/DAO/EvaluacionDAO.js" />
         <option value="$PROJECT_DIR$/front/src/app/services/evaluaciones.service.ts" />
         <option value="$PROJECT_DIR$/front/src/app/encuestas/encuestas.component.ts" />
+        <option value="$PROJECT_DIR$/back/src/DAO/EvaluacionDAO.js" />
       </list>
     </option>
   </component>
@@ -421,7 +421,7 @@
       <workItem from="1560753009871" duration="12676000" />
       <workItem from="1560793757098" duration="189000" />
       <workItem from="1560937336107" duration="2359000" />
-      <workItem from="1561005827269" duration="2689000" />
+      <workItem from="1561005827269" duration="3414000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <created>1560052913750</created>
@@ -612,11 +612,25 @@
       <option name="project" value="LOCAL" />
       <updated>1560938461150</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="SE CREA PREGUTNAS PARA AGREGAR&#10;FALTAN SERVICIOS">
+      <created>1561008555688</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1561008555688</updated>
+    </task>
+    <task id="LOCAL-00029" summary="SE CREA PREGUTNAS PARA AGREGAR&#10;FALTAN SERVICIOS">
+      <created>1561009083936</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1561009083936</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257241000" />
+    <option name="totallyTimeSpent" value="257966000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1114,8 +1128,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/back/src/DAO/EvaluacionDAO.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="289">
+          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
         </state>
       </provider>
     </entry>

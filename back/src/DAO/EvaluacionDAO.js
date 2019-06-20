@@ -65,7 +65,7 @@ exports.editarEvaluacion = async (evaluacion) => {
     evaluacion.preguntas.forEach(
         p=>{
             sql = `INSERT INTO pregunta VALUES (null,${p.idEvaluacion},0,'${p.titulo}')`;
-            c = db.conexion();
+            c = conexion();
             c.query(sql,(e,r)=>{});
         }
     );

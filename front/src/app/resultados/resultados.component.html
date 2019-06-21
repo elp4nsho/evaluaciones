@@ -2,13 +2,13 @@
   <div class="row">
     <div class="col-6">
 
-      <p>N°Evaluaciones</p>
+      <p>N°Evaluaciones tomadas {{evaluacionesRespondidas.length}}</p>
 
-      <p>UltimaEvaluacion</p>
+      <p>UltimaEvaluacion {{evaluacionesRespondidas[0].evaluacionTomadaInfo[0].nombre }}</p>
 
-      <p>Evaluacion con mayor satisfaccion</p>
+      <p>Evaluacion con mayor satisfaccion {{evaluacionesRespondidas[evaluacionesRespondidas.length]}}</p>
 
-      <p>Evaluacion con menor satisfaccion</p>
+      <p>Evaluacion con menor satisfaccion {{evaluacionesRespondidas[0].evaluacionTomadaInfo[0].nombre }}</p>
 
 
 
@@ -17,8 +17,8 @@
     <div class="col-6">
 
       <div class="selectEvaluaciones">
-        <select *ngFor="let ev of evaluacionesRespondidas" name="" id="">
-          <option  value="">ev.</option>
+        <select (change)="seleccionarEvaluacion($event.target.value)"  name="" id="">
+          <option value="{{ev.idEvaluacionRespondida}}"  *ngFor="let ev of evaluacionesRespondidas" >{{ev.evaluacionTomadaInfo[0].nombre}}</option>
         </select>
       </div>
 

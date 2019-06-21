@@ -318,11 +318,20 @@ exports.mostrarEvaluacionesRespondidas = async () => {
         let usuariosAContestar = await devolverLaPromesaDeLaBaseDato(sql);
         sql = "SELECT * FROM evaluacionAContestar";
         let evaluacionesAMostrar = await devolverLaPromesaDeLaBaseDato(sql);
+        sql = "SELECT * FROM evaluacion";
+        let evaluaciones = await devolverLaPromesaDeLaBaseDato(sql);
+
+
 
 
         evaluacionesAMostrar.forEach( evaluacion => {
             evaluacionRespondida.idEvaluacionRespondida = evaluacion.id;
+
+
+
             evaluacionRespondida.fechaEvaluacionRespondida = evaluacion.fechaInicio;
+            evaluacionRespondida.evaluacionTomadaInfo = evaluaciones.filter(e=>e==evaluacion.idEvaluacion);
+
             evaluacionRespondida.usuarios = [];
 
             usuariosAContestar.forEach( usuario => {

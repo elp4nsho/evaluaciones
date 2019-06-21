@@ -4,7 +4,6 @@
     <list default="true" id="7520b18e-e654-47a9-8af8-cfd04c390d2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/src/DAO/EvaluacionDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/DAO/EvaluacionDAO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/resultados/resultados.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/resultados/resultados.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +18,7 @@
     <favorites_list name="ProyectoEvaluacionesEncuesta" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.328125">
+    <splitter split-orientation="horizontal" split-proportion="0.2767857">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -104,8 +103,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/front/src/app/services/evaluaciones.service.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-169">
-                  <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+                <state relative-caret-position="204">
+                  <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -126,8 +125,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/back/src/DAO/EvaluacionDAO.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="192">
-                  <caret line="324" column="61" selection-start-line="324" selection-start-column="61" selection-end-line="324" selection-end-column="61" />
+                <state relative-caret-position="294">
+                  <caret line="332" column="107" selection-start-line="332" selection-start-column="107" selection-end-line="332" selection-end-column="107" />
                 </state>
               </provider>
             </entry>
@@ -135,8 +134,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/front/src/app/resultados/resultados.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+                <state relative-caret-position="510">
+                  <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
                   <folding>
                     <element signature="e#0#50#0" expanded="true" />
                   </folding>
@@ -147,8 +146,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/front/src/app/resultados/resultados.component.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+                <state relative-caret-position="340">
+                  <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                   </folding>
@@ -308,8 +307,8 @@
         <option value="$PROJECT_DIR$/front/src/app/encuestas/encuestas.component.html" />
         <option value="$PROJECT_DIR$/front/src/app/dashboard/dashboard.routes.ts" />
         <option value="$PROJECT_DIR$/front/src/app/sidebar/sidebar.component.html" />
-        <option value="$PROJECT_DIR$/front/src/app/resultados/resultados.component.html" />
         <option value="$PROJECT_DIR$/front/src/app/resultados/resultados.component.ts" />
+        <option value="$PROJECT_DIR$/front/src/app/resultados/resultados.component.html" />
         <option value="$PROJECT_DIR$/back/src/DAO/EvaluacionDAO.js" />
       </list>
     </option>
@@ -326,62 +325,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="evaluaciones" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evaluaciones" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="evaluaciones" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evaluaciones" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="evaluaciones" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evaluaciones" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="evaluaciones" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evaluaciones" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="evaluaciones" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evaluaciones" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="evaluaciones" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evaluaciones" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="encuestas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="evaluaciones" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evaluaciones" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="resultados" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -483,7 +427,8 @@
       <workItem from="1560793757098" duration="189000" />
       <workItem from="1560937336107" duration="2359000" />
       <workItem from="1561005827269" duration="9252000" />
-      <workItem from="1561019960881" duration="608000" />
+      <workItem from="1561019960881" duration="1337000" />
+      <workItem from="1561106742664" duration="1840000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <created>1560052913750</created>
@@ -723,11 +668,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561018813854</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="se agregan servicios de evaluacion">
+      <created>1561020594337</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1561020594337</updated>
+    </task>
+    <task id="LOCAL-00036" summary="se agregan servicios de evaluacion">
+      <created>1561020991557</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1561020991557</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264412000" />
+    <option name="totallyTimeSpent" value="266981000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1144,6 +1103,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/sidebar/sidebar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/front/src/app/encuestas/encuestas.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1155,13 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back/src/DAO/PreguntaDAO.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1200,44 +1159,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/resultados/resultados.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/app/sidebar/sidebar.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/src/app/services/evaluaciones.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-169">
-          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+        <state relative-caret-position="204">
+          <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front/src/app/resultados/resultados.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="510">
+          <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/app/resultados/resultados.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/src/DAO/PreguntaDAO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/back/src/DAO/EvaluacionDAO.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="324" column="61" selection-start-line="324" selection-start-column="61" selection-end-line="324" selection-end-column="61" />
+        <state relative-caret-position="294">
+          <caret line="332" column="107" selection-start-line="332" selection-start-column="107" selection-end-line="332" selection-end-column="107" />
         </state>
       </provider>
     </entry>

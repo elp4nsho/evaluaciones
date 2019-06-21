@@ -330,7 +330,7 @@ exports.mostrarEvaluacionesRespondidas = async () => {
 
 
             evaluacionRespondida.fechaEvaluacionRespondida = evaluacion.fechaInicio;
-            evaluacionRespondida.evaluacionTomadaInfo = evaluaciones.filter(e=>e==evaluacion.idEvaluacion);
+            evaluacionRespondida.evaluacionTomadaInfo = evaluaciones.filter(e=>e.id==evaluacion.idEvaluacion);
 
             evaluacionRespondida.usuarios = [];
 

@@ -14,6 +14,19 @@ export class EvaluacionesService {
   urlCorreo = Constants.urlCorreo;
 
 
+
+  enviarCorreoPDF(data){
+    return this._http.post(this.urlCorreo+"/pdf",data);
+  }
+
+enviarCorreoInvitacion(correo){
+    let datos = {"correo":correo}
+    return this._http.post(this.urlCorreo+"/",datos);
+
+
+}
+
+
   enviarEvaluaciones(evaluaciones){
 
       return this._http.post(this.urlBack+"/evaluaciones/enviar",evaluaciones);

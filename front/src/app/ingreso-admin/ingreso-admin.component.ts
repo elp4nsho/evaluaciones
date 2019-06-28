@@ -12,6 +12,9 @@ import {AuthService} from "../services/auth.service";
 })
 export class IngresoAdminComponent implements OnInit {
 
+  showSpinner: boolean = false;
+
+
   constructor(private _auth:AuthService,private eService: EvaluacionesService, private uService: UsuariosService) {
     this.traerEvaluaciones();
 
@@ -65,6 +68,8 @@ export class IngresoAdminComponent implements OnInit {
 
   enviarEvaluaciones() {
 
+    this.showSpinner = true;
+
     let datos:any = {};
     datos.idEvaluacion = this.evaluacionesSelect.nativeElement.value;
     datos.usuarios = [];
@@ -78,15 +83,22 @@ export class IngresoAdminComponent implements OnInit {
       let u:any = {};
       u.id = d.rut;
       u.evaluacion = ev;
+      this.eService.enviarCorreoInvitacion(d.correo).subscribe(d=>{});
+
       datos.usuarios.push(u);
     });
 
 console.log(datos);
     this.eService.enviarEvaluaciones(datos).subscribe(d => {
       console.log(this.evaluacionesSelect.nativeElement.value);
-
+      this.showSpinner = false;
+      window.location.reload();
       console.log(d);
-    });
+    },
+      e=>this.showSpinner = false
+
+
+  );
   }
 
 

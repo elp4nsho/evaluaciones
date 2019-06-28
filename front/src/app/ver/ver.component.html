@@ -87,12 +87,13 @@
         <td>{{ev.infoEvaluacion[0].nombre}}</td>
         <td>{{ev.fecha}}</td>
         <td>
-          <ul *ngFor="let p of ev.preguntas">
-            <li>{{p.titulo}} {{p.respuesta}}%</li>
+          <ul id="preguntas{{ev.id}}">
+            <li  *ngFor="let p of ev.preguntas" >{{p.titulo}}. Tu respuesta: {{p.respuesta}}% de satisfacción</li>
           </ul>
         </td>
-        <td><i class="fa fa-download"></i></td>
-        <td><i class="fa fa-envelope"></i></td>
+        <td><i (click)="downloadPDF('preguntas'+ev.id,ev)" class="fa fa-download"></i></td>
+        <td><i (click)="sendPDF(ev)" class="fa fa-envelope"></i></td>
+
       <!--  <td class="botonEliminar"><i class="fas fa-minus"></i></td>
         <td class="botonVer"><i class="far fa-eye"></i></td>-->
       </tr>

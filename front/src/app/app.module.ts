@@ -31,6 +31,7 @@ import { ResultadosComponent } from './resultados/resultados.component'
   declarations: [
     AppComponent,
     LoginComponent,
+
     PageNotFoundComponent,
     IngresoComponent,
     VerComponent,

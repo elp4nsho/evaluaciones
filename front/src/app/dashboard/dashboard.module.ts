@@ -13,10 +13,12 @@ import {UsuariosComponent} from "../usuarios/usuarios.component";
 import {UsuarioComponenteComponent} from "../usuario-componente/usuario-componente.component";
 import {EncuestaComponenteComponent} from "../encuesta-componente/encuesta-componente.component";
 import {FormsModule} from "@angular/forms";
+import { Ng2LoadingSpinnerModule } from 'ng2-loading-spinner';
 
 @NgModule({
   imports: [
     CommonModule,
+    Ng2LoadingSpinnerModule.forRoot({}),
 
     RouterModule.forChild(dashboardRoutes),
     FormsModule

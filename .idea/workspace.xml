@@ -4,16 +4,6 @@
     <list default="true" id="7520b18e-e654-47a9-8af8-cfd04c390d2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/src/Servicios/auth/loginService.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/Servicios/auth/loginService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/front/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/front/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/front/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/front/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/front/polyfills.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/front/polyfills.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/front/polyfills.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/front/polyfills.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/front/runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/front/runtime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/front/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/front/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/front/styles.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/front/styles.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/front/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/front/vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/front/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/front/vendor.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/resultados/resultados.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/resultados/resultados.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/back/src/Servicios/auth/loginService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="89" lean-forward="true" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+            <state relative-caret-position="36">
+              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -285,7 +275,7 @@
       <workItem from="1561106742664" duration="6274000" />
       <workItem from="1561195362867" duration="1801000" />
       <workItem from="1561403308533" duration="439000" />
-      <workItem from="1561700561042" duration="841000" />
+      <workItem from="1561700561042" duration="1727000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <created>1560052913750</created>
@@ -567,11 +557,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561111749375</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="se agregan servicios de evaluacion">
+      <created>1561701858170</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1561701858170</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274496000" />
+    <option name="totallyTimeSpent" value="275382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,10 +583,10 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5767327" visible="true" weight="0.1235119" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5767327" visible="true" weight="0.1235119" />
       <window_info id="Structure" order="1" sideWeight="0.41584158" side_tool="true" weight="0.14892033" />
       <window_info id="Favorites" order="2" sideWeight="0.5012346" side_tool="true" weight="0.24944155" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32890365" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.20458265" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.13122924" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986711" />
@@ -601,7 +598,7 @@
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32569557" />
       <window_info anchor="bottom" id="TypeScript" order="11" sideWeight="0.5026061" weight="0.29401994" />
-      <window_info anchor="bottom" x="475" y="443" width="685" height="240" id="Terminal" order="12" sideWeight="0.42326733" visible="true" weight="0.1898527" />
+      <window_info anchor="bottom" x="475" y="443" width="685" height="240" id="Terminal" order="12" sideWeight="0.42326733" weight="0.1898527" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1081,8 +1078,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/back/src/Servicios/auth/loginService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="89" lean-forward="true" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+        <state relative-caret-position="36">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
         </state>
       </provider>
     </entry>

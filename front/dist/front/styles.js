@@ -48,7 +48,7 @@ module.exports = "/*!\n * Bootstrap v4.3.1 (https://getbootstrap.com/)\n * Copyr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\nbody{\n  background: #6A849C !important;\n}\n"
+module.exports = "/* You can add global styles to this file, and also import other style files */\r\nbody{\r\n  background: #6A849C !important;\r\n}\r\n"
 
 /***/ }),
 
@@ -580,8 +580,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/croshy/ProyectoEvaluacionesEncuesta/front/bower_components/bootstrap/dist/css/bootstrap.css */"./bower_components/bootstrap/dist/css/bootstrap.css");
-module.exports = __webpack_require__(/*! /home/croshy/ProyectoEvaluacionesEncuesta/front/src/styles.css */"./src/styles.css");
+__webpack_require__(/*! C:\Users\croshye\WebstormProjects\evaluaciones\front\bower_components\bootstrap\dist\css\bootstrap.css */"./bower_components/bootstrap/dist/css/bootstrap.css");
+module.exports = __webpack_require__(/*! C:\Users\croshye\WebstormProjects\evaluaciones\front\src\styles.css */"./src/styles.css");
 
 
 /***/ })

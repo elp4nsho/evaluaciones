@@ -77,8 +77,6 @@ export class ResultadosComponent implements OnInit {
      /* });*/
     });
   }
-
-
   pintarGrafico(t, e, s) {
     let chart = new CanvasJS.Chart("chartContainer", {
       animationEnabled: true,
@@ -86,6 +84,7 @@ export class ResultadosComponent implements OnInit {
       title: {
         text: "Cantidad de personas"
       },
+
       data: [{
         type: "column",
         dataPoints: [
